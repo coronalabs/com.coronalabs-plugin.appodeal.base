@@ -1,0 +1,6 @@
+framework module AppodealMediationCoreObjC {
+  umbrella header "AppodealMediationCoreObjC.h"
+
+  export *
+  module * { export * }
+}
