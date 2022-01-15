@@ -1,0 +1,6 @@
+framework module StackAPI {
+  umbrella header "StackAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}
