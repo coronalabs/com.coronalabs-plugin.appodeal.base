@@ -1,3 +1,11 @@
+android {
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
 repositories {
     maven {
         url "https://artifactory.appodeal.com/appodeal"
@@ -5,8 +13,10 @@ repositories {
 }
 
 dependencies {
-    implementation("com.appodeal.ads.sdk:core:2.11.0")
-    implementation("com.appodeal.ads.sdk.networks:appodeal:2.11.0.3")
+     implementation("com.appodeal.ads.sdk:core:2.11.0")
     implementation("com.appodeal.ads.sdk.networks:mraid:2.11.0.5")
     implementation("com.appodeal.ads.sdk.networks:vast:2.11.0.5")
+    configurations.all {
+        resolutionStrategy { force 'androidx.work:work-runtime:2.6.0' }
+    }
 }
