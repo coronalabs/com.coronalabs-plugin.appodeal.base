@@ -13,8 +13,8 @@ repositories {
 }
 
 dependencies {
-     implementation("com.appodeal.ads.sdk:core:2.11.0")
-    implementation("com.appodeal.ads.sdk.networks:mraid:2.11.0.5")
-    implementation("com.appodeal.ads.sdk.networks:vast:2.11.0.5")
+    implementation("com.appodeal.ads.sdk:core:2.11.1")
+    implementation("com.appodeal.ads.sdk.networks:mraid:2.11.1.5")
+    implementation("com.appodeal.ads.sdk.networks:vast:2.11.1.5")
   
 }
