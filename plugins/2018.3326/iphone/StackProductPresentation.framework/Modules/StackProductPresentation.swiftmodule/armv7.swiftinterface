@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name StackProductPresentation
 import Foundation
 import SafariServices
@@ -9,6 +9,7 @@ import StackUIKit
 import StoreKit
 import Swift
 import UIKit
+import _Concurrency
 @_inheritsConvenienceInitializers @objc(STKProductPresentation) final public class ProductPresentation : ObjectiveC.NSObject {
   @objc public static func openProduct(parameters: Swift.Dictionary<Swift.String, Swift.AnyHashable>, success: ((Swift.Dictionary<Swift.String, Swift.AnyHashable>) -> Swift.Void)?, failure: ((Foundation.NSError) -> Swift.Void)?, completion: (() -> Swift.Void)?)
   @objc public static func startImpression(_ parameters: Swift.Dictionary<Swift.String, Swift.AnyHashable>)
@@ -16,7 +17,7 @@ import UIKit
   @objc override dynamic public init()
   @objc deinit
 }
-extension ProductPresentation : StackProductPresentation.ProductControllerDelegate {
+extension StackProductPresentation.ProductPresentation : StackProductPresentation.ProductControllerDelegate {
   @objc final public func controller(_ controller: StackProductPresentation.ProductController, didFailToPresent error: Foundation.NSError)
   @objc final public func controller(_ controller: StackProductPresentation.ProductController, willLeaveApplication parameters: Swift.Dictionary<Swift.String, Swift.AnyHashable>)
   @objc final public func controller(_ controller: StackProductPresentation.ProductController, willPresentProduct parameters: Swift.Dictionary<Swift.String, Swift.AnyHashable>)

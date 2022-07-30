@@ -1,9 +1,9 @@
 //
 //  APDInterstital.h
 //
-//  AppodealSDK version 2.11.0
+//  AppodealSDK version 2.11.1
 //
-//  Copyright © 2021 Appodeal, Inc. All rights reserved.
+//  Copyright © 2022 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

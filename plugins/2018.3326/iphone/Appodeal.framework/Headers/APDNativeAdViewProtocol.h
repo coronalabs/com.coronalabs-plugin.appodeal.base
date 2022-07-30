@@ -2,8 +2,8 @@
 //  APDNativeAdView.h
 //  Appodeal
 //
-//  Created by Stas Kochkin on 22/06/2021.
-//  Copyright © 2021 Appodeal, Inc. All rights reserved.
+//  Created by Stas Kochkin on 22/06/2022.
+//  Copyright © 2022 Appodeal, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

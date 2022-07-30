@@ -2,9 +2,9 @@
 //  APDMRECView.h
 //  Appodeal
 //
-//  AppodealSDK 2.11.0
+//  AppodealSDK 2.11.1
 //
-//  Copyright © 2021 Appodeal, Inc. All rights reserved.
+//  Copyright © 2022 Appodeal, Inc. All rights reserved.
 //
 
 #import <Appodeal/APDBannerView.h>

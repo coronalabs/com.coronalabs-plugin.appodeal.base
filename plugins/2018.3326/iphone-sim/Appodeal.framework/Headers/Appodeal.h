@@ -2,9 +2,9 @@
 //  Appodeal.h
 //  Appodeal
 //
-//  AppodealSDK version 2.11.0
+//  AppodealSDK version 2.11.1
 //
-//  Copyright (c) 2021 Appodeal, Inc. All rights reserved.
+//  Copyright (c) 2022 Appodeal, Inc. All rights reserved.
 //
 
 

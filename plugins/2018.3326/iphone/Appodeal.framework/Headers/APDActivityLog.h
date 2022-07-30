@@ -2,8 +2,8 @@
 //  APDActivityLog.h
 //  Appodeal
 //
-//  Created by Stas Kochkin on 21.05.2021.
-//  Copyright © 2021 Appodeal, Inc. All rights reserved.
+//  Created by Stas Kochkin on 21.05.2022.
+//  Copyright © 2022 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
