@@ -41,6 +41,7 @@ FOUNDATION_EXPORT STKAppEventLevel STKAppEventLevelNone;
 NS_SWIFT_NAME(StackAnalytics)
 @interface StackAnalytics: NSObject
 
+@property (nonatomic, class, readonly) NSString *sdkVersion;
 @property (nonatomic, copy) NSURL *baseURL;
 
 - (instancetype)init NS_UNAVAILABLE;

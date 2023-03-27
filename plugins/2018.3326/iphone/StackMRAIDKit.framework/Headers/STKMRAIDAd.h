@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param URL Destination
 - (BOOL)ad:(STKMRAIDAd *)ad shouldProcessNavigationWithURL:(NSURL *)URL;
 @end
+
+
 /// MRAID Ad interface for loading creatives
 @interface STKMRAIDAd : NSObject
 /// Delegate
@@ -32,9 +34,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// WebView reference
 @property (nonatomic, strong, readonly, nullable) WKWebView *webView;
 /// Web configuration
-@property (nonatomic, strong, readonly) STKMRAIDWebConfiguration *configuration;
+@property (nonatomic, copy, readonly) STKMRAIDWebConfiguration *configuration;
 /// Service reference
 @property (nonatomic, strong, readonly) STKMRAIDService *service;
+/// Append configuration
+@property (nonatomic, readonly) void(^appendConfiguration)(STKMRAIDWebConfiguration *);
 /// Method to load HTML
 /// @param HTML Raw HTML string
 - (void)loadHTML:(NSString *)HTML;

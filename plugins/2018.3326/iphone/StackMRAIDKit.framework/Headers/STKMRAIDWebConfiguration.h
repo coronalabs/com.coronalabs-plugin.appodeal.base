@@ -9,9 +9,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface STKMRAIDWebConfiguration : NSObject
+@interface STKMRAIDWebConfiguration : NSObject<NSCopying>
 
 @property (nonatomic, readonly) NSString *baseUrl;
+
+@property (nonatomic, readonly) double timeout;
 
 @property (nonatomic, readonly) WKUserContentController *contentController;
 
@@ -20,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) void(^appendMessageHandler)(id<STKScriptMessageHandler>);
 
 @property (nonatomic, readonly) void(^appendBaseUrl)(NSString *);
+
+@property (nonatomic, readonly) void(^appendTimeout)(double);
 
 @end
 

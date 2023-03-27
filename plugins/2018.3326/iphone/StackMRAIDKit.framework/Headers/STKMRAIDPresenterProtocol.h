@@ -7,6 +7,7 @@
 #import <StackMRAIDKit/STKMRAIDAd.h>
 #import <StackMRAIDKit/STKMRAIDPresentationConfiguration.h>
 
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol STKMRAIDPresenter;
@@ -14,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol STKMRAIDPresenterDelegate <NSObject>
 
-- (UIViewController *)presenterRootViewController;
+- (nullable UIViewController *)presenterRootViewController;
 
 @optional
 
@@ -27,6 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @protocol STKMRAIDViewPresenterDelegate <STKMRAIDPresenterDelegate>
+
+@required
+
+- (void)presenterDidShow:(id<STKMRAIDPresenter>)presenter;
 
 @optional
 
@@ -53,6 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol STKMRAIDPresenter <NSObject>
 
 @property (nonatomic, weak) id<STKMRAIDPresenterDelegate> delegate;
+
+@property (nonatomic, copy, readonly) STKMRAIDPresentationConfiguration *configuration;
 
 - (instancetype)initWithConfiguration:(STKMRAIDPresentationConfiguration *)configuration;
 

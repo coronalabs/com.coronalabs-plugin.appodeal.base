@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <StackMRAIDKit/STKCacheType.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,10 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) STKVASTControllerConfigurationBuilder *(^appendMeasuring)(BOOL measuring);
 @property (nonatomic, copy, readonly) STKVASTControllerConfigurationBuilder *(^appendForceCloseTime)(BOOL forceCloseTime);
 
+@property (nonatomic, copy, readonly) STKVASTControllerConfigurationBuilder *(^appendCacheType)(STKCacheType cacheType);
+
 @property (nonatomic, copy, readonly) STKVASTControllerConfigurationBuilder *(^appendPartnerName)(NSString *partnerName);
 @property (nonatomic, copy, readonly) STKVASTControllerConfigurationBuilder *(^appendPartnerVersion)(NSString *partnerVersion);
 
 @property (nonatomic, copy, readonly) STKVASTControllerConfigurationBuilder *(^appendCloseTime)(NSTimeInterval closeTime);
+@property (nonatomic, copy, readonly) STKVASTControllerConfigurationBuilder *(^appendPlaceholderTimeout)(NSTimeInterval placeholderTimeout);
 @property (nonatomic, copy, readonly) STKVASTControllerConfigurationBuilder *(^appendMaxDuration)(NSTimeInterval maxDuration);
 @property (nonatomic, copy, readonly) STKVASTControllerConfigurationBuilder *(^appendVideoCloseTime)(NSTimeInterval videoCloseTime);
 @property (nonatomic, copy, readonly) STKVASTControllerConfigurationBuilder *(^appendProductParameters)(NSDictionary <NSString *, id> *);
@@ -34,10 +38,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly, getter=isMeasuring) BOOL measuring;
 @property (nonatomic, assign, readonly, getter=isForceCloseTime) BOOL forceCloseTime;
 
+@property (nonatomic, assign, readonly) STKCacheType cacheType;
+
 @property (nonatomic, strong, readonly) NSString *partnerName;
 @property (nonatomic, strong, readonly) NSString *partnerVersion;
 
 @property (nonatomic, assign, readonly) NSTimeInterval closeTime;
+@property (nonatomic, assign, readonly) NSTimeInterval placeholderTimeout;
 @property (nonatomic, assign, readonly) NSTimeInterval maxDuration;
 @property (nonatomic, assign, readonly) NSTimeInterval videoCloseTime;
 

@@ -10,6 +10,7 @@
 #import <StackVASTAssets/STKVASTAsset.h>
 #import <StackVASTAssets/STKVASTAsset+Private.h>
 #import <StackVASTAssets/STKVASTAssetProvider.h>
+#import <StackVASTAssets/STKVASTAssetQueue.h>
 #import <StackVASTAssets/STKVASTAssetHelper.h>
 #import <StackVASTAssets/STKVASTAssetCompanion.h>
 #import <StackVASTAssets/STKVASTAssetError.h>

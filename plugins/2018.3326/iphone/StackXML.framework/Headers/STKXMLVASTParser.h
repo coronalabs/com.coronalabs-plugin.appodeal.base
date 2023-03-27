@@ -7,16 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <StackXML/STKXMLVASTInLineModel.h>
+#import <StackXML/STKXMLVASTADWrapperModel.h>
+#import <StackXML/STKXMLVASTADInLineModel.h>
 
 @interface STKXMLVASTParser : NSObject
 
 - (void)parseContentsOfURL:(NSURL *)URL
-                   success:(void(^)(STKXMLVASTInLineModel *, NSString *))success
+                   success:(void(^)(NSArray <STKXMLVASTADInLineModel *>*, NSString *))success
                    failure:(void(^)(NSError *))failure;
 
 - (void)parseContentsOfDocument:(NSData *)document
-                        success:(void(^)(STKXMLVASTInLineModel *, NSString *))success
+                        success:(void(^)(NSArray <STKXMLVASTADInLineModel *>*, NSString *))success
                         failure:(void(^)(NSError *))failure;
 
 @end

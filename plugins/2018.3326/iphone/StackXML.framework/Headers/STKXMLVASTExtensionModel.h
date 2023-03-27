@@ -22,12 +22,15 @@
 @property (nonatomic, readonly) NSString *videoMuted;
 @property (nonatomic, readonly) NSString *closeTime;
 @property (nonatomic, readonly) NSString *companionShow;
+@property (nonatomic, readonly) NSString *bmSKOverlayShow;
+@property (nonatomic, readonly) NSString *skOverlayShow;
 @property (nonatomic, readonly) NSString *productLink;
 @property (nonatomic, readonly) NSString *r1;
 @property (nonatomic, readonly) NSString *r2;
 @property (nonatomic, readonly) NSString *autorotate;
 @property (nonatomic, readonly) NSString *companionCloseTime;
 @property (nonatomic, readonly) NSString *ignoresSafeAreaLayoutGuide;
+@property (nonatomic, readonly) NSString *forceOrientation;
 
 @property (nonatomic, readonly) STKXMLVASTAssetExtensionModel *CTAAsset;
 @property (nonatomic, readonly) STKXMLVASTAssetExtensionModel *muteAsset;

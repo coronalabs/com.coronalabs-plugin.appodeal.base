@@ -2,9 +2,9 @@
 //  APDNativeAd.h
 //  Appodeal
 //
-//  AppodealSDK version 2.11.1
+//  AppodealSDK version 3.0.2
 //
-//  Copyright © 2022 Appodeal, Inc. All rights reserved.
+//  Copyright © 2023 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

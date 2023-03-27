@@ -2,9 +2,9 @@
 //  APDDefines.h
 //  Appodeal
 //
-//  AppodealSDK version 2.11.1
+//  AppodealSDK version 3.0.2
 //
-//  Copyright © 2022 Appodeal, Inc. All rights reserved.
+//  Copyright © 2023 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -12,7 +12,10 @@
 
 @class APDActivityLog;
 
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDBuildIdendtifier;
+FOUNDATION_EXPORT NSString *_Nonnull const kAppodealUserAgeKey;
+FOUNDATION_EXPORT NSString *_Nonnull const kAppodealUserGenderKey;
+FOUNDATION_EXPORT NSString *_Nonnull const kAPDBuildIdendtifier;
+
 typedef CGSize APDUnitSize;
 FOUNDATION_EXPORT const APDUnitSize kAppodealUnitSize_320x50;
 FOUNDATION_EXPORT const APDUnitSize kAppodealUnitSize_728x90;
@@ -111,6 +114,44 @@ typedef NS_ENUM(NSUInteger, AppodealUserGender) {
     AppodealUserGenderMale
 };
 /**
+ Purchase type
+
+ - APDPurchaseTypeConsumable: Consumable purchases
+ - APDPurchaseTypeNonConsumable: Non consumable purchases
+ - APDPurchaseTypeAutoRenewableSubscription: Auto renewable subscription
+ - APDPurchaseTypeNonRenewingSubscription: Non renewing subscription
+ */
+typedef NS_ENUM(NSUInteger, APDPurchaseType) {
+    APDPurchaseTypeConsumable = 0,
+    APDPurchaseTypeNonConsumable,
+    APDPurchaseTypeAutoRenewableSubscription,
+    APDPurchaseTypeNonRenewingSubscription
+};
+/**
+ GDPR regulation user consent type
+
+ - APDGDPRUserConsentUnknown: User does not give any consent yet.
+ - APDGDPRUserConsentPersonalized: User consents to behavioral targeting in compliance with GDPR.
+ - APDGDPRUserConsentNonPersonalized: User does not consent to behavioral targeting in compliance with GDPR.
+*/
+typedef NS_ENUM(NSUInteger, APDGDPRUserConsent) {
+    APDGDPRUserConsentUnknown = 0,
+    APDGDPRUserConsentPersonalized,
+    APDGDPRUserConsentNonPersonalized,
+};
+/**
+ CCPA regulation user consent type
+
+ - APDCCPAUserConsentUnknown: User does not give any consent yet.
+ - APDCCPAUserConsentOptIn: User consents to the sale of his or her personal information in compliance with CCPA.
+ - APDCCPAUserConsentOptOut: User does not consent to the sale of his or her personal information in compliance with CCPA.
+*/
+typedef NS_ENUM(NSUInteger, APDCCPAUserConsent) {
+    APDCCPAUserConsentUnknown = 0,
+    APDCCPAUserConsentOptIn,
+    APDCCPAUserConsentOptOut,
+};
+/**
  Declaration of banner delegate
  */
 @protocol AppodealBannerDelegate <NSObject>
@@ -137,7 +178,12 @@ typedef NS_ENUM(NSUInteger, AppodealUserGender) {
  Method called when banner shows or refreshes
  */
 - (void)bannerDidShow;
-
+/**
+ Method called when banner did fail to present
+ *
+ @param error Error occured while presenting
+ */
+- (void)bannerDidFailToPresentWithError:(nonnull NSError *)error;
 @end
 /**
  Interstital delegate declaration
@@ -280,12 +326,81 @@ typedef NS_ENUM(NSUInteger, AppodealUserGender) {
  */
 - (void)didFailToLoadNativeAdsWithError:(nonnull NSError *)error;
 @end
-/// Appodeal SDK mediation activity delegate
+/**
+ Appodeal SDK mediation activity delegate
+*/
 @protocol APDActivityDelegate <NSObject>
-/// Send activity log info
-/// @param activityLog Instance of activity log that contains
-/// info about activity type, ad network and ad type
+/**
+ Send activity log info
+ @param activityLog Instance of activity log that contains
+ info about activity type, ad network and ad type
+*/
 - (void)didReceiveActivityLog:(nonnull APDActivityLog *)activityLog;
+@end
+/**
+ Appodeal SDK initialization delegate
+*/
+@protocol AppodealInitializationDelegate <NSObject>
+/**
+ Called when Appodeal SDK complete initialization
+*/
+- (void)appodealSDKDidInitialize;
+@end
+/**
+ Information about revenue from ad network
+*/
+@protocol AppodealAdRevenue <NSObject>
+/**
+ Network Name
+*/
+@property (nonatomic, readonly, copy, nonnull) NSString *networkName;
+/**
+ Appodeal's Ad Unit name
+*/
+@property (nonatomic, readonly, copy, nonnull) NSString *adUnitName;
+/**
+ Placement with witch it was shown an ad
+ */
+@property (nonatomic, readonly, copy, nonnull) NSString *placement;
+/**
+ Revenue precision.
+ - 'exact' - programmatic revenue is the resulting price of auction
+ - 'publisher_defined' - revenue from crosspromo campaigns
+ - 'estimated' - revenue based on ad network pricfloors or historical eCPM
+ - 'undefined' - revenue amount is not defined
+*/
+@property (nonatomic, readonly, copy, nonnull) NSString *revenuePrecision;
+/**
+ Demand Source name. Bidder name in case of impression from real time bidding
+ or name of ad network
+*/
+@property (nonatomic, readonly, copy, nonnull) NSString *demandSource;
+/**
+ Revenue currency. USD
+*/
+@property (nonatomic, readonly, copy, nonnull) NSString *currency;
+/**
+ Revenue amount
+*/
+@property (nonatomic, readonly, assign) double revenue;
+/**
+ String value of ad type
+*/
+@property (nonatomic, readonly, copy, nonnull) NSString *adTypeString;
+/**
+ Impression ad type
+*/
+@property (nonatomic, readonly, assign) AppodealAdType adType;
+@end
+/**
+ Delegate for ad revenue event
+ */
+@protocol AppodealAdRevenueDelegate <NSObject>
+/**
+ Called when SDK receives ad revenue
+ @param ad Information about ad
+ */
+- (void)didReceiveRevenueForAd:(nonnull id<AppodealAdRevenue>)ad;
 @end
 /**
  Extra Keys defines
@@ -294,7 +409,6 @@ FOUNDATION_EXPORT NSString * _Nonnull const kAPDAppsFlyerIdExtrasKey;
 /**
  Network defines
  */
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDMRAIDJSTagNetworkName;
 FOUNDATION_EXPORT NSString * _Nonnull const kAPDTapsenseNetworkName;
 FOUNDATION_EXPORT NSString * _Nonnull const kAPDInnerActiveNetworkName;
 FOUNDATION_EXPORT NSString * _Nonnull const kAPDSmaatoNetworkName;

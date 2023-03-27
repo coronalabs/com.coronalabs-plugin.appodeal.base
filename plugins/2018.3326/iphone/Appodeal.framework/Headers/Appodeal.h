@@ -2,9 +2,9 @@
 //  Appodeal.h
 //  Appodeal
 //
-//  AppodealSDK version 2.11.1
+//  AppodealSDK version 3.0.2
 //
-//  Copyright (c) 2022 Appodeal, Inc. All rights reserved.
+//  Copyright (c) 2023 Appodeal, Inc. All rights reserved.
 //
 
 
@@ -14,7 +14,7 @@
 #import <Appodeal/APDDefines.h>
 #import <Appodeal/APDSdk.h>
 #import <Appodeal/APDActivityLog.h>
- 
+
 #import <Appodeal/APDInterstitialAd.h>
 #import <Appodeal/APDRewardProtocol.h>
 #import <Appodeal/APDRewardedVideo.h>
@@ -58,6 +58,15 @@
  @return registred networks name
  */
 + (NSArray <NSString *>*_Nonnull)registeredNetworkNames;
+/**
+ Return registred networks names for specific ad type
+ @note Objective-C
+ <pre> [Appodeal registeredNetworkNamesForAdType:AppodealAdTypeBanner]; </pre>
+ @note Swift
+ <pre> Appodeal.registeredNetworkNamesForAdType(.banner) </pre>
+ @return registred networks names
+ */
++ (NSArray<NSString *> *_Nonnull)registeredNetworkNamesForAdType:(AppodealAdType)adType;
 /**
  To disable a networks use this method
  @note Objective-C
@@ -155,7 +164,7 @@
  @param types  Appodeal ad type
  @param consent User has given consent to the processing of personal data relating to him or her. https://www.eugdpr.org/
  */
-+ (void)initializeWithApiKey:(nonnull NSString *)apiKey types:(AppodealAdType)types hasConsent:(BOOL)consent;
++ (void)initializeWithApiKey:(nonnull NSString *)apiKey types:(AppodealAdType)types hasConsent:(BOOL)consent __deprecated_msg("This method is deprecated. Use +initializeWithApiKey:types: instead");
 /**
  Initialize method. To initialize Appodeal with several types you
  user consent on personal data processing assumes to be true
@@ -178,18 +187,28 @@
  <pre> Appodeal.setTriggerPrecacheCallbacks(true) </pre>
  @param shouldTrigger Bolean flag indicates that precache callbacks are disabled or not
  */
-+ (void)setTriggerPrecacheCallbacks:(BOOL)shouldTrigger;
++ (void)setTriggerPrecacheCallbacks:(BOOL)shouldTrigger __deprecated_msg("This method is deprecated. Use +(void)setTriggerPrecacheCallbacks:(BOOL)shouldTrigger types:(AppodealAdType)types instead");
+/**
+ Disable calls of precache callbacks for AppodealAdTypes
+ @note Objective-C
+ <pre> [Appodeal setTriggerPrecacheCallbacks:YES types: AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo]; </pre>
+ @note Swift
+ <pre> Appodeal.setTriggerPrecacheCallbacks(true, types: [.interstitial, .rewardedVideo) </pre>
+ @param shouldTrigger Bolean flag indicates that precache callbacks are disabled or not
+ @param types  Appodeal ad type
+ */
++ (void)setTriggerPrecacheCallbacks:(BOOL)shouldTrigger types:(AppodealAdType)types;
 /**
  Get that SDK initialized
  @note Objective-C
- <pre> [Appodeal isInitalizedForAdType:AppodealAdTypeInterstitial]; </pre>
+ <pre> [Appodeal isInitializedForAdType:AppodealAdTypeInterstitial]; </pre>
  @note Swift
- <pre> isInitalizedForAdType(.Interstitial) </pre>
+ <pre> isInitializedForAdType(.Interstitial) </pre>
  @warning Use method after initialization!
  @param type Type you want to check on initialisation.
  @return YES if sdk initialized or NO if not. In this method used strict compare!
  */
-+ (BOOL)isInitalizedForAdType:(AppodealAdType)type;
++ (BOOL)isInitializedForAdType:(AppodealAdType)type;
 /**
  Appodeal supports multiple log levels for internal logging,
  and ONLY one (VERBOSE) log level for third party ad networks.
@@ -220,14 +239,50 @@
 + (void)setPluginVersion:(nonnull NSString *)pluginVersion;
 /**
  Set custom extra data for sdk
+ @note Objective-C
+ <pre> [Appodeal setExtras:@{ @"foo": @"bar" }]; </pre>
+ @note Swift
+ <pre> Appodeal.setExtras(["foo": "bar"]) </pre>
  @param extras NSDictionary with NSString key and JSON encodable object
  */
-+ (void)setExtras:(nullable NSDictionary <NSString *, id> *)extras;
++ (void)setExtras:(nullable NSDictionary <NSString *, id> *)extras __deprecated_msg("This method is deprecated. Use -setExtrasValue:forKey:");
+/**
+ Set custom extra value for specific key
+ @note Objective-C
+ <pre> [Appodeal setExtrasValue:@"bar" forKey:@"foo"]; </pre>
+ @note Swift
+ <pre> Appodeal.setExtrasValue("bar", forKey:"foo"]) </pre>
+ @param value JSON encodable object. Might be nil
+ @param key Nonnull string value
+ */
++ (void)setExtrasValue:(nullable id)value forKey:(nonnull NSString *)key;
+/**
+ SDK extras
+ @note Objective-C
+ <pre>
+ NSDictionary *customState = [Appodeal extras];
+ </pre>
+ @note Swift
+ <pre>
+ let customState = Appodeal.extras()
+ </pre>
+ */
++ (nullable NSDictionary <NSString *, id> *)extras;
 /**
  Set activity delegate
  @param activityDelegate Nullable instance of class that conforms protocol APDActivityDelegate
  */
 + (void)setActivityDelegate:(nullable id<APDActivityDelegate>)activityDelegate;
+/**
+ Set initialization delegate
+ @param initializationDelegate Nullable instance of class that conforms protocol AppodealInitializationDelegate
+ */
++ (void)setInitializationDelegate:(nullable id<AppodealInitializationDelegate>)initializationDelegate;
+/**
+ Set ad revenue delegate
+ @param adRevenueDelegate Nullable instance of class that conforms protocol AppodealAdRevenueDelegate
+ */
++ (void)setAdRevenueDelegate:(nullable id<AppodealAdRevenueDelegate>)adRevenueDelegate;
 /**
  Set interstitial delegate to get callbacks
  @note Objective-C
@@ -365,7 +420,34 @@
  @param amount Amount of in-app purchase, for example @0.99
  @param currency In-app purchase currency, for example @"USD"
  */
-+ (void)trackInAppPurchase:(nonnull NSNumber *)amount currency:(nonnull NSString *)currency;
++ (void)trackInAppPurchase:(nonnull NSNumber *)amount
+                  currency:(nonnull NSString *)currency;
+/**
+ Validate and track in app purchase
+ @param productId Identifier of product
+ @param type Type of product
+ @param price Product price
+ @param currency Price currency
+ @param transactionId Identifier of payment transaction
+ @param additionalParameters Custom parameters
+ @param success Succes block
+ @param failure Failure block
+ */
++ (void)validateAndTrackInAppPurchase:(nullable NSString *)productId
+                                 type:(APDPurchaseType)type
+                                price:(nullable NSString *)price
+                             currency:(nullable NSString *)currency
+                        transactionId:(nullable NSString *)transactionId
+                 additionalParameters:(nullable NSDictionary *)additionalParameters
+                              success:(void (^ _Nullable)(NSDictionary * _Nullable response))success
+                              failure:(void (^ _Nullable)(NSError * _Nullable error))failure;
+/**
+ Track custom event
+ @param event Event name
+ @param customParameters Custom parameters
+ */
++ (void)trackEvent:(nonnull NSString *)event
+  customParameters:(NSDictionary * _Nullable)customParameters;
 /**
  Get current SDK version
  @note Objective-C
@@ -396,53 +478,66 @@
  */
 + (BOOL)isPrecacheAd:(AppodealAdType)adType;
 /**
- You can set custom rule by using this method.
- Configure rules for segments in <b>Appodeal Dashboard</b>.
+ You can set custom rule by using this method. This method will override
+ the whole previous setted custom state.
+ Configure filters for segments/placements in <b>Appodeal Dashboard</b>.
  @note For example, you want to create a segment of users who complete 20 or more levels
  You create a rule in the dashboard with name "completedLevels" of type Int,
  operator GreaterThanOrEqualTo and value 10, and then you implement the following code:
  @note Objective-C
  <pre>
- NSDictionary * customRule = {@"completedLevels" : CURRENT_NUMBER_OF_COMPLETED_LEVELS};
- [[APDSdk sharedSdk] setSegmentFilter: segmentFilter];
+ NSDictionary *customState = {
+ @"completedLevels" : CURRENT_NUMBER_OF_COMPLETED_LEVELS
+ };
+ [Appodeal setCustomState:customState];
  </pre>
  @note Swift
  <pre>
- let customRule = ["completedLevels" : CURRENT_NUMBER_OF_COMPLETED_LEVELS]
- APDSdk .sharedSdk().setSegmentFilter(segmentFilter)
+ let customState = [
+ "completedLevels" : CURRENT_NUMBER_OF_COMPLETED_LEVELS
+ ]
+ Appodeal.setCustomState(customState)
  </pre>
  Call this method any time you want, segments change dynamically
  @note And then CURRENT_NUMBER_OF_COMPLETED_LEVELS become 10 or greater
  Your segments settings become available
- @param segmentFilter NSDictionary instance with keys that are similar to keys that you turn on in Appodeal Dashboard's Segment settings block and values of similar types
+ @param customState NSDictionary instance with keys that are similar to keys that you turn on in Appodeal Dashboard's Segment settings block and values of similar types
  */
-+ (void)setSegmentFilter:(nonnull NSDictionary *)segmentFilter __deprecated_msg("This method is deprecated. Use +setCustomState: instead");
++ (void)setCustomState:(nonnull NSDictionary *)customState __deprecated_msg("This method is deprecated. Use -setCustomStateValue:forKey:");
 /**
-You can set custom rule by using this method.
-Configure filters for segments/placements in <b>Appodeal Dashboard</b>.
-@note For example, you want to create a segment of users who complete 20 or more levels
-You create a rule in the dashboard with name "completedLevels" of type Int,
-operator GreaterThanOrEqualTo and value 10, and then you implement the following code:
-@note Objective-C
-<pre>
-NSDictionary *customState = {
- @"completedLevels" : CURRENT_NUMBER_OF_COMPLETED_LEVELS
-};
-[Appodeal setCustomState:customState];
-</pre>
-@note Swift
-<pre>
-let customState = [
- "completedLevels" : CURRENT_NUMBER_OF_COMPLETED_LEVELS
-]
-Appodeal.setCustomState(customState)
-</pre>
-Call this method any time you want, segments change dynamically
-@note And then CURRENT_NUMBER_OF_COMPLETED_LEVELS become 10 or greater
-Your segments settings become available
-@param customState NSDictionary instance with keys that are similar to keys that you turn on in Appodeal Dashboard's Segment settings block and values of similar types
-*/
-+ (void)setCustomState:(nonnull NSDictionary *)customState;
+ You can set custom rule by using this method. This method will override
+ only custom state for specific state.
+ Configure filters for segments/placements in <b>Appodeal Dashboard</b>.
+ @note For example, you want to create a segment of users who complete 20 or more levels
+ You create a rule in the dashboard with name "completedLevels" of type Int,
+ operator GreaterThanOrEqualTo and value 10, and then you implement the following code:
+ @note Objective-C
+ <pre>
+ [Appodeal setCustomStateValue:CURRENT_NUMBER_OF_COMPLETED_LEVELS forKey:@"completedLevels"];
+ </pre>
+ @note Swift
+ <pre>
+ Appodeal.setCustomStateValue(CURRENT_NUMBER_OF_COMPLETED_LEVELS, forKey:"completedLevels")
+ </pre>
+ Call this method any time you want, segments change dynamically
+ @note And then CURRENT_NUMBER_OF_COMPLETED_LEVELS become 10 or greater
+ Your segments settings become available
+ @param value JSON encodable object. Might be nil
+ @param key Nonnull string value
+ */
++ (void)setCustomStateValue:(nullable id)value forKey:(nonnull NSString *)key;
+/**
+ You can retrieve all passed custom state by using this method.
+ @note Objective-C
+ <pre>
+ NSDictionary *customState = [Appodeal customState];
+ </pre>
+ @note Swift
+ <pre>
+ let customState = Appodeal.customState()
+ </pre>
+ */
++ (nullable NSDictionary <NSString *, id> *)customState;
 /**
  Autoresized banner support. Default set to YES;
  @warning Call this method before caching banners!
@@ -454,15 +549,13 @@ Your segments settings become available
  */
 + (void)setSmartBannersEnabled:(BOOL)smartBannerEnabled;
 /**
- Banner background visibility setter. Default set to NO.
+ Return the BOOL value of smart banners active state
  @note Objective-C
- <pre> [Appodeal setBannerBackgroundVisible:YES]; </pre>
+ <pre> [Appodeal isSmartBannersEnadled]; </pre>
  @note Swift
- <pre> Appodeal.setBannerBackgroundVisible(true) </pre>
- @warning Call this method before caching banners!
- @param bannerBackgroundVisible If YES, the banner will have a background. If NO, the banner background will be transparent
+ <pre> Appodeal.isSmartBannersEnadled() </pre>
  */
-+ (void)setBannerBackgroundVisible:(BOOL)bannerBackgroundVisible __deprecated_msg("This method is deprecated and will be removed in next release");
++ (BOOL)isSmartBannersEnabled;
 /**
  Banner animation setter. Default set to YES
  @note Objective-C
@@ -474,14 +567,14 @@ Your segments settings become available
  */
 + (void)setBannerAnimationEnabled:(BOOL)bannerAnimationEnabled;
 /**
-Banner rotation angles for left and right show styles. Default leftRotationAngleDegrees equals to 90,
-rightRotationAngleDegrees equals to 270
-@note Objective-C
-<pre> [Appodeal setBannerLeftRotationAngleDegrees:-90 rightRotationAngleDegrees: 90]; </pre>
-@warning Call this method before caching banners!
-@param leftRotationAngleDegrees Angle for rotation transform of banner for AppodealShowStyleBannerLeft
-@param rightRotationAngleDegrees Angle for rotation transform of banner for AppodealShowStyleBannerRight
-*/
+ Banner rotation angles for left and right show styles. Default leftRotationAngleDegrees equals to 90,
+ rightRotationAngleDegrees equals to 270
+ @note Objective-C
+ <pre> [Appodeal setBannerLeftRotationAngleDegrees:-90 rightRotationAngleDegrees: 90]; </pre>
+ @warning Call this method before caching banners!
+ @param leftRotationAngleDegrees Angle for rotation transform of banner for AppodealShowStyleBannerLeft
+ @param rightRotationAngleDegrees Angle for rotation transform of banner for AppodealShowStyleBannerRight
+ */
 + (void)setBannerLeftRotationAngleDegrees:(CGFloat)leftRotationAngleDegrees
                 rightRotationAngleDegrees:(CGFloat)rightRotationAngleDegrees;
 /**
@@ -490,10 +583,20 @@ rightRotationAngleDegrees equals to 270
  */
 + (void)setChildDirectedTreatment:(BOOL)childDirectedTreatment;
 /**
-  User has given consent to the processing of personal data relating to him or her.
-  @param consent Boolean flag that indicates that user give consent on personal data processing
-*/
-+ (void)updateConsent:(BOOL)consent;
+ User has given consent to the processing of personal data relating to him or her.
+ @param consent Boolean flag that indicates that user give consent on personal data processing
+ */
++ (void)updateConsent:(BOOL)consent __deprecated_msg("This method is deprecated. Use -updateUserConsentGDPR: and -updateUserConsentCCPA instead");
+/**
+ Updates user consent in GDPR regulation
+ @param userConsent User consent flag that indicates that user give consent on personal data processing
+ */
++ (void)updateUserConsentGDPR:(APDGDPRUserConsent)userConsent;
+/**
+ Updates user consent in CCPA regulation
+ @param userConsent User consent flag that indicates that user give consent on personal data processing
+ */
++ (void)updateUserConsentCCPA:(APDCCPAUserConsent)userConsent;
 /**
  Get framework type
  @note Objective-C
@@ -524,7 +627,7 @@ rightRotationAngleDegrees equals to 270
  <pre> [Appodeal segmentId]; </pre>
  @note Swift
  <pre> Appodeal.segmentId() </pre>
-*/
+ */
 + (nonnull NSNumber *)segmentId;
 /**
  Pause all curent sdk work. All mediation task will invalidate asap and your get
@@ -547,7 +650,6 @@ rightRotationAngleDegrees equals to 270
  Unavailable method
  */
 + (void)deinitialize NS_UNAVAILABLE;
-
 @end
 /**
  Set user metadata for relevant ad targeting
@@ -563,6 +665,14 @@ rightRotationAngleDegrees equals to 270
  */
 + (void)setUserId:(nonnull NSString *)userId;
 /**
+ User ID getter
+ @note Objective-C
+ <pre> [Appodeal userId]; </pre>
+ @note Swift
+ <pre> Appodeal.userId() </pre>
+ */
++ (nullable NSString *)userId;
+/**
  User age setter
  @note Objective-C
  <pre> [Appodeal setUserAge:25]; </pre>
@@ -570,7 +680,7 @@ rightRotationAngleDegrees equals to 270
  <pre> Appodeal.setUserAge(25) </pre>
  @param age Set age as integer value
  */
-+ (void)setUserAge:(NSUInteger)age;
++ (void)setUserAge:(NSUInteger)age __deprecated_msg("This method is deprecated.");
 /**
  User gender setter
  @note Objective-C
@@ -579,8 +689,8 @@ rightRotationAngleDegrees equals to 270
  <pre> Appodeal.setUserGender(AppodealUserGender.male) </pre>
  @param gender AppodealUserGenderOther, AppodealUserGenderMale, AppodealUserGenderFemale
  */
-+ (void)setUserGender:(AppodealUserGender)gender;
- @end
++ (void)setUserGender:(AppodealUserGender)gender __deprecated_msg("This method is deprecated.");
+@end
 
 
 #if __has_include(<StackConsentManager/StackConsentManager.h>)
@@ -597,14 +707,14 @@ rightRotationAngleDegrees equals to 270
  @param apiKey Your api key from Appodeal Dashboard
  @param types  Appodeal ad type
  @param consentReport Consent report object from Stack Consent Manager
-*/
+ */
 + (void)initializeWithApiKey:(nonnull NSString *)apiKey
                        types:(AppodealAdType)types
-               consentReport:(nonnull id <STKConsent>)consentReport;
+               consentReport:(nonnull id <STKConsent>)consentReport __deprecated_msg("This method is deprecated. Use +initializeWithApiKey:types: instead");
 /**
-  User has update consent through Stack Consent Manager .
-  @param consentReport Consent report object from Stack Consent Manager
-*/
+ User has update consent through Stack Consent Manager .
+ @param consentReport Consent report object from Stack Consent Manager
+ */
 + (void)updateConsentReport:(nonnull id<STKConsent>)consentReport;
 @end
 #endif

@@ -74,6 +74,14 @@ NS_ASSUME_NONNULL_BEGIN
 /// Indicates that player should present postbanner
 /// By default is YES
 @property (nonatomic, assign, readonly) BOOL companionEnabled;
+/// Indicates that player should present BMSKOverlay
+/// By default is NO
+@property (nonatomic, assign, readonly) BOOL bmSKOverlayEnabled;
+/// Indicates that player should present SKOverlay
+/// By default is NO
+@property (nonatomic, assign, readonly) BOOL skOverlayEnabled;
+///Force orientation of Creative
+@property (nonatomic, copy, readonly, nullable) NSString *forceOrientation;
 /// Postbanners
 @property (nonatomic, strong, readonly, nullable) NSArray <STKVASTAssetCompanion *> *companions;
 /// In-stream companions
@@ -86,6 +94,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) STKVASTAssetPostbanner *postbanner;
 /// OM verirfications
 @property (nonatomic, strong, readonly, nullable) NSArray <STKVASTAssetOMVerification *> *verifications;
+/// AD play position in AD Pod
+@property (nonatomic, readonly, nullable) NSNumber *sequence;
+
 @end
 
 NS_ASSUME_NONNULL_END

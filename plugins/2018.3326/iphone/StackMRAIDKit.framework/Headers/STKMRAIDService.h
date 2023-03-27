@@ -24,9 +24,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface STKMRAIDService : NSObject
 
-@property (nonatomic, strong, readonly) STKMRAIDServiceConfiguration *configuration;
+@property (nonatomic, copy, readonly) STKMRAIDServiceConfiguration *configuration;
 
 @property (nonatomic, weak) id<STKMRAIDServiceDelegate> delegate;
+
+@property (nonatomic, readonly) void(^appendConfiguration)(STKMRAIDServiceConfiguration *);
 
 @end
 

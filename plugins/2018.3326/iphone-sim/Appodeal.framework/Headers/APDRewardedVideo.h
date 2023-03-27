@@ -2,9 +2,9 @@
 //  APDReviewVideo.h
 //  Appodeal
 //
-//  AppodealSDK version 2.11.1
+//  AppodealSDK version 3.0.2
 //
-//  Copyright © 2022 Appodeal, Inc. All rights reserved.
+//  Copyright © 2023 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -54,7 +54,7 @@
  Call when user taps on rewarded video
  @param rewardedVideo Shown rewarded video
  */
-- (void)rewardedVideoDidRecieveTapAction:(nonnull APDRewardedVideo *)rewardedVideo;
+- (void)rewardedVideoDidReceiveTapAction:(nonnull APDRewardedVideo *)rewardedVideo;
 /**
  Method called after rewarded video completes
  view and stay on screen.

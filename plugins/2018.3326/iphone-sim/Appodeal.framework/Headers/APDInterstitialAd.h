@@ -1,9 +1,9 @@
 //
 //  APDInterstital.h
 //
-//  AppodealSDK version 2.11.1
+//  AppodealSDK version 3.0.2
 //
-//  Copyright © 2022 Appodeal, Inc. All rights reserved.
+//  Copyright © 2023 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -51,7 +51,7 @@
  Call when user taps on interstitial
  @param interstitialAd Shown interstitial
  */
-- (void)interstitialAdDidRecieveTapAction:(nonnull APDInterstitialAd *)interstitialAd;
+- (void)interstitialAdDidReceiveTapAction:(nonnull APDInterstitialAd *)interstitialAd;
 /**
  Called if interstitial ad expired
  @param interstitialAd Interstitial ad instance

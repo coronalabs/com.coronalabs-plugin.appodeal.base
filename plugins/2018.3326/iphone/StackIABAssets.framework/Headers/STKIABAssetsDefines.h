@@ -30,6 +30,8 @@ FOUNDATION_EXPORT NSString *kSTKIABCountdownViewStyleText;
 
 FOUNDATION_EXPORT NSString *kSTKIABRepeatViewStylePlay;
 
+FOUNDATION_EXPORT NSString *kSTKIABForceOrientationPortrait;
+
 CGSize STKIABAssetSize(void);
 UIEdgeInsets STKIABDefaultInsets(void);
 UIColor *STKIABDefaultFillColor(void);
@@ -84,6 +86,14 @@ typedef NS_ENUM(NSUInteger, STKIABClosableViewStyle) {
 };
 
 STKIABClosableViewStyle STKIABClosableViewStyleFromString(NSString *string);
+
+typedef NS_ENUM(NSInteger, STKIABForceOrientation) {
+    STKIABForceOrientationPortrait = 0,
+    STKIABForceOrientationLandscape,
+    STKIABForceOrientationNone
+};
+
+STKIABForceOrientation STKIABForceOrientationFromString(NSString *string);
 
 typedef NS_ENUM(NSUInteger, STKIABMuteViewStyle) {
     STKIABMuteViewStyleSpeaker = 0,

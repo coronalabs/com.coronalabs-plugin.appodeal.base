@@ -12,10 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface STKObjectCacher : NSObject
 
-+ (void)cacheObject:(id<NSCoding> _Nullable)object forName:(NSString *_Nullable)name;
++ (void)objectWithName:(NSString * _Nullable)name
+            completion:(void (^)(id _Nullable, NSError * _Nullable)) completion;
 
-+ (id<NSCoding>_Nullable)objectFromName:(NSString *_Nullable)name;
++ (void)cacheObject:(id<NSCoding> _Nullable)object
+           withName:(NSString * _Nullable)name
+         completion:(void (^)(NSError * _Nullable)) completion;
 
++ (void)removeObjectWithName:(NSString * _Nullable)name
+                  completion:(void (^)(NSError * _Nullable))completion;
 @end
 
 NS_ASSUME_NONNULL_END

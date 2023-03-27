@@ -33,9 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface STKVASTAssetProvider : NSObject
 /**
- Vast asset model
+ Vast assets model
  */
-@property (nonatomic, readonly, nullable) STKVASTAsset *asset;
+@property (nonatomic, readonly, nullable) NSArray <STKVASTAsset *> *assets;
 /**
  Designated initializer
 

@@ -25,6 +25,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype)assetWithInLine:(nullable STKXMLVASTInLineModel *)inLine error:(NSError *_Nullable __autoreleasing *)error;
 
+/**
+ New initializer
+
+ @param adInLine VAST IAB model
+ @param error Autoreleasing error. Return 401 code if File not found
+ @return Return nonnull class instance
+ */
++ (instancetype)assetWithADInLine:(nullable STKXMLVASTADInLineModel *)adInLine error:(NSError *_Nullable __autoreleasing *)error;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,9 +1,9 @@
 //
 //  APDBannerView.h
 //
-//  AppodealSDK version 2.11.1
+//  AppodealSDK version 3.0.2
 //
-//  Copyright © 2022 Appodeal, Inc. All rights reserved.
+//  Copyright © 2023 Appodeal, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -21,13 +21,13 @@
 /**
  Method called after any banner was ready to present.
  Maybe called twice for precache banner and usual banner
- @param bannerView Nonnul, ready to show banner
+ @param bannerView Nonnull, ready to show banner
  @param precache Boolean flag indicates that banner is precache
  */
 - (void)bannerViewDidLoadAd:(nonnull APDBannerView *)bannerView isPrecache:(BOOL)precache;
 /**
  Method called in case that banner mediation failed
- @param bannerView Nonnul failed banner view
+ @param bannerView Nonnull failed banner view
  @param error Error occured while mediation
  */
 - (void)bannerView:(nonnull APDBannerView *)bannerView didFailToLoadAdWithError:(nonnull NSError *)error;
@@ -41,6 +41,13 @@
  @param bannerView On screen banner view
  */
 - (void)bannerViewDidShow:(nonnull APDBannerView *)bannerView;
+/**
+Method called in case of failed presentation
+*
+@param bannerView Nonnull, failed banner view
+@param error Error occured while presenting
+*/
+- (void)bannerView:(nonnull APDBannerView *)bannerView didFailToPresentWithError:(nonnull NSError *)error;
 /**
  Called in case if banner view was successfully loaded,
  but ad expire before show. Banner will retry to load
@@ -83,10 +90,6 @@
  Set banner refresh animation
  */
 @property (assign, nonatomic) IBInspectable UIViewAnimationOptions refreshAnimation;
-/**
- Set banner background visibility
- */
-@property (assign, nonatomic) BOOL backgroundVisible __deprecated_msg("This property is deprecated and will be removed in next release");
 /**
  Get predicated ecpm
  */
