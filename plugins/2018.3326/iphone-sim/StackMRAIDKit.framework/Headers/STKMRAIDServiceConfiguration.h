@@ -19,7 +19,7 @@ FOUNDATION_EXPORT STKMRAIDFeature const kMRAIDSupportsLogging;
 FOUNDATION_EXPORT STKMRAIDFeature const kMRAIDPreloadURL;
 FOUNDATION_EXPORT STKMRAIDFeature const kMRAIDMeasure;
 
-@interface STKMRAIDServiceConfiguration : NSObject
+@interface STKMRAIDServiceConfiguration : NSObject <NSCopying>
 
 @property (nonatomic, strong, nullable) NSString *partnerName;
 @property (nonatomic, strong, nullable) NSString *partnerVersion;

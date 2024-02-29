@@ -14,6 +14,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol STKVASTControllerDelegate <NSObject>
+
+@required
+
 /// Called after successful loading video url
 /// @param controller Current VAST Controller
 - (void)vastControllerReady:(STKVASTController *)controller;
@@ -21,6 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param controller Current VAST Controller
 /// @param error Loading video error
 - (void)vastController:(STKVASTController *)controller didFailToLoad:(NSError *)error;
+/// Called after not successful loading video url in pleload mode
+/// @param controller Current VAST Controller
+- (void)vastControllerDidExpire:(STKVASTController *)controller;
  /// Called after not successful presenting video url
  /// @param controller Current VAST Controller
  /// @param error Presentation error
@@ -31,9 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// Called after fully watched video
 /// @param controller Current VAST Controller
 - (void)vastControllerDidFinish:(STKVASTController *)controller;
-/// Called if video was skipped
-/// @param controller Current VAST Controller
-- (void)vastControllerDidSkip:(STKVASTController *)controller;
 /// Called when vast controller opens product in safari
 /// @param controller Presented controller
 - (void)vastControllerWillLeaveApplication:(STKVASTController *)controller;
@@ -46,10 +49,20 @@ NS_ASSUME_NONNULL_BEGIN
 /// Called after controller did dismiss
 /// @param controller Current VAST Controller
 - (void)vastControllerDidDismiss:(STKVASTController *)controller;
+/// Called after controller did impression
+/// @param controller Current VAST Controller
+- (void)vastControllerDidImpression:(STKVASTController *)controller;
+
+@optional
+
 /// Called before controller will start clich through processing
 /// @param controller Presented controller
 /// @param URL Destination URL
 - (BOOL)vastController:(STKVASTController *)controller shouldProcessNavigationWithURL:(NSURL *)URL;
+/// Called if video was skipped
+/// @param controller Current VAST Controller
+- (void)vastControllerDidSkip:(STKVASTController *)controller;
+
 @end
 
 @interface STKVASTController : STKRotationController
@@ -71,7 +84,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)loadForVastXML:(nullable NSData *)XML;
 /// Show vast controller on this controller
 /// @param viewController Presenting view controller
-- (void)presentFromViewController:(UIViewController *)viewController;
+- (void)presentFromViewController:(nullable UIViewController *)viewController;
 /// Suspend vast player
 - (void)pause;
 /// Resume vast player

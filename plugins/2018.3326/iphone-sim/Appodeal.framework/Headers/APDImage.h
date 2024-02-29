@@ -2,9 +2,9 @@
 //  APDImage.h
 //  Appodeal
 //
-//  AppodealSDK version 3.0.2
+//  AppodealSDK version 3.2.1
 //
-//  Copyright © 2023 Appodeal, Inc. All rights reserved.
+//  Copyright © 2024 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -15,12 +15,9 @@
  */
 @interface APDImage : NSObject
 /**
- Size of image. Can be zero
- */
-@property (nonatomic, assign) CGSize size  __attribute__((deprecated("This getter is deprecated and will be removed in next release")));
-/**
  Url to image source. Can be local
  */
-@property (nonatomic, strong, readonly, nonnull) NSURL * url;
+@property (nonatomic, strong, readonly, nullable) NSURL *url;
+@property (nonatomic, strong, readonly, nullable) UIImage *image;
 
 @end

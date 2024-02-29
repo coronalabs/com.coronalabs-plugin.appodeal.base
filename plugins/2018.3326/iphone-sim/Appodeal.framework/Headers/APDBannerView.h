@@ -1,9 +1,9 @@
 //
 //  APDBannerView.h
 //
-//  AppodealSDK version 3.0.2
+//  AppodealSDK version 3.2.1
 //
-//  Copyright © 2023 Appodeal, Inc. All rights reserved.
+//  Copyright © 2024 Appodeal, Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -135,11 +135,17 @@ Method called in case of failed presentation
  */
 - (void)loadAd;
 /**
- Call this method when orientation changes
-
- @param orientation Current interface orientation
+ Get banner availability for placement
+ @param placement string value of ad placement
+ @return YES if there is banner ad for placement
  */
-- (void)rotateToOrientation:(UIInterfaceOrientation)orientation __attribute__((deprecated("This method is deprecated and will be removed in future release")));
+- (BOOL)hasReadyAdForPlacement:(nonnull NSString *)placement;
+/**
+ Get banner relation to precache round for placement
+ @param placement string value of ad placement
+ @return YES if banner is from precache round for placement
+ */
+- (BOOL)isPrecacheAdForPlacement:(nonnull NSString *)placement;
 @end
 /**
  Compatibility alias for APDBannerView

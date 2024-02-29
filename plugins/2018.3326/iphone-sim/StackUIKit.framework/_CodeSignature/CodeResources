@@ -110,7 +110,11 @@
 		</data>
 		<key>Headers/StackUIKit.h</key>
 		<data>
-		y0hgBYx82vUWnLvG1fjGcLIPTi4=
+		eT/nTOV9BP74ltn7KmzRzt5Abbk=
+		</data>
+		<key>Headers/UIApplication+STKUIKit.h</key>
+		<data>
+		24PNVEnNUzDo+jL1Wk1TnVgDaOw=
 		</data>
 		<key>Headers/UIColor+STKUIKit.h</key>
 		<data>
@@ -130,7 +134,11 @@
 		</data>
 		<key>Headers/UIView+STKUIKit.h</key>
 		<data>
-		PTcHrZH2aXiPWLXk87bw4gGw66c=
+		kFOT07BBKtSUGieBW0JTOFxoIlU=
+		</data>
+		<key>Headers/UIView+STKViewability.h</key>
+		<data>
+		HnSA9ZfKlSSFEbBsE415oUMA308=
 		</data>
 		<key>Headers/UIViewController+STKUIKit.h</key>
 		<data>
@@ -138,7 +146,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IgADI+8kFsq9fYgQVxdOJw5zgJs=
+		Id6mglTQpgAk0Ae43/iwv1HVK0o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -441,11 +449,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			y0hgBYx82vUWnLvG1fjGcLIPTi4=
+			eT/nTOV9BP74ltn7KmzRzt5Abbk=
 			</data>
 			<key>hash2</key>
 			<data>
-			1ax6ojWH9ArUcZWIGYj3SlqieocBKGbcvezdsOZpuKM=
+			8nASNHuayd5V/iNPa+VLfrrqkudQZJpi1roQBN/MTPQ=
+			</data>
+		</dict>
+		<key>Headers/UIApplication+STKUIKit.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			24PNVEnNUzDo+jL1Wk1TnVgDaOw=
+			</data>
+			<key>hash2</key>
+			<data>
+			8QR7OBelMAYgkn5S0xnASFMwqaseU/WVGvpqU95Swxk=
 			</data>
 		</dict>
 		<key>Headers/UIColor+STKUIKit.h</key>
@@ -496,11 +515,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PTcHrZH2aXiPWLXk87bw4gGw66c=
+			kFOT07BBKtSUGieBW0JTOFxoIlU=
 			</data>
 			<key>hash2</key>
 			<data>
-			jt4lDFAAjKQX+9MDBGOkB51k4vwNxlkf0qK0K04Vs7I=
+			P5OhN9f1iBmP/S07tBpjWQe8ScNhY1pci/r0Aq1PMeA=
+			</data>
+		</dict>
+		<key>Headers/UIView+STKViewability.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HnSA9ZfKlSSFEbBsE415oUMA308=
+			</data>
+			<key>hash2</key>
+			<data>
+			C9pbws+AKn5vR86kSxBNRuT9moWN3O6ko1nxoUJeUkQ=
 			</data>
 		</dict>
 		<key>Headers/UIViewController+STKUIKit.h</key>

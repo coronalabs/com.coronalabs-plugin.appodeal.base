@@ -6,6 +6,6 @@ framework module StackProductPresentation {
 }
 
 module StackProductPresentation.Swift {
-    header "StackProductPresentation-Swift.h"
-    requires objc
+  header "StackProductPresentation-Swift.h"
+  requires objc
 }

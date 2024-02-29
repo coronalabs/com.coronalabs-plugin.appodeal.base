@@ -11,4 +11,5 @@
 #import <StackVASTKit/STKVASTControllerConfiguration.h>
 
 FOUNDATION_EXPORT NSString *const StackVASTKitVersion;
+FOUNDATION_EXPORT NSString *const StackRichMediaVersion;
 

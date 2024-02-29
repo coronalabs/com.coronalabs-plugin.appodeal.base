@@ -36,6 +36,8 @@
 #import <StackUIKit/STKLayoutGuide+STKLayout.h>
 
 #import <StackUIKit/UIView+STKUIKit.h>
+#import <StackUIKit/UIView+STKViewability.h>
+#import <StackUIKit/UIApplication+STKUIKit.h>
 #import <StackUIKit/UIColor+STKUIKit.h>
 #import <StackUIKit/UIImage+STKUIKit.h>
 #import <StackUIKit/UIViewController+STKUIKit.h>

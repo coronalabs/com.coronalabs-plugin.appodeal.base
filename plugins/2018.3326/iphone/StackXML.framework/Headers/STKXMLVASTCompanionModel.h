@@ -26,8 +26,8 @@
 @property (nonatomic, readonly) NSString *HTMLResource;
 @property (nonatomic, readonly) NSString *adParameters;
 @property (nonatomic, readonly) NSString *altText;
-@property (nonatomic, readonly) NSString *clickThrough;
-@property (nonatomic, readonly) NSString *clickTracking;
+@property (nonatomic, readonly) NSArray <NSString *> *clicksThrough;
+@property (nonatomic, readonly) NSArray <NSString *> *clicksTracking;
 @property (nonatomic, readonly) NSArray <NSDictionary *> *trackingEvents;
 
 - (NSArray *)trackersForName:(NSString *)name;

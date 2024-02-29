@@ -2,9 +2,9 @@
 //  APDSdk.h
 //  Appodeal
 //
-//  AppodealSDK version 3.0.2
+//  AppodealSDK version 3.2.1
 //
-//  Copyright © 2023 Appodeal, Inc. All rights reserved.
+//  Copyright © 2024 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -102,20 +102,15 @@ typedef void(^APDAdRevenueHandler)(_Nonnull id<AppodealAdRevenue>);
  */
 - (void)setFramework:(APDFramework)framework version:(nullable NSString *)version;
 /**
- User has given consent to the processing of personal data relating to him or her.
- @param userConsent Boolean flag that indicates that user give consent on personal data processing
- */
-- (void)setUserConsent:(BOOL)userConsent  __deprecated_msg("This method is deprecated. Use -updateUserConsentGDPR: and -updateUserConsentCCPA instead");
-/**
  Updates user consent in GDPR regulation
  @param userConsent User consent flag that indicates that user give consent on personal data processing
  */
-- (void)updateUserConsentGDPR:(APDGDPRUserConsent)userConsent;
+- (void)updateUserConsentGDPR:(APDGDPRUserConsent)userConsent __deprecated_msg("This method is deprecated and will be removed in the next release");
 /**
  Updates user consent in CCPA regulation
  @param userConsent User consent flag that indicates that user give consent on personal data processing
  */
-- (void)updateUserConsentCCPA:(APDCCPAUserConsent)userConsent;
+- (void)updateUserConsentCCPA:(APDCCPAUserConsent)userConsent __deprecated_msg("This method is deprecated and will be removed in the next release");;
 /**
  Call this method to specify framework before initialization
  @param pluginVersion NSString version plugin
@@ -280,12 +275,12 @@ typedef void(^APDAdRevenueHandler)(_Nonnull id<AppodealAdRevenue>);
 
 @end
 
-#if __has_include(<StackConsentManager/StackConsentManager.h>)
+#if __has_include(<StackConsentManager/StackConsentManager-Swift.h>)
 @interface APDSdk (ConsentManager)
 /**
   User has update consent through Stack Consent Manager.
   @param consentReport Consent report object from Stack Consent Manager
 */
-- (void)setConsentReport:(nonnull id<STKConsent>)consentReport;
+- (void)setConsentReport:(nonnull id)consentReport __deprecated_msg("This method is deprecated and will be removed in the next release");
 @end
 #endif

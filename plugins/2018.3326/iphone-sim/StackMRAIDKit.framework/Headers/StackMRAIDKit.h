@@ -18,7 +18,9 @@
 #import <StackMRAIDKit/STKMRAIDInterstitialPresenter.h>
 #import <StackMRAIDKit/STKScriptMessageHandlerProtocol.h>
 #import <StackMRAIDKit/STKMRAIDWebConfiguration.h>
+#import <StackMRAIDKit/STKMRAIDBanner.h>
+#import <StackMRAIDKit/STKMRAIDWrapperConfiguration.h>
+#import <StackMRAIDKit/STKMRAIDInterstitial.h>
+#import <StackMRAIDKit/STKMRAIDErrorType.h>
 
 FOUNDATION_EXPORT NSString *const StackMRAIDKitVersion;
-
-

@@ -9,6 +9,12 @@
 #import <StackVASTAssets/STKVASTAssetTrackProtocol.h>
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger,  STKVASTContentType) {
+    STKVASTContentTypeStaticImage = 0,
+    STKVASTContentTypeIframe,
+    STKVASTContentTypeHTML
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface STKVASTAssetCompanion : NSObject
@@ -16,6 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
  Companion creative size. Default CGSizeZero
  */
 @property (nonatomic, assign, readonly) CGSize size;
+/**
+ Type of companion creative content
+ */
+@property (nonatomic, assign, readonly) STKVASTContentType contentType;
 /**
  Content
     - StaticImage from URL (Local HTML)

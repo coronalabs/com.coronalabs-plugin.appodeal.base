@@ -2,9 +2,9 @@
 //  Appodeal.h
 //  Appodeal
 //
-//  AppodealSDK version 3.0.2
+//  AppodealSDK version 3.2.1
 //
-//  Copyright (c) 2023 Appodeal, Inc. All rights reserved.
+//  Copyright (c) 2024 Appodeal, Inc. All rights reserved.
 //
 
 
@@ -110,11 +110,18 @@
  */
 + (void)disableNetworkForAdType:(AppodealAdType)adType name:(nonnull NSString *)networkName;
 /**
- Get predicted eCPM for type
+ Get predicted eCPM for type and defualt placement
  @param type AppodealAdTypeInterstitial, AppodealAdTypeBanner, AppodealAdTypeNativeAd, AppodealAdTypeRewardedVideo, AppodealAdTypeNonSkippableVideo
- @return predicated ecpm
+ @return predicted eCPM
  */
 + (double)predictedEcpmForAdType:(AppodealAdType)type;
+/**
+ Get predicted eCPM for type
+ @param type AppodealAdTypeInterstitial, AppodealAdTypeBanner, AppodealAdTypeNativeAd, AppodealAdTypeRewardedVideo, AppodealAdTypeNonSkippableVideo
+ @param placement String placement name
+ @return predicted eCPM
+ */
++ (double)predictedEcpmForAdType:(AppodealAdType)type placement:(nonnull NSString *)placement;
 /**
  Set flag NO if you have disabled locationTracking, and YES that enabled
  @note To disable location check, use this method
@@ -137,7 +144,7 @@
  <pre> Appodeal.setAutocache(false, types: AppodealAdType.Interstitial) </pre>
  @warning Use method before initialization!
  @param autocache Bolean flag
- @param types AppodealAdTypeRewardedVideo or AppodealAdTypeNonSkippableVideo, AppodealAdTypeInterstitial, AppodealAdTypeSkippableVideo
+ @param types AppodealAdTypeRewardedVideo or AppodealAdTypeNonSkippableVideo, AppodealAdTypeInterstitial
  */
 + (void)setAutocache:(BOOL)autocache types:(AppodealAdType)types;
 /**
@@ -147,24 +154,10 @@
  @note Swift
  <pre> Appodeal.isAutocacheEnabled(AppodealAdType.Interstitial) </pre>
  @warning After initialization!
- @param types AppodealAdTypeRewardedVideo, AppodealAdTypeInterstitial, AppodealAdTypeSkippableVideo
+ @param types AppodealAdTypeRewardedVideo, AppodealAdTypeInterstitial
  @return If enabled return YES or NO if not
  */
 + (BOOL)isAutocacheEnabled:(AppodealAdType)types;
-/**
- Initialize method. To initialize Appodeal with several types you
- can do something like this:
- @note Objective-C
- <pre> [Appodeal initializeWithApiKey:YOUR_API_KEY types: AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo hasConsent:YES]; </pre>
- @note Swift
- <pre>
- let adTypes: AppodealAdType = [.banner, .interstitial]
- Appodeal.initialize(withApiKey: "API_KEY", types: adTypes, hasConsent: true) </pre>
- @param apiKey Your api key from Appodeal Dashboard
- @param types  Appodeal ad type
- @param consent User has given consent to the processing of personal data relating to him or her. https://www.eugdpr.org/
- */
-+ (void)initializeWithApiKey:(nonnull NSString *)apiKey types:(AppodealAdType)types hasConsent:(BOOL)consent __deprecated_msg("This method is deprecated. Use +initializeWithApiKey:types: instead");
 /**
  Initialize method. To initialize Appodeal with several types you
  user consent on personal data processing assumes to be true
@@ -187,7 +180,7 @@
  <pre> Appodeal.setTriggerPrecacheCallbacks(true) </pre>
  @param shouldTrigger Bolean flag indicates that precache callbacks are disabled or not
  */
-+ (void)setTriggerPrecacheCallbacks:(BOOL)shouldTrigger __deprecated_msg("This method is deprecated. Use +(void)setTriggerPrecacheCallbacks:(BOOL)shouldTrigger types:(AppodealAdType)types instead");
++ (void)setTriggerPrecacheCallbacks:(BOOL)shouldTrigger;
 /**
  Disable calls of precache callbacks for AppodealAdTypes
  @note Objective-C
@@ -237,15 +230,6 @@
  @param pluginVersion -  NSString value, default nil
  */
 + (void)setPluginVersion:(nonnull NSString *)pluginVersion;
-/**
- Set custom extra data for sdk
- @note Objective-C
- <pre> [Appodeal setExtras:@{ @"foo": @"bar" }]; </pre>
- @note Swift
- <pre> Appodeal.setExtras(["foo": "bar"]) </pre>
- @param extras NSDictionary with NSString key and JSON encodable object
- */
-+ (void)setExtras:(nullable NSDictionary <NSString *, id> *)extras __deprecated_msg("This method is deprecated. Use -setExtrasValue:forKey:");
 /**
  Set custom extra value for specific key
  @note Objective-C
@@ -351,7 +335,7 @@
  <pre> [Appodeal showAd:AppodealAdTypeInterstitial rootViewController:UIViewController]; </pre>
  @note Swift
  <pre> Appodeal.showAd(AppodealShowStyle.Interstitial, rootViewController: UIViewController!) </pre>
- @param style              AppodealAdTypeInterstitial, AppodealAdTypeSkippableVideo, AppodealAdTypeBanner, AppodealAdTypeNativeAd, AppodealAdTypeRewardedVideo, AppodealAdTypeMREC, AppodealAdTypeNonSkippableVideo
+ @param style              AppodealAdTypeInterstitial, AppodealAdTypeBanner, AppodealAdTypeNativeAd, AppodealAdTypeRewardedVideo, AppodealAdTypeMREC, AppodealAdTypeNonSkippableVideo
  @param rootViewController Controller for present ads. If contoller is nil SDK will use own window for present fullscreen ad and root controller of key window for in line ads
  @return YES if possible to show or NO if not
  */
@@ -363,7 +347,7 @@
  <pre> [Appodeal showAd:AppodealAdTypeInterstitial forPlacement:@"PLACEMENT" rootViewController:UIViewController]; </pre>
  @note Swift
  <pre> Appodeal.showAd(AppodealShowStyle.Interstitial, forPlacement: String!, rootViewController: UIViewController!) </pre>
- @param style AppodealAdTypeInterstitial, AppodealAdTypeSkippableVideo, AppodealAdTypeBanner, AppodealAdTypeNativeAd, AppodealAdTypeRewardedVideo, AppodealAdTypeMREC, AppodealAdTypeNonSkippableVideo
+ @param style AppodealAdTypeInterstitial, AppodealAdTypeBanner, AppodealAdTypeNativeAd, AppodealAdTypeRewardedVideo, AppodealAdTypeMREC, AppodealAdTypeNonSkippableVideo
  @param placement Placement name configured in segments settings on Appodeal Dashboard
  @param rootViewController Controller for present ads. If contoller is nil SDK will use own window for present fullscreen ad and root controller of key window for in line ads
  @return YES if possible to show or NO if not
@@ -468,42 +452,26 @@
  */
 + (BOOL)isReadyForShowWithStyle:(AppodealShowStyle)showStyle;
 /**
- Check that ad is precache ad or not
+ Check that ad is precache ad or not for given ad type and default placement
  @note Objective-C
  <pre> [Appodeal isPrecacheAd:AppodealAdTypeInterstitial]; </pre>
  @note Swift
- <pre> Appodeal.isPrecacheAd(.Interstitial) </pre>
- @param adType one of supported ad type. Not pass mask that contains several types!
+ <pre> Appodeal.isPrecacheAd(.interstitial) </pre>
+ @param adType One of supported ad type. Not pass mask that contains several types!
  @return YES if loaded ad is precache or NO if ad not loaded or loaded simple ad
  */
 + (BOOL)isPrecacheAd:(AppodealAdType)adType;
 /**
- You can set custom rule by using this method. This method will override
- the whole previous setted custom state.
- Configure filters for segments/placements in <b>Appodeal Dashboard</b>.
- @note For example, you want to create a segment of users who complete 20 or more levels
- You create a rule in the dashboard with name "completedLevels" of type Int,
- operator GreaterThanOrEqualTo and value 10, and then you implement the following code:
+ Check that ad is precache ad or not for given ad type and placement
  @note Objective-C
- <pre>
- NSDictionary *customState = {
- @"completedLevels" : CURRENT_NUMBER_OF_COMPLETED_LEVELS
- };
- [Appodeal setCustomState:customState];
- </pre>
+ <pre> [Appodeal isPrecacheAd:AppodealAdTypeInterstitial placement:@"my_placement"]; </pre>
  @note Swift
- <pre>
- let customState = [
- "completedLevels" : CURRENT_NUMBER_OF_COMPLETED_LEVELS
- ]
- Appodeal.setCustomState(customState)
- </pre>
- Call this method any time you want, segments change dynamically
- @note And then CURRENT_NUMBER_OF_COMPLETED_LEVELS become 10 or greater
- Your segments settings become available
- @param customState NSDictionary instance with keys that are similar to keys that you turn on in Appodeal Dashboard's Segment settings block and values of similar types
+ <pre> Appodeal.isPrecacheAd(.interstitial, placement: "my_placement") </pre>
+ @param adType One of supported ad type. Not pass mask that contains several types!
+ @param placement String placement name
+ @return YES if loaded ad is precache or NO if ad not loaded or loaded simple ad
  */
-+ (void)setCustomState:(nonnull NSDictionary *)customState __deprecated_msg("This method is deprecated. Use -setCustomStateValue:forKey:");
++ (BOOL)isPrecacheAd:(AppodealAdType)adType placement:(nonnull NSString *)placement;
 /**
  You can set custom rule by using this method. This method will override
  only custom state for specific state.
@@ -583,20 +551,15 @@
  */
 + (void)setChildDirectedTreatment:(BOOL)childDirectedTreatment;
 /**
- User has given consent to the processing of personal data relating to him or her.
- @param consent Boolean flag that indicates that user give consent on personal data processing
- */
-+ (void)updateConsent:(BOOL)consent __deprecated_msg("This method is deprecated. Use -updateUserConsentGDPR: and -updateUserConsentCCPA instead");
-/**
  Updates user consent in GDPR regulation
  @param userConsent User consent flag that indicates that user give consent on personal data processing
  */
-+ (void)updateUserConsentGDPR:(APDGDPRUserConsent)userConsent;
++ (void)updateUserConsentGDPR:(APDGDPRUserConsent)userConsent __deprecated_msg("This method is deprecated and will be removed in the next release");
 /**
  Updates user consent in CCPA regulation
  @param userConsent User consent flag that indicates that user give consent on personal data processing
  */
-+ (void)updateUserConsentCCPA:(APDCCPAUserConsent)userConsent;
++ (void)updateUserConsentCCPA:(APDCCPAUserConsent)userConsent __deprecated_msg("This method is deprecated and will be removed in the next release");
 /**
  Get framework type
  @note Objective-C
@@ -672,49 +635,15 @@
  <pre> Appodeal.userId() </pre>
  */
 + (nullable NSString *)userId;
-/**
- User age setter
- @note Objective-C
- <pre> [Appodeal setUserAge:25]; </pre>
- @note Swift
- <pre> Appodeal.setUserAge(25) </pre>
- @param age Set age as integer value
- */
-+ (void)setUserAge:(NSUInteger)age __deprecated_msg("This method is deprecated.");
-/**
- User gender setter
- @note Objective-C
- <pre> [Appodeal setUserGender:AppodealUserGenderMale]; </pre>
- @note Swift
- <pre> Appodeal.setUserGender(AppodealUserGender.male) </pre>
- @param gender AppodealUserGenderOther, AppodealUserGenderMale, AppodealUserGenderFemale
- */
-+ (void)setUserGender:(AppodealUserGender)gender __deprecated_msg("This method is deprecated.");
 @end
 
 
-#if __has_include(<StackConsentManager/StackConsentManager.h>)
+#if __has_include(<StackConsentManager/StackConsentManager-Swift.h>)
 @interface Appodeal (ConsentManager)
-/**
- Initialize method. To initialize Appodeal with several types you
- can do something like this:
- @note Objective-C
- <pre> [Appodeal initializeWithApiKey:YOUR_API_KEY types: AppodealAdTypeInterstitial | AppodealAdTypeRewardedVideo consentReport:consentReport]; </pre>
- @note Swift
- <pre>
- let adTypes: AppodealAdType = [.banner, .interstitial]
- Appodeal.initialize(withApiKey: "API_KEY", types: adTypes, consentReport: consentReport) </pre>
- @param apiKey Your api key from Appodeal Dashboard
- @param types  Appodeal ad type
- @param consentReport Consent report object from Stack Consent Manager
- */
-+ (void)initializeWithApiKey:(nonnull NSString *)apiKey
-                       types:(AppodealAdType)types
-               consentReport:(nonnull id <STKConsent>)consentReport __deprecated_msg("This method is deprecated. Use +initializeWithApiKey:types: instead");
 /**
  User has update consent through Stack Consent Manager .
  @param consentReport Consent report object from Stack Consent Manager
  */
-+ (void)updateConsentReport:(nonnull id<STKConsent>)consentReport;
++ (void)updateConsentReport:(nonnull id)consentReport __deprecated_msg("This method is deprecated and will be removed in the next release");
 @end
 #endif

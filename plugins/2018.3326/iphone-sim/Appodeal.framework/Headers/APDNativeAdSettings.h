@@ -2,8 +2,8 @@
 //  APDNativeAdSettings.h
 //  Appodeal
 //
-//  Created by Stas Kochkin on 04/07/2023.
-//  Copyright © 2023 Appodeal, Inc. All rights reserved.
+//  Created by Stas Kochkin on 04/07/2024.
+//  Copyright © 2024 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -40,12 +40,12 @@ typedef NS_OPTIONS(NSUInteger, APDNativeResourceAutocacheMask) {
 /**
  Set autocache mask
  */
-@property (nonatomic, assign) APDNativeResourceAutocacheMask autocacheMask;
+@property (nonatomic, assign) APDNativeResourceAutocacheMask autocacheMask __attribute__((deprecated("from v.3.2.0 and will be removed in a future release")));
 /**
  Set native placehplder URL
  This url use as pleceholder for mainImage view
  */
-@property (nonatomic, strong, nullable) NSURL * nativeMediaViewPlaceholder;
+@property (nonatomic, strong, nullable) NSURL * nativeMediaViewPlaceholder __attribute__((deprecated("from v.3.2.0 and will be removed in a future release")));
 /**
  Default instance
  @return Instance of APDNativeAdSettings

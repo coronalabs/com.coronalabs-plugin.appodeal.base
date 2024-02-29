@@ -10,15 +10,15 @@
 		</data>
 		<key>Headers/APDBannerView.h</key>
 		<data>
-		/CgXMxti13eVQhpXbw3myYhcCLA=
+		6ZiXU69Y8DYYtGQBxbRtXKCswEs=
 		</data>
 		<key>Headers/APDDefines.h</key>
 		<data>
-		PDYU9TlbYN2GDfMSUOi8yhVYcUY=
+		v/lqf3ypR/niCaJFmmQ9bjPhUf4=
 		</data>
 		<key>Headers/APDImage.h</key>
 		<data>
-		bCfTezLpnMlQL43/mcXjYOW6G3M=
+		ZfAImzzHQ6VNFRwpNOKJuiN7e4Y=
 		</data>
 		<key>Headers/APDInterstitialAd.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/APDNativeAdSettings.h</key>
 		<data>
-		Al/gkneSpdUioBqX1oo9EKUCT0E=
+		NjMy0dqhaBQDSc9G1641V4uZukg=
 		</data>
 		<key>Headers/APDNativeAdViewProtocol.h</key>
 		<data>
@@ -50,15 +50,15 @@
 		</data>
 		<key>Headers/APDRewardedVideo.h</key>
 		<data>
-		531BUpuxg+NtszkgeJqbI49GiH8=
+		vfRe2KUCOlxPQkl2Ur3IvYLBBMI=
 		</data>
 		<key>Headers/APDSdk.h</key>
 		<data>
-		FjfTpvmkYbQcSKFkr8PdJTT2qI0=
+		hO7lQgAIskvR4lDVEvhrI5GCK18=
 		</data>
 		<key>Headers/Appodeal.h</key>
 		<data>
-		knmEy4XH//N9oFqIRzPoVeloqkg=
+		4Z6qyZozI8jVp/yrbMXY5PBbYLo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,19 +66,19 @@
 		</data>
 		<key>Modules/module.private.modulemap</key>
 		<data>
-		dOAxiVuBwkaWdGfDVl0urPTm5js=
+		Rq5WIbFlF4Ic/VcKLxeTZ4U5gM4=
 		</data>
 		<key>PrivateHeaders/APDAdItemProtocol.h</key>
 		<data>
-		b8GBPtIzwfY0gjRmH4E8C6NJiyI=
+		vb4G4rPap9kBTe4oLEo09E5yaUc=
 		</data>
 		<key>PrivateHeaders/APDAdNetworkProtocol.h</key>
 		<data>
-		dqarpQExTNaJupMDtf4eY74lR40=
+		wttB8PKoS6Jx10XU71BHyy3LKmU=
 		</data>
 		<key>PrivateHeaders/APDAdQueueManagerProtocol.h</key>
 		<data>
-		lSvZB2ZxwmQ1JImEmWQVBKrWABE=
+		at1gKGvVGE1WwpmOgX9ypqxnwj4=
 		</data>
 		<key>PrivateHeaders/APDAdRepresentationProtocol.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>PrivateHeaders/APDAdapterProtocol.h</key>
 		<data>
-		sjM6MnQ1iceQLUAx5EjGFeiYGio=
+		1uHvZALYfmSaZVeZk/5KelBZQ7M=
 		</data>
 		<key>PrivateHeaders/APDAppInfoProtocol.h</key>
 		<data>
@@ -94,19 +94,11 @@
 		</data>
 		<key>PrivateHeaders/APDBannerAdapterProtocol.h</key>
 		<data>
-		/dw39+TxTCKrREqA/9+t4+r9Pp0=
-		</data>
-		<key>PrivateHeaders/APDConsentManagerReportProtocol.h</key>
-		<data>
-		7+kXAx+QpEoTk6dVNPHX7KRljso=
+		D0me7CLCW7tikPVtjdhFOp2Fy9c=
 		</data>
 		<key>PrivateHeaders/APDDebugCheck.h</key>
 		<data>
 		eDOYMugvXxCv+tfYlAir5yfVJC0=
-		</data>
-		<key>PrivateHeaders/APDDefaultNativeAdViewRenderer.h</key>
-		<data>
-		s00EohA/md1ea5bsISCbQ9rpcWY=
 		</data>
 		<key>PrivateHeaders/APDDeviceInfoProtocol.h</key>
 		<data>
@@ -126,19 +118,23 @@
 		</data>
 		<key>PrivateHeaders/APDImage+Private.h</key>
 		<data>
-		XCv9s0yIbTv8qJj8DxLH2ublo5k=
+		tzbP+k+5P8GxTwwbmj2Gnr2Chrc=
 		</data>
 		<key>PrivateHeaders/APDImpressionDetector.h</key>
 		<data>
 		t0gUTU/LUbpFYYFA4vVODcCcYV0=
 		</data>
+		<key>PrivateHeaders/APDImpressionLevelData.h</key>
+		<data>
+		Xbo77+Ju0tbkOBtw42ImRVhabqs=
+		</data>
 		<key>PrivateHeaders/APDInterstitialAdAdapterProtocol.h</key>
 		<data>
-		fcSVAtZkbAxX2Hhx2rAh+AKIVls=
+		wn31JDDTuD+VKk1RClMOMkoD134=
 		</data>
 		<key>PrivateHeaders/APDLog.h</key>
 		<data>
-		C9g+4hyTflE75N/qYoua/wmGoK4=
+		pYORevu0dys2fDV4UoNfCvJBhsM=
 		</data>
 		<key>PrivateHeaders/APDModel.h</key>
 		<data>
@@ -146,11 +142,11 @@
 		</data>
 		<key>PrivateHeaders/APDNativeAd+Private.h</key>
 		<data>
-		h57nhyq/jFYDchtAfsPBc2INyO0=
+		DfPAt62RDGWiyPEjgYvKuQNtugE=
 		</data>
 		<key>PrivateHeaders/APDNativeAdAdapterProtocol.h</key>
 		<data>
-		Yw2o7L8ETlqNncVVLgrXGakMcWU=
+		6lssTApts5hq/8DuZIHActgcSvo=
 		</data>
 		<key>PrivateHeaders/APDNativeAdRenderer.h</key>
 		<data>
@@ -158,7 +154,7 @@
 		</data>
 		<key>PrivateHeaders/APDNativeAdServiceProtocol.h</key>
 		<data>
-		AxsFdU9JPqHCXidhQBTKE9+ZTG4=
+		o6LdB+kC7C27PcaNKeeoFuQ2x3k=
 		</data>
 		<key>PrivateHeaders/APDPlatformInfoProtocol.h</key>
 		<data>
@@ -166,7 +162,7 @@
 		</data>
 		<key>PrivateHeaders/APDPrivateDefines.h</key>
 		<data>
-		gngrpRTyWlvZdhtRJjC+996kaZQ=
+		jRUXyKZIRNr65J5xSr1MoQ9sHLs=
 		</data>
 		<key>PrivateHeaders/APDProductPresentationAdapter.h</key>
 		<data>
@@ -178,7 +174,7 @@
 		</data>
 		<key>PrivateHeaders/APDServiceProtocol.h</key>
 		<data>
-		d/kkqd55jkMcUiU+cLOxaoGRCiA=
+		rXHJHJ4bakVHr2khHi6vVlDpqxM=
 		</data>
 		<key>PrivateHeaders/APDServicesInfoProtocol.h</key>
 		<data>
@@ -198,7 +194,7 @@
 		</data>
 		<key>PrivateHeaders/APDVendorProtocol.h</key>
 		<data>
-		L549u/36FtjhtxobF/TlEtZHOiE=
+		IibjPgN5ud0h+6TX1Iz6gh52FdM=
 		</data>
 		<key>PrivateHeaders/APDVendorRegistry.h</key>
 		<data>
@@ -206,15 +202,11 @@
 		</data>
 		<key>PrivateHeaders/AppodealPrivateHeaders.h</key>
 		<data>
-		ip/aC0KH23l3KGoNi9C2p4ntSh8=
+		ikdKqPUYlGReyaOzdvn2CeFWxQU=
 		</data>
 		<key>PrivateHeaders/AppodealPurchaseProtocol.h</key>
 		<data>
 		H/3KyGhJFryC1fJpTkCM3hk/C7k=
-		</data>
-		<key>PrivateHeaders/NSURL+APDExtensions.h</key>
-		<data>
-		10t0PkDeeaVnH1OAyBLLr0kY2ac=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -234,33 +226,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/CgXMxti13eVQhpXbw3myYhcCLA=
+			6ZiXU69Y8DYYtGQBxbRtXKCswEs=
 			</data>
 			<key>hash2</key>
 			<data>
-			tdjcF1eEBwRmdB6Ff/SPGyOeaaZGNgs41HVgLmW+wIM=
+			b+q7J+5uM5Hv66fwB54YBz7xFvVDycjxm+u8qOn12tI=
 			</data>
 		</dict>
 		<key>Headers/APDDefines.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PDYU9TlbYN2GDfMSUOi8yhVYcUY=
+			v/lqf3ypR/niCaJFmmQ9bjPhUf4=
 			</data>
 			<key>hash2</key>
 			<data>
-			RPMZqSwh1XSAA5xACcQgOwFInzfumHF1gHinxUkNTBU=
+			4vyEJWSQ4skVNCTQcijz6kmUs131HPT2u6SETtPxn6c=
 			</data>
 		</dict>
 		<key>Headers/APDImage.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			bCfTezLpnMlQL43/mcXjYOW6G3M=
+			ZfAImzzHQ6VNFRwpNOKJuiN7e4Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			jJWN5n2KPaf7cmaFMV30J1waP+tE6UWEAaUBfmNTgDE=
+			j9L4tXmcZGrO1S+z6bSK0fjRVzRiOvJe0tcNP6fyyzo=
 			</data>
 		</dict>
 		<key>Headers/APDInterstitialAd.h</key>
@@ -311,11 +303,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Al/gkneSpdUioBqX1oo9EKUCT0E=
+			NjMy0dqhaBQDSc9G1641V4uZukg=
 			</data>
 			<key>hash2</key>
 			<data>
-			lc6Wj+Ts3v+VWdrhxNvn6g8L8jcVsmGBIp3ID7C7oL4=
+			ZR0RLpRkmlxMGLiusWeJZm/lcI1/5ShJZoIyL1tPXpg=
 			</data>
 		</dict>
 		<key>Headers/APDNativeAdViewProtocol.h</key>
@@ -344,33 +336,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			531BUpuxg+NtszkgeJqbI49GiH8=
+			vfRe2KUCOlxPQkl2Ur3IvYLBBMI=
 			</data>
 			<key>hash2</key>
 			<data>
-			7ITuP06U8s8+Q0k5bUtLmZXQ4LRPpL0TzmFTlzJvvHc=
+			Ga5nNNllwYWdR3gvePHLy33/Mfqsb2RaCXHJ4OnhFMg=
 			</data>
 		</dict>
 		<key>Headers/APDSdk.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FjfTpvmkYbQcSKFkr8PdJTT2qI0=
+			hO7lQgAIskvR4lDVEvhrI5GCK18=
 			</data>
 			<key>hash2</key>
 			<data>
-			DSNF6yW+DhrRJiK0cysCPB0b/qJX5hVLqojFD+AJCtA=
+			7MgNvtsi9kBm2e6xPmlGVBDQOUAiYsmEq5O656LNkEg=
 			</data>
 		</dict>
 		<key>Headers/Appodeal.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			knmEy4XH//N9oFqIRzPoVeloqkg=
+			4Z6qyZozI8jVp/yrbMXY5PBbYLo=
 			</data>
 			<key>hash2</key>
 			<data>
-			InEispzr1walfon6wyt8Tc6MLfJN4MlImZ2yb6ZGku4=
+			1Ho96ARbPq0soKwU1svBh2MjZzLZynx4gZyeNHHupRI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -388,44 +380,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dOAxiVuBwkaWdGfDVl0urPTm5js=
+			Rq5WIbFlF4Ic/VcKLxeTZ4U5gM4=
 			</data>
 			<key>hash2</key>
 			<data>
-			a2rCeo7os+fjkoMs4VNBjM1vUzzv/kCdtc5fFiRreNc=
+			z1/KCPKuJTngcIDOb6mAu3vixcELzhpNkvyZvqWbBi4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDAdItemProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			b8GBPtIzwfY0gjRmH4E8C6NJiyI=
+			vb4G4rPap9kBTe4oLEo09E5yaUc=
 			</data>
 			<key>hash2</key>
 			<data>
-			BNGeQbDZi06TLriu/QIa/rZgno1AsfcoKi46I708bzQ=
+			Hf3+SE8jC9V5AWY74kZuSQRyAlFIL62ThglCjDDNupE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDAdNetworkProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dqarpQExTNaJupMDtf4eY74lR40=
+			wttB8PKoS6Jx10XU71BHyy3LKmU=
 			</data>
 			<key>hash2</key>
 			<data>
-			JVzApRg2ZN1hpA3CkQV0vbU75SH1Ap4+R2tHI7sxBTM=
+			+xphgwUFrQ267lfkiHuy0Ne65m/unmDBra2P1jhyZic=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDAdQueueManagerProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lSvZB2ZxwmQ1JImEmWQVBKrWABE=
+			at1gKGvVGE1WwpmOgX9ypqxnwj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			fzHnz2Ywiay6wrtH/sjZRHs5xXYtr327kbFuq0amGLY=
+			yJxwtvm5mOkm23IQVILXBHOVjJp7fPOM+eCZtn5lnxs=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDAdRepresentationProtocol.h</key>
@@ -443,11 +435,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sjM6MnQ1iceQLUAx5EjGFeiYGio=
+			1uHvZALYfmSaZVeZk/5KelBZQ7M=
 			</data>
 			<key>hash2</key>
 			<data>
-			55TJht3yU0oE0A3uKujV81k556/09XEhkSBU+oK6Naw=
+			YgZXiy/E5E05rv2lJ+csXxYj9c4Ch9WSHzsncNTQEfU=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDAppInfoProtocol.h</key>
@@ -465,22 +457,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/dw39+TxTCKrREqA/9+t4+r9Pp0=
+			D0me7CLCW7tikPVtjdhFOp2Fy9c=
 			</data>
 			<key>hash2</key>
 			<data>
-			HcQbwXpDRvHmCy22yL0F2R0rMXI6rGIVxi/yp5whmFQ=
-			</data>
-		</dict>
-		<key>PrivateHeaders/APDConsentManagerReportProtocol.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7+kXAx+QpEoTk6dVNPHX7KRljso=
-			</data>
-			<key>hash2</key>
-			<data>
-			T9l0HTxN70j95APT1EAYOa99JWP+bZwTUJk/aBnP6bM=
+			JSwdSwMSHS3V/dOzNMP2NEyG4S6LweITfqcpw1tei0A=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDDebugCheck.h</key>
@@ -492,17 +473,6 @@
 			<key>hash2</key>
 			<data>
 			S9RmInSJbXpKSrqXxl0InL8bwOF4B4mzLEOiKoTj7vQ=
-			</data>
-		</dict>
-		<key>PrivateHeaders/APDDefaultNativeAdViewRenderer.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			s00EohA/md1ea5bsISCbQ9rpcWY=
-			</data>
-			<key>hash2</key>
-			<data>
-			htVE1Wun11FLd38GJsmtGBbvx/lztEM4Uy0aUaGR5Mg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDDeviceInfoProtocol.h</key>
@@ -553,11 +523,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			XCv9s0yIbTv8qJj8DxLH2ublo5k=
+			tzbP+k+5P8GxTwwbmj2Gnr2Chrc=
 			</data>
 			<key>hash2</key>
 			<data>
-			SXlKe+vjw5+p1m/SdxT1M9a21WgmlgxpRL2L9UrNObs=
+			D5c3BwMT0EL2NvEFS+VbaeboQHXeR1hd43TvGG3fdQo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDImpressionDetector.h</key>
@@ -571,26 +541,37 @@
 			bBYb10rqiLzrrfIHV3uX0qhZbex/zwYVbdVQoKZZEjs=
 			</data>
 		</dict>
+		<key>PrivateHeaders/APDImpressionLevelData.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Xbo77+Ju0tbkOBtw42ImRVhabqs=
+			</data>
+			<key>hash2</key>
+			<data>
+			A+4w+6/JkrzuzB54WK4RqEvq8nEpLuVm48x8OuuOGQc=
+			</data>
+		</dict>
 		<key>PrivateHeaders/APDInterstitialAdAdapterProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fcSVAtZkbAxX2Hhx2rAh+AKIVls=
+			wn31JDDTuD+VKk1RClMOMkoD134=
 			</data>
 			<key>hash2</key>
 			<data>
-			d2154fu/GFepvjTopGR8KFSSXiFeLiKnBAl2LA7tN48=
+			38L1gi0kj5jUAr7hWE5l/EIDpHJjY52dQlEVVqc1V4o=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDLog.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			C9g+4hyTflE75N/qYoua/wmGoK4=
+			pYORevu0dys2fDV4UoNfCvJBhsM=
 			</data>
 			<key>hash2</key>
 			<data>
-			QspshItxdfPq3qK7/XjJdgKKcpU2/HkQJcMYlx2FnzU=
+			Wmn2KKdz7td9ZWVnlgnd9C9sePeGsdi2TiFLS6fmWFQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDModel.h</key>
@@ -608,22 +589,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h57nhyq/jFYDchtAfsPBc2INyO0=
+			DfPAt62RDGWiyPEjgYvKuQNtugE=
 			</data>
 			<key>hash2</key>
 			<data>
-			lalU9z0ryIRknsUut3bobreJg6qb5g0z8ffdMFHZvgM=
+			aLXB6/amhRKxAbhIHTpQR5K3vEROer2hQORuoLP52rQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDNativeAdAdapterProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Yw2o7L8ETlqNncVVLgrXGakMcWU=
+			6lssTApts5hq/8DuZIHActgcSvo=
 			</data>
 			<key>hash2</key>
 			<data>
-			4AEEC9gr0loNmkOjxh7jyP3+pgpSfpw2Z4tANC3F3TI=
+			Z7bXmgXkPSNox+plQcCl9P0QVkHTjR1YkqaN7sJOW+4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDNativeAdRenderer.h</key>
@@ -641,11 +622,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AxsFdU9JPqHCXidhQBTKE9+ZTG4=
+			o6LdB+kC7C27PcaNKeeoFuQ2x3k=
 			</data>
 			<key>hash2</key>
 			<data>
-			1dverMTjjULROv9w9IsArPtn1Dwxugxk4MMxWALACCE=
+			wtqUmOY9SXSklzz7JIwZeGsctZQPWARybC4gpLLEsec=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDPlatformInfoProtocol.h</key>
@@ -663,11 +644,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gngrpRTyWlvZdhtRJjC+996kaZQ=
+			jRUXyKZIRNr65J5xSr1MoQ9sHLs=
 			</data>
 			<key>hash2</key>
 			<data>
-			UmJ0r5Zbb5A6qnisY/xcJgWWMM6Ut8ukSWJms66zud4=
+			nEKJrgHeznYTyEyp9FU1YI4UxXr3ud6a7NKlc3zUMQQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDProductPresentationAdapter.h</key>
@@ -696,11 +677,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d/kkqd55jkMcUiU+cLOxaoGRCiA=
+			rXHJHJ4bakVHr2khHi6vVlDpqxM=
 			</data>
 			<key>hash2</key>
 			<data>
-			koGWXGpZsDjsGNMnXtLSLyfbwyXW2jWyMl9XGepEzz0=
+			W60OuqsXhun9i09TcGVDAJX58optO5sQoipRACRwp8w=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDServicesInfoProtocol.h</key>
@@ -751,11 +732,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L549u/36FtjhtxobF/TlEtZHOiE=
+			IibjPgN5ud0h+6TX1Iz6gh52FdM=
 			</data>
 			<key>hash2</key>
 			<data>
-			Xs4yqOkJofRJUTXTqDslEKSNyHz0OIjO5zxK5JqJNMA=
+			uPDFlspZouYT8toF9Y6rtmrzT59hFbhLhPKu9711kO0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDVendorRegistry.h</key>
@@ -773,11 +754,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ip/aC0KH23l3KGoNi9C2p4ntSh8=
+			ikdKqPUYlGReyaOzdvn2CeFWxQU=
 			</data>
 			<key>hash2</key>
 			<data>
-			3N+r/bahXoOTSL2RlCK5g7bz/TID2Rm/Vb7BOKJ03bQ=
+			VPmCPEKbYwyeuZdBD6ULVLHBw7eZ5F09zkIqPWe3dfo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/AppodealPurchaseProtocol.h</key>
@@ -789,17 +770,6 @@
 			<key>hash2</key>
 			<data>
 			Ac/NbHwYp0qgd20d3QfcmAgUB3XdW9iJGBpCeYwKwYo=
-			</data>
-		</dict>
-		<key>PrivateHeaders/NSURL+APDExtensions.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			10t0PkDeeaVnH1OAyBLLr0kY2ac=
-			</data>
-			<key>hash2</key>
-			<data>
-			pACeo6TGwUkxx2S3w5ahUzYygYl5c6g4vAxzpfgs5no=
 			</data>
 		</dict>
 	</dict>

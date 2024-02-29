@@ -6,6 +6,7 @@
 
 #import <UIKit/UIKit.h>
 #import <StackIABAssets/StackIABAssets.h>
+#import <StackMRAIDKit/STKMRAIDContentMode.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -19,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL r1;
 @property (nonatomic, assign) BOOL r2;
 @property (nonatomic, assign) BOOL ignoresSafeAreaLayout;
+@property (nonatomic, assign) BOOL isSpinnerActive;
+@property (nonatomic, assign) NSTimeInterval r1Delay;
+@property (nonatomic, assign) STKMRAIDContentMode contentMode;
 
 @property (nonatomic, copy, nullable) NSString *productLink;
 @property (nonatomic, copy, nullable) UIColor *backgroundColor;
@@ -27,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) STKIABAsset *closableAsset;
 @property (nonatomic, copy) STKIABAsset *progressAsset;
 
-@property (nonatomic, copy, nullable) NSDictionary <NSString *, NSString *> *productParameters;
+@property (nonatomic, copy, nullable) NSDictionary <NSString *, id> *productParameters;
 
 @end
 

@@ -27,6 +27,7 @@
 @property (nonatomic, readonly) NSString *productLink;
 @property (nonatomic, readonly) NSString *r1;
 @property (nonatomic, readonly) NSString *r2;
+@property (nonatomic, readonly) NSString *r3;
 @property (nonatomic, readonly) NSString *autorotate;
 @property (nonatomic, readonly) NSString *companionCloseTime;
 @property (nonatomic, readonly) NSString *ignoresSafeAreaLayoutGuide;

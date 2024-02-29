@@ -36,18 +36,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface UIView (STKViewability)
-
-- (BOOL)stk_geometryNotNil;
-
-- (NSArray *)stk_allViewsThatHeigherOnScreen;
-
-- (CGFloat)stk_intersectsParentWindowPercentage;
-
-- (BOOL)stk_isVisibleOnScreenWithPercentage:(CGFloat)percentageVisible
-                           overlayDetection:(BOOL)overlayDetection
-                      weakDeviceSupportMode:(BOOL)weakDeviceSupportMode;
-
-@end
-
 NS_ASSUME_NONNULL_END

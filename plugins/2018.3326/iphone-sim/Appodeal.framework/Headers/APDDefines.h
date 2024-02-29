@@ -2,9 +2,9 @@
 //  APDDefines.h
 //  Appodeal
 //
-//  AppodealSDK version 3.0.2
+//  AppodealSDK version 3.2.1
 //
-//  Copyright © 2023 Appodeal, Inc. All rights reserved.
+//  Copyright © 2024 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -68,7 +68,7 @@ typedef NS_OPTIONS(NSInteger, AppodealAdType) {
 /**
  APDSdk supported ad types bit mask. You can initialize sdk with
  several ad types, by usage binary operand |
- For example: APDAdTypeInterstitialAd | APDAdTypeSkippableVideo
+ For example: APDAdTypeInterstitialAd | AppodealAdTypeRewardedVideo
 
  - APDAdTypeInterstitialAd: Interstital ad
  - APDAdTypeBanner: Banner ad
@@ -391,6 +391,10 @@ typedef NS_ENUM(NSUInteger, APDCCPAUserConsent) {
  Impression ad type
 */
 @property (nonatomic, readonly, assign) AppodealAdType adType;
+/**
+ Custom parameters
+ */
+@property (nonatomic, readonly, copy, nonnull) NSDictionary <NSString *, id> *customParameters;
 @end
 /**
  Delegate for ad revenue event
@@ -409,37 +413,22 @@ FOUNDATION_EXPORT NSString * _Nonnull const kAPDAppsFlyerIdExtrasKey;
 /**
  Network defines
  */
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDTapsenseNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDInnerActiveNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDSmaatoNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDAppNexusNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDOpenXNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDVungleNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDUnityNetworkName;
 FOUNDATION_EXPORT NSString * _Nonnull const kAPDAdColonyNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDAmazonNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDAppLovinNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDAvocarrotNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDChartboostNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDFacebookNetworkName;
 FOUNDATION_EXPORT NSString * _Nonnull const kAPDAdMobNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDMyTargetNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDMoPubNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDPubnativeNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDStartAppNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDYandexNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDMillenialNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDTapjoyNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDZplayNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDAdMobMediationNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDAppLovinNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDBidMachineNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDBidonNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDBigoAdsNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDDTExchangeNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDFacebookNetworkName;
 FOUNDATION_EXPORT NSString * _Nonnull const kAPDInMobiNetworkName;
 FOUNDATION_EXPORT NSString * _Nonnull const kAPDIronSourceNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDAppnextNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDCheetahNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDRevMobNetworkName;
 FOUNDATION_EXPORT NSString * _Nonnull const kAPDMintegralNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDIVengoNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDOguryNetworkName;
-FOUNDATION_EXPORT NSString * _Nonnull const kAPDBidMachineNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDMyTargetNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDUnityNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDVungleNetworkName;
+FOUNDATION_EXPORT NSString * _Nonnull const kAPDYandexNetworkName;
 
 /**
  Size defines
@@ -571,6 +560,7 @@ typedef NS_ENUM(NSUInteger, APDUserGender) {
  - APDFrameworkSDKBox: SDK Box
  - APDFrameworkDefold: Defold
  - APDFrameworkBuildBox: Build Box
+ - APDAPDFrameworkGodot: Godot
  */
 typedef NS_ENUM(NSUInteger, APDFramework) {
     APDFrameworkNative = 1,
@@ -595,6 +585,7 @@ typedef NS_ENUM(NSUInteger, APDFramework) {
     APDFrameworkDefold,
     APDFrameworkBuildBox,
     APDFrameworkFlutter,
+    APDFrameworkGodot,
 };
 
 /**

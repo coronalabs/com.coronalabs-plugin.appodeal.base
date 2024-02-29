@@ -2,9 +2,9 @@
 //  APDReviewVideo.h
 //  Appodeal
 //
-//  AppodealSDK version 3.0.2
+//  AppodealSDK version 3.2.1
 //
-//  Copyright © 2023 Appodeal, Inc. All rights reserved.
+//  Copyright © 2024 Appodeal, Inc. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -29,7 +29,7 @@
  */
 - (void)rewardedVideoDidLoad:(nonnull APDRewardedVideo *)rewardedVideo isPrecache:(BOOL)isPrecache;
 /**
- Method called if skippable rewarded mediation failed
+ Method called if rewarded video mediation failed
  @param rewardedVideo Failed rewarded video
  @param error Error
  */
@@ -85,7 +85,7 @@
  */
 @interface APDRewardedVideo : NSObject
 /**
- Set delegate to skippable video
+ Set delegate to rewarded video
  */
 @property (weak, nonatomic, nullable) id<APDRewardedVideoDelegate> delegate;
 /**
