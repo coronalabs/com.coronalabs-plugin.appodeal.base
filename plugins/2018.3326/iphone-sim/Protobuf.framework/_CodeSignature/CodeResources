@@ -26,11 +26,11 @@
 		</data>
 		<key>Headers/GPBAny.pbobjc.h</key>
 		<data>
-		PHD+z/FyZi2dOfuu83fRK82k820=
+		qNNmhlQ7oyjinnkKfjyojoWdteQ=
 		</data>
 		<key>Headers/GPBApi.pbobjc.h</key>
 		<data>
-		8rJZ9ivJg+0ubTSLfnQhaKRF+rI=
+		5OYAXWICgUZE+Zlgr0WK894wUi8=
 		</data>
 		<key>Headers/GPBArray.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Headers/GPBBootstrap.h</key>
 		<data>
-		45eAQp1YJt3A0KA+u+YJiTa7m1c=
+		QFGqpisStyn3gcYzg1ZOvah+Dgw=
 		</data>
 		<key>Headers/GPBCodedInputStream.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/GPBDescriptor_PackagePrivate.h</key>
 		<data>
-		cnOTfdAUBzs3V7ZXNQ9vtyCcH2Q=
+		Ic7rj5Ad/ujLrmdsXZHrKshH7wU=
 		</data>
 		<key>Headers/GPBDictionary.h</key>
 		<data>
@@ -78,11 +78,11 @@
 		</data>
 		<key>Headers/GPBDuration.pbobjc.h</key>
 		<data>
-		6TVX2O4RFyPJhm7ejLAtYsNsfJM=
+		ngfdIHIRpa8rEExEbhZEQ3ls6g8=
 		</data>
 		<key>Headers/GPBEmpty.pbobjc.h</key>
 		<data>
-		+iWJKca1ebCrySLxF2CjdSpT7g0=
+		pb2Re+7aB9dA++sgbF5lXVqOEV4=
 		</data>
 		<key>Headers/GPBExtensionInternals.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/GPBFieldMask.pbobjc.h</key>
 		<data>
-		ZDDmPWWoVgej9pcqQRTnSfHrqPo=
+		OvgxGNISukq0i7R1EUnqiy3yj5s=
 		</data>
 		<key>Headers/GPBMessage.h</key>
 		<data>
@@ -126,19 +126,19 @@
 		</data>
 		<key>Headers/GPBSourceContext.pbobjc.h</key>
 		<data>
-		SGYAqIyk5NmG9uYWUlOIp9AYuJM=
+		G7Bne947/X+Zw961F6K7F01+x5w=
 		</data>
 		<key>Headers/GPBStruct.pbobjc.h</key>
 		<data>
-		56vn/KxmP8PPtE6emuccFaM4bkY=
+		Frv35EIzS6nLCn106b47RZ5TSNM=
 		</data>
 		<key>Headers/GPBTimestamp.pbobjc.h</key>
 		<data>
-		3stSrrSyZD9YVQ0ip9ia4V7iKrY=
+		Bm1QgxQ/Tz7zFDjvnBZCohGwazw=
 		</data>
 		<key>Headers/GPBType.pbobjc.h</key>
 		<data>
-		4K0OpZBh6Mo6N1fp9FTtdAwo2Yk=
+		KTe40OhaH5M9XjSLEXiNaGDB6Rk=
 		</data>
 		<key>Headers/GPBUnknownField.h</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Headers/GPBWellKnownTypes.h</key>
 		<data>
-		R4wbRoixsP+ZYOXnAWlkRKTUjRw=
+		uhJzIEsj0qaq2HEjPZoTBrb2TuY=
 		</data>
 		<key>Headers/GPBWireFormat.h</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>Headers/GPBWrappers.pbobjc.h</key>
 		<data>
-		sDlu8PfTMawLA7C6iX4Q+qiJ8V4=
+		9S5cL7sMc8Pj3y7nxnePmW3XZgc=
 		</data>
 		<key>Headers/Protobuf-umbrella.h</key>
 		<data>
@@ -202,11 +202,19 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IyFbu3ii07189VvUi+YYSSdAyAQ=
+		toNXho2ZyR7J8YoPA8U7zy59iFg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		oOJ2+RCCiAVMnRIo8as4UC5+8cI=
+		</data>
+		<key>Protobuf_Privacy.bundle/Info.plist</key>
+		<data>
+		Gf0FYdXjIJAfTorKD8xQMzlajs8=
+		</data>
+		<key>Protobuf_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		ucg9pita0v8d353x3NuGfxweQYU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -270,22 +278,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			PHD+z/FyZi2dOfuu83fRK82k820=
+			qNNmhlQ7oyjinnkKfjyojoWdteQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			EotNfo8kdTGr+/u7YHIOcALFUIXfWWPOz17YdYNcBWA=
+			zki8DaAcwrKs+7neib5FnRNbsfS+KonQzsrPevJiA7s=
 			</data>
 		</dict>
 		<key>Headers/GPBApi.pbobjc.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8rJZ9ivJg+0ubTSLfnQhaKRF+rI=
+			5OYAXWICgUZE+Zlgr0WK894wUi8=
 			</data>
 			<key>hash2</key>
 			<data>
-			3G2b7Ntfb7Upge6pF0HrRlDGRH+L43JVz6oQdh7PxGI=
+			cWL2Xa/ADqy4sIJYAt7DzM7EpGglPslRnp4yhUEUmbM=
 			</data>
 		</dict>
 		<key>Headers/GPBArray.h</key>
@@ -314,11 +322,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			45eAQp1YJt3A0KA+u+YJiTa7m1c=
+			QFGqpisStyn3gcYzg1ZOvah+Dgw=
 			</data>
 			<key>hash2</key>
 			<data>
-			pFFngKvur86Jug9kGqi0TvG07cwTvlNgecG5UOEwoZQ=
+			ry6XVRn1YwiLIftGgLGeGVdpNCz3eDJoJ4CVSncUKLU=
 			</data>
 		</dict>
 		<key>Headers/GPBCodedInputStream.h</key>
@@ -380,11 +388,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cnOTfdAUBzs3V7ZXNQ9vtyCcH2Q=
+			Ic7rj5Ad/ujLrmdsXZHrKshH7wU=
 			</data>
 			<key>hash2</key>
 			<data>
-			4NpMEq6zJxT5Up0/N41dJxlJK6XP+4Lc8xRmi5iZYks=
+			4bqyiwfTxKv1Nibz2XXUrgIixH9cozLN8oXLUjE4Xjw=
 			</data>
 		</dict>
 		<key>Headers/GPBDictionary.h</key>
@@ -413,22 +421,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6TVX2O4RFyPJhm7ejLAtYsNsfJM=
+			ngfdIHIRpa8rEExEbhZEQ3ls6g8=
 			</data>
 			<key>hash2</key>
 			<data>
-			1JeT+Uxa+9e6nU/7sy2f0bHivh5wZbG4jDLKEuwnYNk=
+			ZNOP+w2Xc15MS0UttSgAfSDseeQBy1f7+u4Wh5CjCVY=
 			</data>
 		</dict>
 		<key>Headers/GPBEmpty.pbobjc.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+iWJKca1ebCrySLxF2CjdSpT7g0=
+			pb2Re+7aB9dA++sgbF5lXVqOEV4=
 			</data>
 			<key>hash2</key>
 			<data>
-			tERlPMco8grBsrCwZzlhX8XLiMtJ+SJtZRO+qndFWT8=
+			U7gOL2Pgg4yLh5jcRiXP25068ql/M0b88otWjtJPBnw=
 			</data>
 		</dict>
 		<key>Headers/GPBExtensionInternals.h</key>
@@ -457,11 +465,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZDDmPWWoVgej9pcqQRTnSfHrqPo=
+			OvgxGNISukq0i7R1EUnqiy3yj5s=
 			</data>
 			<key>hash2</key>
 			<data>
-			KgSDoGgf1xVRoRVupAv95tMR3n2VRjqo2FcgnzYnkZA=
+			5pMWOYi5WFO9g/LWhdY4qFVqzrFDOEMDEWF8s/OX6B4=
 			</data>
 		</dict>
 		<key>Headers/GPBMessage.h</key>
@@ -545,44 +553,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SGYAqIyk5NmG9uYWUlOIp9AYuJM=
+			G7Bne947/X+Zw961F6K7F01+x5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			vPeI0f3d8p5fA0O11BpZykFbHorDVMu3xThqk7SDURc=
+			lCYTu55GNsaernVUTNU5y9JOt3TALVmRdI3atbDZoLg=
 			</data>
 		</dict>
 		<key>Headers/GPBStruct.pbobjc.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			56vn/KxmP8PPtE6emuccFaM4bkY=
+			Frv35EIzS6nLCn106b47RZ5TSNM=
 			</data>
 			<key>hash2</key>
 			<data>
-			wV1LRCVyHv4S5qN+Q+Yryqqwrm0aG2SX745iPtIfnoo=
+			6YofYk4mXPUiXBOo7Pclh+g5+bJEPC7I0GwMjUpxgs4=
 			</data>
 		</dict>
 		<key>Headers/GPBTimestamp.pbobjc.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3stSrrSyZD9YVQ0ip9ia4V7iKrY=
+			Bm1QgxQ/Tz7zFDjvnBZCohGwazw=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZWgrnoM99HCgl4Mz3aplZ6qn31TaywrKS/LG1fLrvSI=
+			s71OJFYyR+KG0twGusEGKOJ2P9uT2itwaccBWLtlM0E=
 			</data>
 		</dict>
 		<key>Headers/GPBType.pbobjc.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4K0OpZBh6Mo6N1fp9FTtdAwo2Yk=
+			KTe40OhaH5M9XjSLEXiNaGDB6Rk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Iidzvt9jRCtQ6nDUwUfHbXpc8sKkKtkK4kWg3b/bEZ8=
+			hl47fSOs+p3pefZMS4Kk+PeP5m1JowmJHD7TtgZG3bc=
 			</data>
 		</dict>
 		<key>Headers/GPBUnknownField.h</key>
@@ -655,11 +663,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R4wbRoixsP+ZYOXnAWlkRKTUjRw=
+			uhJzIEsj0qaq2HEjPZoTBrb2TuY=
 			</data>
 			<key>hash2</key>
 			<data>
-			zOr4EcJi1ulbtv/eGHDuFaIFvINdhouNTC+r2UgPyH8=
+			Q1mhcHgo0pFEGj7xVcUEgSHHZcT5XnxS+KkYd9WyLbo=
 			</data>
 		</dict>
 		<key>Headers/GPBWireFormat.h</key>
@@ -677,11 +685,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sDlu8PfTMawLA7C6iX4Q+qiJ8V4=
+			9S5cL7sMc8Pj3y7nxnePmW3XZgc=
 			</data>
 			<key>hash2</key>
 			<data>
-			SqA7eRyJrN2c9Ew54yOvTOTM+nEhXq++CSlQIEXftfg=
+			e++7o/pXCT/ZipZqR/xRWSLYYNCPatLETmIxtcgsmT8=
 			</data>
 		</dict>
 		<key>Headers/Protobuf-umbrella.h</key>
@@ -759,6 +767,28 @@
 			<key>hash2</key>
 			<data>
 			PLEmn+pIfv2wmiWgfUNqw4ebOM6/nWSX9YlFSVlmQ7s=
+			</data>
+		</dict>
+		<key>Protobuf_Privacy.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gf0FYdXjIJAfTorKD8xQMzlajs8=
+			</data>
+			<key>hash2</key>
+			<data>
+			yhj78Aeswxa19PU8ZCkJSurWflNDsFvMTpGvTErqgXY=
+			</data>
+		</dict>
+		<key>Protobuf_Privacy.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ucg9pita0v8d353x3NuGfxweQYU=
+			</data>
+			<key>hash2</key>
+			<data>
+			Uh6274Qwdz5cAQ4YOP6d2PpdYre3bRzqjX2NqtyxROI=
 			</data>
 		</dict>
 	</dict>

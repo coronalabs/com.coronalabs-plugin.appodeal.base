@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AppodealMediationCore-Swift.h</key>
 		<data>
-		v8lc6z/K05AmOLBrBO1CtZrWTjE=
+		BgmwSg1AzLQi2r5OS/S62SzQH2E=
 		</data>
 		<key>Headers/AppodealMediationCore.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PXhd9IausV8OUldi26Pw3/et+Kk=
+		6+ufxAi3RzLbWig/sODGTBBN2+Q=
 		</data>
 		<key>Modules/AppodealMediationCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		pTRGcnTThTJ+Kby+TF2ENPQo/NM=
+		ighQH/JDTHJW4iczuw1DvHTIPs8=
 		</data>
 		<key>Modules/AppodealMediationCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		iAUxb9Igrw3q6YUju0m1xCS1TLc=
+		jRDbREuUYnxm9iWc+mbaJkv+bFQ=
 		</data>
 		<key>Modules/AppodealMediationCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		vXzA3gz2jIRmi28k0vsGOwwnpvI=
+		ofcABP87o1tCwQT3ZAdMceATyk4=
 		</data>
 		<key>Modules/AppodealMediationCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		iAUxb9Igrw3q6YUju0m1xCS1TLc=
+		jRDbREuUYnxm9iWc+mbaJkv+bFQ=
 		</data>
 		<key>Modules/AppodealMediationCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jYbW5Ek/3/QZp1sjBlz1I4nbJVc=
+		RvrQjZuIN4EoKKvPw1DonSxN/Ek=
 		</data>
 		<key>Modules/AppodealMediationCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		pTRGcnTThTJ+Kby+TF2ENPQo/NM=
+		ighQH/JDTHJW4iczuw1DvHTIPs8=
 		</data>
 		<key>Modules/AppodealMediationCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		AhandDuwXRmdOa5c5WRpqsXKpLA=
+		pqjKoTfJ5CURhLyf5Pw4m0Qf1O8=
 		</data>
 		<key>Modules/AppodealMediationCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		W+Zz7hdtnBNnVmVRq5U3R+fOrpk=
+		LKNWHFhmR+3aL5CZAPNFbWWpGeo=
 		</data>
 		<key>Modules/AppodealMediationCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AhandDuwXRmdOa5c5WRpqsXKpLA=
+		pqjKoTfJ5CURhLyf5Pw4m0Qf1O8=
 		</data>
 		<key>Modules/AppodealMediationCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		RCjbAZq6BacqaqF65pRz8CmKT7E=
+		HJLTa8dpeiGNamnuc8qLCJJjXuI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,11 +67,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v8lc6z/K05AmOLBrBO1CtZrWTjE=
+			BgmwSg1AzLQi2r5OS/S62SzQH2E=
 			</data>
 			<key>hash2</key>
 			<data>
-			eTr8HHirTRJ2YBJMwqJpuxceEDleJHH4kMke3BUwiSw=
+			dqQPsEIRfrJgpyFoXlLc1gI6CFncJCNqP9Tm/l0keg4=
 			</data>
 		</dict>
 		<key>Headers/AppodealMediationCore.h</key>
@@ -89,110 +89,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pTRGcnTThTJ+Kby+TF2ENPQo/NM=
+			ighQH/JDTHJW4iczuw1DvHTIPs8=
 			</data>
 			<key>hash2</key>
 			<data>
-			VkO3ns3lMvm+seYVedyILO2tqq1RJd3BCsUKJx3Vjgc=
+			cvuRL1BZsIj1bkHSSYmX0R8t4pYLD+3A42vvk634HIk=
 			</data>
 		</dict>
 		<key>Modules/AppodealMediationCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iAUxb9Igrw3q6YUju0m1xCS1TLc=
+			jRDbREuUYnxm9iWc+mbaJkv+bFQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			BdA+FErfuKKG0uW2qr/75bXsmd1P3bXy9lDrlo8ONiU=
+			KOzRi03LbDfas1JKpxmmQmYaVljCNJjb0jpU46pZzBA=
 			</data>
 		</dict>
 		<key>Modules/AppodealMediationCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vXzA3gz2jIRmi28k0vsGOwwnpvI=
+			ofcABP87o1tCwQT3ZAdMceATyk4=
 			</data>
 			<key>hash2</key>
 			<data>
-			SRYlOhXuFUmUVyYHTuo5KNLLnU0a6i9U+OfPH5Io6Is=
+			k+tgEHxP7xCqUnGtlQcWpWUYNGtZP9YJEjEVoSV/GQE=
 			</data>
 		</dict>
 		<key>Modules/AppodealMediationCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iAUxb9Igrw3q6YUju0m1xCS1TLc=
+			jRDbREuUYnxm9iWc+mbaJkv+bFQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			BdA+FErfuKKG0uW2qr/75bXsmd1P3bXy9lDrlo8ONiU=
+			KOzRi03LbDfas1JKpxmmQmYaVljCNJjb0jpU46pZzBA=
 			</data>
 		</dict>
 		<key>Modules/AppodealMediationCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jYbW5Ek/3/QZp1sjBlz1I4nbJVc=
+			RvrQjZuIN4EoKKvPw1DonSxN/Ek=
 			</data>
 			<key>hash2</key>
 			<data>
-			6UYC9XMaqnLzGHkT4UAbjN76Svy04+Og7ocXNbEbIng=
+			oml2I991UYgLY5yBiIWxLbVt75eDPVW+bQ0jF7YAJ7o=
 			</data>
 		</dict>
 		<key>Modules/AppodealMediationCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pTRGcnTThTJ+Kby+TF2ENPQo/NM=
+			ighQH/JDTHJW4iczuw1DvHTIPs8=
 			</data>
 			<key>hash2</key>
 			<data>
-			VkO3ns3lMvm+seYVedyILO2tqq1RJd3BCsUKJx3Vjgc=
+			cvuRL1BZsIj1bkHSSYmX0R8t4pYLD+3A42vvk634HIk=
 			</data>
 		</dict>
 		<key>Modules/AppodealMediationCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AhandDuwXRmdOa5c5WRpqsXKpLA=
+			pqjKoTfJ5CURhLyf5Pw4m0Qf1O8=
 			</data>
 			<key>hash2</key>
 			<data>
-			5eMrWDGxIyrQp+m2dY2Cyhu4OWJAc9oTDPO5AKKzvRE=
+			FVjPSCYHdR492ZPj0okcq0jfzRnLVRH0A9xev9jtKlE=
 			</data>
 		</dict>
 		<key>Modules/AppodealMediationCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W+Zz7hdtnBNnVmVRq5U3R+fOrpk=
+			LKNWHFhmR+3aL5CZAPNFbWWpGeo=
 			</data>
 			<key>hash2</key>
 			<data>
-			JOBh0go1SXIAtQByRuwcFjxWlBAqyD2d1PCXnJU0EbI=
+			Jd7XuQwje13IAHit1y4jf0iMf0cWFN+fqyen9zBVTcY=
 			</data>
 		</dict>
 		<key>Modules/AppodealMediationCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AhandDuwXRmdOa5c5WRpqsXKpLA=
+			pqjKoTfJ5CURhLyf5Pw4m0Qf1O8=
 			</data>
 			<key>hash2</key>
 			<data>
-			5eMrWDGxIyrQp+m2dY2Cyhu4OWJAc9oTDPO5AKKzvRE=
+			FVjPSCYHdR492ZPj0okcq0jfzRnLVRH0A9xev9jtKlE=
 			</data>
 		</dict>
 		<key>Modules/AppodealMediationCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			RCjbAZq6BacqaqF65pRz8CmKT7E=
+			HJLTa8dpeiGNamnuc8qLCJJjXuI=
 			</data>
 			<key>hash2</key>
 			<data>
-			nyG4+X9HgWaaYhSNgTtsIAi+P8qKYsGhB8A7dffkq8I=
+			UybVY5okmbiECo2peWLpP6Kh1Yo+8bDGGCvmVwjDVAg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

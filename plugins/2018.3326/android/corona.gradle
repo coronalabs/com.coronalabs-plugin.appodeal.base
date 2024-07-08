@@ -18,8 +18,37 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.appodeal.ads.sdk:core:3.2.1'
-    implementation 'com.appodeal.ads.sdk.networks:iab:3.2.1.0'
-    implementation 'com.appodeal.ads.sdk.services:sentry_analytics:3.2.1.0'
+    implementation("com.appodeal.ads:sdk:3.3.1.0") {
+        exclude group: "com.appodeal.ads.sdk.networks", module: "admob"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "amazon"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "applovin"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "applovin_max"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "bigo_ads"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "dt_exchange"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "inmobi"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "ironsource"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "meta"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "mintegral"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "my_target"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "pangle"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "unity_ads"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "vungle"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "yandex"
+        exclude group: "com.appodeal.ads.sdk.services", module: "adjust"
+        exclude group: "com.appodeal.ads.sdk.services", module: "appsflyer"
+        exclude group: "com.appodeal.ads.sdk.services", module: "facebook_analytics"
+        exclude group: "com.appodeal.ads.sdk.services", module: "firebase"
+        exclude group: "org.bidon", module: "admob-adapter"
+        exclude group: "org.bidon", module: "gam-adapter"
+        exclude group: "org.bidon", module: "amazon-adapter"
+        exclude group: "org.bidon", module: "applovin-adapter"
+        exclude group: "org.bidon", module: "bigoads-adapter"
+        exclude group: "org.bidon", module: "dtexchange-adapter"
+        exclude group: "org.bidon", module: "inmobi-adapter"
+        exclude group: "org.bidon", module: "mintegral-adapter"
+        exclude group: "org.bidon", module: "meta-adapter"
+        exclude group: "org.bidon", module: "vungle-adapter"
+        exclude group: "org.bidon", module: "unityads-adapter"
+    }
   
 }

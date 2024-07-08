@@ -14,4 +14,8 @@ FOUNDATION_EXTERN NSString * stkOMJSScript(void);
 
 FOUNDATION_EXTERN NSString * stkInjectOMJSScriptInHTML(NSString * html);
 
+FOUNDATION_EXTERN NSString *const stkOMSDKName;
+
+FOUNDATION_EXTERN NSString *const stkOMSDKVersion;
+
 NS_ASSUME_NONNULL_END

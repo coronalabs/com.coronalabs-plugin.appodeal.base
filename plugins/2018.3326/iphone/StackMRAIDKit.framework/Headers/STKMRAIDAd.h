@@ -6,6 +6,7 @@
 
 #import <StackMRAIDKit/STKMRAIDWebConfiguration.h>
 #import <StackMRAIDKit/STKMRAIDService.h>
+#import <StackOpenMeasure/StackOpenMeasure.h>
 
 @class STKMRAIDAd;
 
@@ -37,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) STKMRAIDWebConfiguration *configuration;
 /// Service reference
 @property (nonatomic, strong, readonly) STKMRAIDService *service;
+/// Open Measure
+@property (nonatomic, strong, readonly) STKMRAIDMeasure *measure;
 /// Append configuration
 @property (nonatomic, readonly) void(^appendConfiguration)(STKMRAIDWebConfiguration *);
 /// Method to load HTML

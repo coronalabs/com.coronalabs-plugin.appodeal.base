@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) BOOL r2;
 @property (nonatomic, assign) BOOL ignoresSafeAreaLayout;
 @property (nonatomic, assign) BOOL isSpinnerActive;
+@property (nonatomic, assign) BOOL isOverlayActive;
 @property (nonatomic, assign) NSTimeInterval r1Delay;
 @property (nonatomic, assign) STKMRAIDContentMode contentMode;
 

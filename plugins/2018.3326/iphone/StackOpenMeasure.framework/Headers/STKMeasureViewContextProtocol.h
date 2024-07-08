@@ -7,14 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <StackOpenMeasure/STKMeasureObstruction.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol STKMeasureViewContextProtocol <NSObject>
 
 - (void)registerMainView:(UIView *)mainView;
-- (void)registerFriendlyObstruction:(UIView *)view;
-- (void)registerFriendlyObstructions:(NSArray<UIView *> *)views;
+- (void)unRegisterMainView;
+
+- (void)registerFriendlyObstruction:(STKMeasureObstruction *)obstruction;
+- (void)registerFriendlyObstructions:(NSArray<STKMeasureObstruction *> *)obstructions;
+
+- (void)removeFriendlyObstruction:(STKMeasureObstruction *)obstruction;
+- (void)removeAllFriendlyObstructions;
 
 @end
 

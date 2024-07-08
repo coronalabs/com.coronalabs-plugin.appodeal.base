@@ -18,11 +18,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LaZ2JOLz7u+PV1RjKldST1JkIPU=
+		D1n3Hw1/MdyaPwIKDi1R/km0K8U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		bMYiIfYVADUb4JZy/RE9yiHARjs=
+		</data>
+		<key>StackFoundation.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		PehKh85ACMAJeaVumbBh74Ik6uM=
+		</data>
+		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackUIKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -69,6 +81,39 @@
 			<key>hash2</key>
 			<data>
 			34wjm2EBCrS1W4ffSf/9edZU5pJjY18QQEVxUM56jEw=
+			</data>
+		</dict>
+		<key>StackFoundation.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PehKh85ACMAJeaVumbBh74Ik6uM=
+			</data>
+			<key>hash2</key>
+			<data>
+			ziopBf5Z2+3YiSbyK1rHnLjnoN5dvC2/y2ULp6Tn0JE=
+			</data>
+		</dict>
+		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackUIKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
 			</data>
 		</dict>
 	</dict>

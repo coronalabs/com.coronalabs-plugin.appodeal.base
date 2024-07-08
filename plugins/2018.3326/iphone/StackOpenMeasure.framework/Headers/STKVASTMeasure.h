@@ -6,6 +6,7 @@
 //  Copyright © 2020 Appodeal. All rights reserved.
 //
 
+#import <StackOpenMeasure/STKMeasureError.h>
 #import <StackOpenMeasure/STKMeasureEventProtocol.h>
 #import <StackOpenMeasure/STKMeasureBuilderProtocol.h>
 #import <StackOpenMeasure/STKMeasureViewContextProtocol.h>
@@ -20,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)measureWithBuilder:(void(^)(id<STKVASTMeasureBuilderProtocol>))builder;
 
 - (void)startSession:(NSError * _Nullable __autoreleasing *)error;
-
+- (void)logErrorWithType:(STKMeasureErrorType)type message:(NSString *)message;
 - (void)finishSession;
 
 + (instancetype)new __unavailable;

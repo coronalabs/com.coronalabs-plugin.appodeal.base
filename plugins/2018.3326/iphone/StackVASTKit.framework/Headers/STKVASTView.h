@@ -30,9 +30,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
+@protocol STKVASTViewDataSources <NSObject>
+
+- (nullable UIViewController *)rootViewControllerForVASTView:(STKVASTView *)view;
+
+@end
+
 @interface STKVASTView : UIView
 
 @property (nonatomic, weak, nullable) id <STKVASTViewDelegate> delegate;
+
+@property (nonatomic, weak, nullable) id <STKVASTViewDataSources> dataSources;
 
 @property (nonatomic, copy, readonly, nullable) NSString *adCreative;
 

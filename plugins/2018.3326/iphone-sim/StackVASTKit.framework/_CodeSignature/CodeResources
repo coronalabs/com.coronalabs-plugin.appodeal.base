@@ -12,9 +12,13 @@
 		<data>
 		lBZvlFGOLg2uEp/sl4nVbgDqgXs=
 		</data>
+		<key>Headers/STKVASTHTMLCompanionRendererConfiguration.h</key>
+		<data>
+		ALXS8a36cJGXchCBcR8YMebuzK8=
+		</data>
 		<key>Headers/STKVASTView.h</key>
 		<data>
-		Mj46H1xmu+WUqtvrU78DAStkpEY=
+		qHD80Ro0WXcKf76vmfjjknUf+Z4=
 		</data>
 		<key>Headers/StackVASTKit.h</key>
 		<data>
@@ -22,11 +26,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+9hlfsYyU758oq8JbuJHkW3j0aw=
+		O0D9OqRhc/HKnP3W2fA8Pm5wVbg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		cK1hrrS2JfVQSHacQmcfW2E9L9E=
+		</data>
+		<key>StackFoundation.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		PehKh85ACMAJeaVumbBh74Ik6uM=
+		</data>
+		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+		</data>
+		<key>StackUIKit.bundle/PrivacyInfo.xcprivacy</key>
+		<data>
+		AsGWXTZZNiiA2K0mG3kTPcRZ83U=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -53,15 +69,26 @@
 			DN2yFk8lU1CLpPx+Ct51/zGqS/RGe+IJxKTnHZfMH+U=
 			</data>
 		</dict>
+		<key>Headers/STKVASTHTMLCompanionRendererConfiguration.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ALXS8a36cJGXchCBcR8YMebuzK8=
+			</data>
+			<key>hash2</key>
+			<data>
+			/tdDbrZnr/D2jcuNDoXx21vev5wf/Kay543DgRwvi88=
+			</data>
+		</dict>
 		<key>Headers/STKVASTView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Mj46H1xmu+WUqtvrU78DAStkpEY=
+			qHD80Ro0WXcKf76vmfjjknUf+Z4=
 			</data>
 			<key>hash2</key>
 			<data>
-			q34V2HGfrNc8fuPpafcWY5kwN/iGggwMKu/xAW/8dg4=
+			TdIwV5Bww0eDKSVqMyoLiHdbtzjF2RETeBQjNk7nl30=
 			</data>
 		</dict>
 		<key>Headers/StackVASTKit.h</key>
@@ -84,6 +111,39 @@
 			<key>hash2</key>
 			<data>
 			PEaQIoi3YnIazj8hekdqRF1AY3/iuUwRRErZ+YbHlFc=
+			</data>
+		</dict>
+		<key>StackFoundation.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			PehKh85ACMAJeaVumbBh74Ik6uM=
+			</data>
+			<key>hash2</key>
+			<data>
+			ziopBf5Z2+3YiSbyK1rHnLjnoN5dvC2/y2ULp6Tn0JE=
+			</data>
+		</dict>
+		<key>StackProductPresentation.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
+			</data>
+		</dict>
+		<key>StackUIKit.bundle/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			AsGWXTZZNiiA2K0mG3kTPcRZ83U=
+			</data>
+			<key>hash2</key>
+			<data>
+			oOieiiHwPwrN8Jcb7UfQIsN5K/r7ZuKQ3AfMZT8usiw=
 			</data>
 		</dict>
 	</dict>

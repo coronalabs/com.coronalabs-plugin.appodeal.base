@@ -66,12 +66,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (class, nonatomic, readonly) NSString *timezone;
 /// Boot date with secodns accuracy
 @property (class, nonatomic, readonly) NSDate *bootdate;
-/// User available keyboards ids, comma joined
-@property (class, nonatomic, readonly) NSString *keyboards;
-/// Recently used emoji, joined
-@property (class, nonatomic, readonly) NSString *emoji;
-/// Input sources language codes (ru, en, he, etc)
-@property (class, nonatomic, readonly) NSArray <NSString *> *inputLanguage;
 /// Used cpu
 @property (class, nonatomic, readonly) double cpuUsage;
 /// Total RAM in bytes
