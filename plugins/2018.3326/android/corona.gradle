@@ -17,8 +17,9 @@ repositories {
     }
 }
 
+
 dependencies {
-    implementation("com.appodeal.ads:sdk:3.3.1.0") {
+    implementation("com.appodeal.ads:sdk:3.4.0.0") {
         exclude group: "com.appodeal.ads.sdk.networks", module: "admob"
         exclude group: "com.appodeal.ads.sdk.networks", module: "amazon"
         exclude group: "com.appodeal.ads.sdk.networks", module: "applovin"
@@ -29,6 +30,7 @@ dependencies {
         exclude group: "com.appodeal.ads.sdk.networks", module: "ironsource"
         exclude group: "com.appodeal.ads.sdk.networks", module: "meta"
         exclude group: "com.appodeal.ads.sdk.networks", module: "mintegral"
+        exclude group: "com.appodeal.ads.sdk.networks", module: "mobilefuse"
         exclude group: "com.appodeal.ads.sdk.networks", module: "my_target"
         exclude group: "com.appodeal.ads.sdk.networks", module: "pangle"
         exclude group: "com.appodeal.ads.sdk.networks", module: "unity_ads"
@@ -44,11 +46,15 @@ dependencies {
         exclude group: "org.bidon", module: "applovin-adapter"
         exclude group: "org.bidon", module: "bigoads-adapter"
         exclude group: "org.bidon", module: "dtexchange-adapter"
+        exclude group: "org.bidon", module: "chartboost-adapter"
         exclude group: "org.bidon", module: "inmobi-adapter"
+        exclude group: "org.bidon", module: "ironsource-adapter"
         exclude group: "org.bidon", module: "mintegral-adapter"
+        exclude group: "org.bidon", module: "mobilefuse-adapter"
+        exclude group: "org.bidon", module: "vkads-adapter"
         exclude group: "org.bidon", module: "meta-adapter"
         exclude group: "org.bidon", module: "vungle-adapter"
         exclude group: "org.bidon", module: "unityads-adapter"
+        exclude group: "org.bidon", module: "yandex-adapter"
     }
-  
 }

@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		KaX2q/hULdizKOqcU99tNHcKKH4=
+		rHALq6/nGtzt1k9fFc38fkdwFLA=
 		</data>
 		<key>Modules/module.private.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>PrivateHeaders/APDAdNetworkProtocol.h</key>
 		<data>
-		wttB8PKoS6Jx10XU71BHyy3LKmU=
+		fXZ0RCxCgotf+HL7Lq/1R6VcBbg=
 		</data>
 		<key>PrivateHeaders/APDAdQueueManagerProtocol.h</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>PrivateHeaders/APDError.h</key>
 		<data>
-		2pJEpInx8FopDu02ZET9KhQTknc=
+		QbikK3JpzsMldvLGl904tmuCLwo=
 		</data>
 		<key>PrivateHeaders/APDFactory.h</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>PrivateHeaders/APDLog.h</key>
 		<data>
-		mG+RsOL/YaWfxc/WGzqurOkLn94=
+		FNNIZAHeRUBenWeGyuf4yPiEQmM=
 		</data>
 		<key>PrivateHeaders/APDMediationConfigRouter.h</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>PrivateHeaders/APDNativeAdAdapterProtocol.h</key>
 		<data>
-		6lssTApts5hq/8DuZIHActgcSvo=
+		zXpb0uNBq4qBGx8ih6nBSsajHUU=
 		</data>
 		<key>PrivateHeaders/APDNativeAdRenderer.h</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>PrivateHeaders/APDPrivateDefines.h</key>
 		<data>
-		yghNYfF8rkhorLV9PjpizX6fVb8=
+		2/QutRAJq3+BH/lEX4P8q1EuFX4=
 		</data>
 		<key>PrivateHeaders/APDProductPresentationAdapter.h</key>
 		<data>
@@ -178,11 +178,11 @@
 		</data>
 		<key>PrivateHeaders/APDServiceProtocol.h</key>
 		<data>
-		hcHzyQw6IXsBZA5vfPSNqcuKdkQ=
+		5FChtD+KmAeGzv7Lh/FCG7Bf+20=
 		</data>
 		<key>PrivateHeaders/APDServicesInfoProtocol.h</key>
 		<data>
-		YpETYigZ9KfNgHpoVhtaHppMeYk=
+		EYfhp04NjmIfaL7uKoNjLnbIwUM=
 		</data>
 		<key>PrivateHeaders/APDSessionInfoProtocol.h</key>
 		<data>
@@ -190,11 +190,11 @@
 		</data>
 		<key>PrivateHeaders/APDTimer.h</key>
 		<data>
-		R7pzo4u2yfu8OQXRsVicER0bHUQ=
+		0RYWLHt+NhYh/oVX/i8/zfSwl2Y=
 		</data>
 		<key>PrivateHeaders/APDValueTransformer.h</key>
 		<data>
-		IDe+hGXYXHe50udpCP3x4YtSnn4=
+		tRaKQhMS6GGvwcLpes6Eb8oB28c=
 		</data>
 		<key>PrivateHeaders/APDVendorProtocol.h</key>
 		<data>
@@ -373,11 +373,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KaX2q/hULdizKOqcU99tNHcKKH4=
+			rHALq6/nGtzt1k9fFc38fkdwFLA=
 			</data>
 			<key>hash2</key>
 			<data>
-			mSg8Bnwa5nRHJNmn5TP43yE5Hcit1YF4g8s3fWOHtuo=
+			iGSBUK1yn3pFT9R52dxikxRLdrqiXbEcx+ocoQ+jdPg=
 			</data>
 		</dict>
 		<key>Modules/module.private.modulemap</key>
@@ -406,11 +406,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wttB8PKoS6Jx10XU71BHyy3LKmU=
+			fXZ0RCxCgotf+HL7Lq/1R6VcBbg=
 			</data>
 			<key>hash2</key>
 			<data>
-			+xphgwUFrQ267lfkiHuy0Ne65m/unmDBra2P1jhyZic=
+			nxL/iWtXT0ovszXAG6wqpHvj31TYDIrhUQvfq5OMdE0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDAdQueueManagerProtocol.h</key>
@@ -494,11 +494,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2pJEpInx8FopDu02ZET9KhQTknc=
+			QbikK3JpzsMldvLGl904tmuCLwo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8nbO5k5t1i+XpyX7ccErtRg/OnjIJPqdi20oDCBZkmE=
+			1wGPNLExshhYlo7sSj48SDsVjXrbFe0MQIvylxNbCXQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDFactory.h</key>
@@ -571,11 +571,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mG+RsOL/YaWfxc/WGzqurOkLn94=
+			FNNIZAHeRUBenWeGyuf4yPiEQmM=
 			</data>
 			<key>hash2</key>
 			<data>
-			oZrji2wMwhKSXVkJ2YUNbOC+s8oBU4PL74oA88Nnelc=
+			o4tfbzXp+YsEbvAyUEgdHXylyJmPd2TiXfj15qXb4oE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDMediationConfigRouter.h</key>
@@ -615,11 +615,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6lssTApts5hq/8DuZIHActgcSvo=
+			zXpb0uNBq4qBGx8ih6nBSsajHUU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z7bXmgXkPSNox+plQcCl9P0QVkHTjR1YkqaN7sJOW+4=
+			CLom+AYdtxnVnbxhVE19PrsK4ZIWY5MofUIqI/bZYRw=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDNativeAdRenderer.h</key>
@@ -659,11 +659,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yghNYfF8rkhorLV9PjpizX6fVb8=
+			2/QutRAJq3+BH/lEX4P8q1EuFX4=
 			</data>
 			<key>hash2</key>
 			<data>
-			bdrro13SFTdqifRlVWnEHUYTQp/7SzLs6ywPTOgod/8=
+			jZIwvpcmeIESHbZzdhLvH0kW5Jjo9BWL9Bgqa+gj298=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDProductPresentationAdapter.h</key>
@@ -692,22 +692,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hcHzyQw6IXsBZA5vfPSNqcuKdkQ=
+			5FChtD+KmAeGzv7Lh/FCG7Bf+20=
 			</data>
 			<key>hash2</key>
 			<data>
-			Phm/H52ZGDkGisbo2DwUgFm3XNv9J4imbwHORdbmVyw=
+			M7QsY/+Y9hjIHvOBgmyPwrfaLOioGkb/owBb9lodBEQ=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDServicesInfoProtocol.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YpETYigZ9KfNgHpoVhtaHppMeYk=
+			EYfhp04NjmIfaL7uKoNjLnbIwUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			6Dd6tV02mqv4Pc0sLjDpcnUfE/w9FltDAxcSXmfoa6E=
+			qje+6yIZT7MeCPLRnnzBMF7PahhGkrwlcpIG2AFHYdk=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDSessionInfoProtocol.h</key>
@@ -725,22 +725,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R7pzo4u2yfu8OQXRsVicER0bHUQ=
+			0RYWLHt+NhYh/oVX/i8/zfSwl2Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			91BUsQidMyOaZXokOz35vYagDSR5CRqfUVHkOvLvA3c=
+			GdluoNJBDjL/ewjf6pdZfPhoYz9dR4+KuLjIBqtg9Sk=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDValueTransformer.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IDe+hGXYXHe50udpCP3x4YtSnn4=
+			tRaKQhMS6GGvwcLpes6Eb8oB28c=
 			</data>
 			<key>hash2</key>
 			<data>
-			5Y/xurLtypGSVbgk5n8pmGAPO8k58PhY3yjznJWKAQs=
+			t7ItBbqWGo2E6nm+mSFKFTIsZLXNd/TCY506f9Tk6D0=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDVendorProtocol.h</key>
