@@ -150,7 +150,7 @@
 		</data>
 		<key>PrivateHeaders/APDNativeAdAdapterProtocol.h</key>
 		<data>
-		zXpb0uNBq4qBGx8ih6nBSsajHUU=
+		NMI4jHhWTnDyLTnVeZtoN2FCmak=
 		</data>
 		<key>PrivateHeaders/APDNativeAdRenderer.h</key>
 		<data>
@@ -198,7 +198,7 @@
 		</data>
 		<key>PrivateHeaders/APDVendorProtocol.h</key>
 		<data>
-		IibjPgN5ud0h+6TX1Iz6gh52FdM=
+		JPU3rwvxJ4xsnhSGcd7s1BX1O4w=
 		</data>
 		<key>PrivateHeaders/APDVendorRegistry.h</key>
 		<data>
@@ -615,11 +615,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zXpb0uNBq4qBGx8ih6nBSsajHUU=
+			NMI4jHhWTnDyLTnVeZtoN2FCmak=
 			</data>
 			<key>hash2</key>
 			<data>
-			CLom+AYdtxnVnbxhVE19PrsK4ZIWY5MofUIqI/bZYRw=
+			o20LWwiF1W3iSnlXB8FsLlO1Ljokamp9Hbk+FtIix14=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDNativeAdRenderer.h</key>
@@ -747,11 +747,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IibjPgN5ud0h+6TX1Iz6gh52FdM=
+			JPU3rwvxJ4xsnhSGcd7s1BX1O4w=
 			</data>
 			<key>hash2</key>
 			<data>
-			uPDFlspZouYT8toF9Y6rtmrzT59hFbhLhPKu9711kO0=
+			JVzbHX+JkMeO2yChoF8SQZ8xN3u1OMIQgiguu5ncBpo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDVendorRegistry.h</key>

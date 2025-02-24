@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/STKIABAssetsDefines.h</key>
 		<data>
-		UqlCWWEv5vQrd3Rn3Bt2wGc0F0k=
+		CAt4nbqjCOgYVOiRdeYSu/K2X5Y=
 		</data>
 		<key>Headers/STKIABCallToActionView.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/STKMRAIDAd.h</key>
 		<data>
-		8DqLyXprzswIXz/SOWkAS9j0eDo=
+		pBX6R8bwRnDPc0QsWJz3z1CgH90=
 		</data>
 		<key>Headers/STKMRAIDBanner.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/STKMRAIDPresenterProtocol.h</key>
 		<data>
-		rt3I4/QKgeUj3wnnvcOjy74cNHw=
+		4/J8QUWBYiJ5SyYHOCTyt/89RR4=
 		</data>
 		<key>Headers/STKMRAIDReusablePresenterProtocol.h</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Headers/STKVASTController.h</key>
 		<data>
-		HTxFbejtdJqj2pYbeAK0HMNjjSM=
+		4gJHNR9qWxDR5fOxMwj/P5cJ48Y=
 		</data>
 		<key>Headers/STKVASTControllerConfiguration.h</key>
 		<data>
@@ -230,7 +230,7 @@
 		</data>
 		<key>Headers/STKVASTView.h</key>
 		<data>
-		7Vh9NScYPeD2j2z//sXeh0V26vI=
+		n/jXlz0hQIiwhhrVEovFlYgnr/Q=
 		</data>
 		<key>Headers/STKVideoPlayer.h</key>
 		<data>
@@ -326,7 +326,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		v2OGk6o6jgGNatpnQJ2S4LOmGq0=
+		rj1yKs/GsBY82pCa/cNq0RG6L5o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -387,11 +387,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			UqlCWWEv5vQrd3Rn3Bt2wGc0F0k=
+			CAt4nbqjCOgYVOiRdeYSu/K2X5Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			IbZbCX2ew67dxMjwaX6m34LSbuLm+ewLiJJ/XEQJwPg=
+			pxQ8Y6crvN5A6iRM5JVrdvED+AxWP81A5D/f/CH34Ik=
 			</data>
 		</dict>
 		<key>Headers/STKIABCallToActionView.h</key>
@@ -497,11 +497,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8DqLyXprzswIXz/SOWkAS9j0eDo=
+			pBX6R8bwRnDPc0QsWJz3z1CgH90=
 			</data>
 			<key>hash2</key>
 			<data>
-			npSkZzA+hJpBD1ArbjgmQTcmJKdCq7AfvR/7ailGcDk=
+			d3fR/enWrx3g1Ikkmdvj9sh6UBvuJQl3+JFxdKGBLKY=
 			</data>
 		</dict>
 		<key>Headers/STKMRAIDBanner.h</key>
@@ -585,11 +585,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rt3I4/QKgeUj3wnnvcOjy74cNHw=
+			4/J8QUWBYiJ5SyYHOCTyt/89RR4=
 			</data>
 			<key>hash2</key>
 			<data>
-			XaExfOy1tZakx+ndUGdj0G9m9a8TnQJs+s8rV09YrYM=
+			sqChA0ad6TxeSPK/5Mp5Mdu/K2T/SKmrp02XmYRvEXc=
 			</data>
 		</dict>
 		<key>Headers/STKMRAIDReusablePresenterProtocol.h</key>
@@ -915,11 +915,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HTxFbejtdJqj2pYbeAK0HMNjjSM=
+			4gJHNR9qWxDR5fOxMwj/P5cJ48Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			E2YBg2NLZeoeSF9Y9bjP3Frn/aQ96mKTGrfAnnGkWqs=
+			UkKAmPbDnkQDe3Q2/pN3U16PAV3iAHYo2F3wEzgov5g=
 			</data>
 		</dict>
 		<key>Headers/STKVASTControllerConfiguration.h</key>
@@ -959,11 +959,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7Vh9NScYPeD2j2z//sXeh0V26vI=
+			n/jXlz0hQIiwhhrVEovFlYgnr/Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			4ukIP4/CP0KXgNP8gS8tAwCG1dSdQFfUIobH/VkGHKc=
+			mwXl1itJXnqbr5jJzI8FDPBMXMwyJ+VtA7E2M2hh/IU=
 			</data>
 		</dict>
 		<key>Headers/STKVideoPlayer.h</key>

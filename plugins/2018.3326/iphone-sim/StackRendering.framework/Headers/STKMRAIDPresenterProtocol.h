@@ -66,6 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)presentAd:(STKMRAIDAd *)ad;
 
 - (void)startImpression;
+- (void)endImpression;
 
 - (void)setViewable:(BOOL)viewable;
 
