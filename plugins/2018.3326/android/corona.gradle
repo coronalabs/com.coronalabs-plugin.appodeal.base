@@ -12,14 +12,12 @@ android {
 }
 
 repositories {
-    maven {
-        url "https://artifactory.appodeal.com/appodeal"
-    }
+    maven { url "https://artifactory.appodeal.com/appodeal" }
 }
 
 
 dependencies {
-    implementation("com.appodeal.ads:sdk:3.4.2s.0") {
+    implementation("com.appodeal.ads:sdk:3.4.2.0") {
         exclude group: "com.appodeal.ads.sdk.networks", module: "admob"
         exclude group: "com.appodeal.ads.sdk.networks", module: "amazon"
         exclude group: "com.appodeal.ads.sdk.networks", module: "applovin"
