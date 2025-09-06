@@ -138,7 +138,7 @@
           {
             "kind": "Function",
             "name": "productNavigationWillLeaveApplication",
-            "printedName": "productNavigationWillLeaveApplication(_:)",
+            "printedName": "productNavigationWillLeaveApplication(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -150,11 +150,25 @@
                 "name": "ProductNavigation",
                 "printedName": "StackProductPresentation.ProductNavigation",
                 "usr": "c:@M@StackProductPresentation@objc(cs)STKProductNavigation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@StackProductPresentation@objc(pl)STKProductNavigationDelegate(im)productNavigationWillLeaveApplication:",
-            "mangledName": "$s24StackProductPresentation0B18NavigationDelegateP07productD20WillLeaveApplicationyyAA0bD0CF",
+            "usr": "c:@M@StackProductPresentation@objc(pl)STKProductNavigationDelegate(im)productNavigationWillLeaveApplication::",
+            "mangledName": "$s24StackProductPresentation0B18NavigationDelegateP07productD20WillLeaveApplicationyyAA0bD0C_SSSgtF",
             "moduleName": "StackProductPresentation",
             "genericSig": "<τ_0_0 where τ_0_0 : StackProductPresentation.ProductNavigationDelegate>",
             "sugared_genericSig": "<Self where Self : StackProductPresentation.ProductNavigationDelegate>",
@@ -640,6 +654,93 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -654,6 +755,16 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "StackProductPresentation"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -783,6 +894,30 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation"
+      },
+      {
+        "kind": "Import",
+        "name": "StackModules.STKConstants",
+        "printedName": "StackModules.STKConstants",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation"
       },
       {
         "kind": "Import",
@@ -1738,7 +1873,7 @@
           {
             "kind": "Function",
             "name": "prepare",
-            "printedName": "prepare(parameters:completion:)",
+            "printedName": "prepare(with:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1747,8 +1882,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
+                "name": "ProductParametersType",
+                "printedName": "StackProductPresentation.Product.ProductParametersType",
+                "usr": "s:24StackProductPresentation0B0C0B14ParametersTypeO"
               },
               {
                 "kind": "TypeFunc",
@@ -1778,69 +1914,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:24StackProductPresentation0B0C7prepare10parameters10completionyx_ys5Error_pSgctAA21SKANProductParametersRzlF",
-            "mangledName": "$s24StackProductPresentation0B0C7prepare10parameters10completionyx_ys5Error_pSgctAA21SKANProductParametersRzlF",
+            "usr": "s:24StackProductPresentation0B0C7prepare4with10completionyAC0B14ParametersTypeO_ys5Error_pSgctF",
+            "mangledName": "$s24StackProductPresentation0B0C7prepare4with10completionyAC0B14ParametersTypeO_ys5Error_pSgctF",
             "moduleName": "StackProductPresentation",
-            "genericSig": "<τ_0_0 where τ_0_0 : StackProductPresentation.SKANProductParameters>",
-            "sugared_genericSig": "<ProductParameters where ProductParameters : StackProductPresentation.SKANProductParameters>",
             "declAttributes": [
               "Final",
               "AccessControl",
               "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "prepare",
-            "printedName": "prepare(parameters:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "((any Swift.Error)?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any Swift.Error)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:24StackProductPresentation0B0C7prepare10parameters10completionyx_ys5Error_pSgctAA20AAKProductParametersRzlF",
-            "mangledName": "$s24StackProductPresentation0B0C7prepare10parameters10completionyx_ys5Error_pSgctAA20AAKProductParametersRzlF",
-            "moduleName": "StackProductPresentation",
-            "genericSig": "<τ_0_0 where τ_0_0 : StackProductPresentation.AAKProductParameters>",
-            "sugared_genericSig": "<ProductParameters where ProductParameters : StackProductPresentation.AAKProductParameters>",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2308,7 +2388,7 @@
           {
             "kind": "Function",
             "name": "productNavigationWillLeaveApplication",
-            "printedName": "productNavigationWillLeaveApplication(_:)",
+            "printedName": "productNavigationWillLeaveApplication(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2320,13 +2400,27 @@
                 "name": "ProductNavigation",
                 "printedName": "StackProductPresentation.ProductNavigation",
                 "usr": "c:@M@StackProductPresentation@objc(cs)STKProductNavigation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@StackProductPresentation@objc(cs)STKProduct(im)productNavigationWillLeaveApplication:",
-            "mangledName": "$s24StackProductPresentation0B0C37productNavigationWillLeaveApplicationyyAA0bE0CF",
+            "usr": "c:@CM@StackProductPresentation@objc(cs)STKProduct(im)productNavigationWillLeaveApplication::",
+            "mangledName": "$s24StackProductPresentation0B0C37productNavigationWillLeaveApplicationyyAA0bE0C_SSSgtF",
             "moduleName": "StackProductPresentation",
-            "objc_name": "productNavigationWillLeaveApplication:",
+            "objc_name": "productNavigationWillLeaveApplication::",
             "declAttributes": [
               "Final",
               "ObjC",
@@ -2889,6 +2983,118 @@
                 "mangledName": "$ss8SendableP"
               }
             ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ProductParametersType",
+            "printedName": "ProductParametersType",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "aak",
+                "printedName": "aak",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StackProductPresentation.Product.ProductParametersType.Type) -> (any StackProductPresentation.AAKProductParameters) -> StackProductPresentation.Product.ProductParametersType",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(any StackProductPresentation.AAKProductParameters) -> StackProductPresentation.Product.ProductParametersType",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProductParametersType",
+                            "printedName": "StackProductPresentation.Product.ProductParametersType",
+                            "usr": "s:24StackProductPresentation0B0C0B14ParametersTypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AAKProductParameters",
+                            "printedName": "any StackProductPresentation.AAKProductParameters",
+                            "usr": "s:24StackProductPresentation20AAKProductParametersP"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StackProductPresentation.Product.ProductParametersType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProductParametersType",
+                            "printedName": "StackProductPresentation.Product.ProductParametersType",
+                            "usr": "s:24StackProductPresentation0B0C0B14ParametersTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24StackProductPresentation0B0C0B14ParametersTypeO3aakyAeA010AAKProductD0_pcAEmF",
+                "mangledName": "$s24StackProductPresentation0B0C0B14ParametersTypeO3aakyAeA010AAKProductD0_pcAEmF",
+                "moduleName": "StackProductPresentation"
+              },
+              {
+                "kind": "Var",
+                "name": "skan",
+                "printedName": "skan",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StackProductPresentation.Product.ProductParametersType.Type) -> (any StackProductPresentation.SKANProductParameters) -> StackProductPresentation.Product.ProductParametersType",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(any StackProductPresentation.SKANProductParameters) -> StackProductPresentation.Product.ProductParametersType",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProductParametersType",
+                            "printedName": "StackProductPresentation.Product.ProductParametersType",
+                            "usr": "s:24StackProductPresentation0B0C0B14ParametersTypeO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SKANProductParameters",
+                            "printedName": "any StackProductPresentation.SKANProductParameters",
+                            "usr": "s:24StackProductPresentation21SKANProductParametersP"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StackProductPresentation.Product.ProductParametersType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProductParametersType",
+                            "printedName": "StackProductPresentation.Product.ProductParametersType",
+                            "usr": "s:24StackProductPresentation0B0C0B14ParametersTypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24StackProductPresentation0B0C0B14ParametersTypeO4skanyAeA011SKANProductD0_pcAEmF",
+                "mangledName": "$s24StackProductPresentation0B0C0B14ParametersTypeO4skanyAeA011SKANProductD0_pcAEmF",
+                "moduleName": "StackProductPresentation"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:24StackProductPresentation0B0C0B14ParametersTypeO",
+            "mangledName": "$s24StackProductPresentation0B0C0B14ParametersTypeO",
+            "moduleName": "StackProductPresentation",
+            "isFromExtension": true
           },
           {
             "kind": "TypeDecl",
@@ -3805,6 +4011,106 @@
                 "usr": "s:24StackProductPresentation0B0C5EventO10overlayTapyAeC9FrameworkOcAEmF",
                 "mangledName": "$s24StackProductPresentation0B0C5EventO10overlayTapyAeC9FrameworkOcAEmF",
                 "moduleName": "StackProductPresentation"
+              },
+              {
+                "kind": "Var",
+                "name": "deepLinkOpen",
+                "printedName": "deepLinkOpen",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StackProductPresentation.Product.Event.Type) -> (Swift.String) -> StackProductPresentation.Product.Event",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> StackProductPresentation.Product.Event",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "StackProductPresentation.Product.Event",
+                            "usr": "s:24StackProductPresentation0B0C5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StackProductPresentation.Product.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "StackProductPresentation.Product.Event",
+                            "usr": "s:24StackProductPresentation0B0C5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24StackProductPresentation0B0C5EventO12deepLinkOpenyAESScAEmF",
+                "mangledName": "$s24StackProductPresentation0B0C5EventO12deepLinkOpenyAESScAEmF",
+                "moduleName": "StackProductPresentation"
+              },
+              {
+                "kind": "Var",
+                "name": "deepLinkError",
+                "printedName": "deepLinkError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StackProductPresentation.Product.Event.Type) -> (StackProductPresentation.Product.Error) -> StackProductPresentation.Product.Event",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(StackProductPresentation.Product.Error) -> StackProductPresentation.Product.Event",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "StackProductPresentation.Product.Event",
+                            "usr": "s:24StackProductPresentation0B0C5EventO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "StackProductPresentation.Product.Error",
+                            "usr": "s:24StackProductPresentation0B0C5ErrorO"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StackProductPresentation.Product.Event.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Event",
+                            "printedName": "StackProductPresentation.Product.Event",
+                            "usr": "s:24StackProductPresentation0B0C5EventO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24StackProductPresentation0B0C5EventO13deepLinkErroryAeC0G0OcAEmF",
+                "mangledName": "$s24StackProductPresentation0B0C5EventO13deepLinkErroryAeC0G0OcAEmF",
+                "moduleName": "StackProductPresentation"
               }
             ],
             "declKind": "Enum",
@@ -3894,6 +4200,13 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation"
       },
       {
         "kind": "Import",
@@ -4008,7 +4321,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(parameters:)",
+            "printedName": "init(skanParameters:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4023,8 +4336,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:24StackProductPresentation0B10ImpressionC10parametersACx_tKcAA21SKANProductParametersRzlufc",
-            "mangledName": "$s24StackProductPresentation0B10ImpressionC10parametersACx_tKcAA21SKANProductParametersRzlufc",
+            "usr": "s:24StackProductPresentation0B10ImpressionC14skanParametersACx_tKcAA011SKANProductF0Rzlufc",
+            "mangledName": "$s24StackProductPresentation0B10ImpressionC14skanParametersACx_tKcAA011SKANProductF0Rzlufc",
             "moduleName": "StackProductPresentation",
             "genericSig": "<τ_0_0 where τ_0_0 : StackProductPresentation.SKANProductParameters>",
             "sugared_genericSig": "<ProductParameters where ProductParameters : StackProductPresentation.SKANProductParameters>",
@@ -4037,7 +4350,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(parameters:)",
+            "printedName": "init(aakParameters:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4047,16 +4360,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GenericTypeParam",
-                "printedName": "τ_0_0"
+                "name": "AAKProductParameters",
+                "printedName": "any StackProductPresentation.AAKProductParameters",
+                "usr": "s:24StackProductPresentation20AAKProductParametersP"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:24StackProductPresentation0B10ImpressionC10parametersACx_tKcAA20AAKProductParametersRzlufc",
-            "mangledName": "$s24StackProductPresentation0B10ImpressionC10parametersACx_tKcAA20AAKProductParametersRzlufc",
+            "usr": "s:24StackProductPresentation0B10ImpressionC13aakParametersAcA010AAKProductF0_p_tKcfc",
+            "mangledName": "$s24StackProductPresentation0B10ImpressionC13aakParametersAcA010AAKProductF0_p_tKcfc",
             "moduleName": "StackProductPresentation",
-            "genericSig": "<τ_0_0 where τ_0_0 : StackProductPresentation.AAKProductParameters>",
-            "sugared_genericSig": "<ProductParameters where ProductParameters : StackProductPresentation.AAKProductParameters>",
             "declAttributes": [
               "AccessControl"
             ],
@@ -4324,8 +4636,10 @@
             "usr": "s:24StackProductPresentation0B10ImpressionC7prepareyyYaKF",
             "mangledName": "$s24StackProductPresentation0B10ImpressionC7prepareyyYaKF",
             "moduleName": "StackProductPresentation",
+            "intro_iOS": "15.0",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Available"
             ],
             "isFromExtension": true,
             "throwing": true,
@@ -4358,8 +4672,10 @@
             "usr": "s:24StackProductPresentation0B10ImpressionC9beginView2on10controllerySo6UIViewC_So0I10ControllerCtYaKF",
             "mangledName": "$s24StackProductPresentation0B10ImpressionC9beginView2on10controllerySo6UIViewC_So0I10ControllerCtYaKF",
             "moduleName": "StackProductPresentation",
+            "intro_iOS": "15.0",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Available"
             ],
             "isFromExtension": true,
             "throwing": true,
@@ -4380,8 +4696,10 @@
             "usr": "s:24StackProductPresentation0B10ImpressionC7endViewyyYaKF",
             "mangledName": "$s24StackProductPresentation0B10ImpressionC7endViewyyYaKF",
             "moduleName": "StackProductPresentation",
+            "intro_iOS": "15.0",
             "declAttributes": [
-              "Final"
+              "Final",
+              "Available"
             ],
             "isFromExtension": true,
             "throwing": true,
@@ -6435,6 +6753,785 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "StackProductPresentation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrivacySheetPresenterDelegate",
+        "printedName": "PrivacySheetPresenterDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "privacySheetDidFailToPresentModal",
+            "printedName": "privacySheetDidFailToPresentModal(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PrivacySheetPresenter",
+                "printedName": "StackProductPresentation.PrivacySheetPresenter",
+                "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@StackProductPresentation@objc(pl)STKPrivacySheetPresenterDelegate(im)privacySheetDidFailToPresentModal:error:",
+            "mangledName": "$s24StackProductPresentation29PrivacySheetPresenterDelegateP07privacyE21DidFailToPresentModal_5erroryAA0deF0C_s5Error_ptF",
+            "moduleName": "StackProductPresentation",
+            "genericSig": "<τ_0_0 where τ_0_0 : StackProductPresentation.PrivacySheetPresenterDelegate>",
+            "sugared_genericSig": "<Self where Self : StackProductPresentation.PrivacySheetPresenterDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "privacySheetWillPresentModal",
+            "printedName": "privacySheetWillPresentModal(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PrivacySheetPresenter",
+                "printedName": "StackProductPresentation.PrivacySheetPresenter",
+                "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@StackProductPresentation@objc(pl)STKPrivacySheetPresenterDelegate(im)privacySheetWillPresentModal:",
+            "mangledName": "$s24StackProductPresentation29PrivacySheetPresenterDelegateP07privacyE16WillPresentModalyyAA0deF0CF",
+            "moduleName": "StackProductPresentation",
+            "genericSig": "<τ_0_0 where τ_0_0 : StackProductPresentation.PrivacySheetPresenterDelegate>",
+            "sugared_genericSig": "<Self where Self : StackProductPresentation.PrivacySheetPresenterDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "privacySheetDidDismissModal",
+            "printedName": "privacySheetDidDismissModal(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PrivacySheetPresenter",
+                "printedName": "StackProductPresentation.PrivacySheetPresenter",
+                "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@StackProductPresentation@objc(pl)STKPrivacySheetPresenterDelegate(im)privacySheetDidDismissModal:",
+            "mangledName": "$s24StackProductPresentation29PrivacySheetPresenterDelegateP07privacyE15DidDismissModalyyAA0deF0CF",
+            "moduleName": "StackProductPresentation",
+            "genericSig": "<τ_0_0 where τ_0_0 : StackProductPresentation.PrivacySheetPresenterDelegate>",
+            "sugared_genericSig": "<Self where Self : StackProductPresentation.PrivacySheetPresenterDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "privacySheetWillLeaveApplication",
+            "printedName": "privacySheetWillLeaveApplication(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PrivacySheetPresenter",
+                "printedName": "StackProductPresentation.PrivacySheetPresenter",
+                "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@StackProductPresentation@objc(pl)STKPrivacySheetPresenterDelegate(im)privacySheetWillLeaveApplication:",
+            "mangledName": "$s24StackProductPresentation29PrivacySheetPresenterDelegateP07privacyE20WillLeaveApplicationyyAA0deF0CF",
+            "moduleName": "StackProductPresentation",
+            "genericSig": "<τ_0_0 where τ_0_0 : StackProductPresentation.PrivacySheetPresenterDelegate>",
+            "sugared_genericSig": "<Self where Self : StackProductPresentation.PrivacySheetPresenterDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "privacySheetDidFailToLeaveApplication",
+            "printedName": "privacySheetDidFailToLeaveApplication(_:error:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PrivacySheetPresenter",
+                "printedName": "StackProductPresentation.PrivacySheetPresenter",
+                "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@StackProductPresentation@objc(pl)STKPrivacySheetPresenterDelegate(im)privacySheetDidFailToLeaveApplication:error:",
+            "mangledName": "$s24StackProductPresentation29PrivacySheetPresenterDelegateP07privacyE25DidFailToLeaveApplication_5erroryAA0deF0C_s5Error_ptF",
+            "moduleName": "StackProductPresentation",
+            "genericSig": "<τ_0_0 where τ_0_0 : StackProductPresentation.PrivacySheetPresenterDelegate>",
+            "sugared_genericSig": "<Self where Self : StackProductPresentation.PrivacySheetPresenterDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@StackProductPresentation@objc(pl)STKPrivacySheetPresenterDelegate",
+        "mangledName": "$s24StackProductPresentation29PrivacySheetPresenterDelegateP",
+        "moduleName": "StackProductPresentation",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "objc_name": "STKPrivacySheetPresenterDelegate",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PrivacySheetPresenter",
+        "printedName": "PrivacySheetPresenter",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "Error",
+            "printedName": "Error",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "viewModelInvalidOrNotSet",
+                "printedName": "viewModelInvalidOrNotSet",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StackProductPresentation.PrivacySheetPresenter.Error.Type) -> StackProductPresentation.PrivacySheetPresenter.Error",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "StackProductPresentation.PrivacySheetPresenter.Error",
+                        "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StackProductPresentation.PrivacySheetPresenter.Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "StackProductPresentation.PrivacySheetPresenter.Error",
+                            "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO24viewModelInvalidOrNotSetyA2EmF",
+                "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC5ErrorO24viewModelInvalidOrNotSetyA2EmF",
+                "moduleName": "StackProductPresentation"
+              },
+              {
+                "kind": "Var",
+                "name": "controllerNotSet",
+                "printedName": "controllerNotSet",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StackProductPresentation.PrivacySheetPresenter.Error.Type) -> StackProductPresentation.PrivacySheetPresenter.Error",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "StackProductPresentation.PrivacySheetPresenter.Error",
+                        "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StackProductPresentation.PrivacySheetPresenter.Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "StackProductPresentation.PrivacySheetPresenter.Error",
+                            "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO16controllerNotSetyA2EmF",
+                "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC5ErrorO16controllerNotSetyA2EmF",
+                "moduleName": "StackProductPresentation"
+              },
+              {
+                "kind": "Var",
+                "name": "invalidRedirectUrl",
+                "printedName": "invalidRedirectUrl",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(StackProductPresentation.PrivacySheetPresenter.Error.Type) -> StackProductPresentation.PrivacySheetPresenter.Error",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "StackProductPresentation.PrivacySheetPresenter.Error",
+                        "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "StackProductPresentation.PrivacySheetPresenter.Error.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "StackProductPresentation.PrivacySheetPresenter.Error",
+                            "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO18invalidRedirectUrlyA2EmF",
+                "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC5ErrorO18invalidRedirectUrlyA2EmF",
+                "moduleName": "StackProductPresentation"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "StackProductPresentation.PrivacySheetPresenter.Error",
+                    "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "StackProductPresentation.PrivacySheetPresenter.Error",
+                    "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC5ErrorO2eeoiySbAE_AEtFZ",
+                "moduleName": "StackProductPresentation",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO9hashValueSivp",
+                "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC5ErrorO9hashValueSivp",
+                "moduleName": "StackProductPresentation",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO9hashValueSivg",
+                    "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC5ErrorO9hashValueSivg",
+                    "moduleName": "StackProductPresentation",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC5ErrorO4hash4intoys6HasherVz_tF",
+                "moduleName": "StackProductPresentation",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:24StackProductPresentation21PrivacySheetPresenterC5ErrorO",
+            "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC5ErrorO",
+            "moduleName": "StackProductPresentation",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any StackProductPresentation.PrivacySheetPresenterDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter(py)delegate",
+            "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC8delegateAA0deF8Delegate_pSgvp",
+            "moduleName": "StackProductPresentation",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any StackProductPresentation.PrivacySheetPresenterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrivacySheetPresenterDelegate",
+                        "printedName": "any StackProductPresentation.PrivacySheetPresenterDelegate",
+                        "usr": "c:@M@StackProductPresentation@objc(pl)STKPrivacySheetPresenterDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter(im)delegate",
+                "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC8delegateAA0deF8Delegate_pSgvg",
+                "moduleName": "StackProductPresentation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any StackProductPresentation.PrivacySheetPresenterDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PrivacySheetPresenterDelegate",
+                        "printedName": "any StackProductPresentation.PrivacySheetPresenterDelegate",
+                        "usr": "c:@M@StackProductPresentation@objc(pl)STKPrivacySheetPresenterDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter(im)setDelegate:",
+                "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC8delegateAA0deF8Delegate_pSgvs",
+                "moduleName": "StackProductPresentation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24StackProductPresentation21PrivacySheetPresenterC8delegateAA0deF8Delegate_pSgvM",
+                "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC8delegateAA0deF8Delegate_pSgvM",
+                "moduleName": "StackProductPresentation",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PrivacySheetPresenter",
+                "printedName": "StackProductPresentation.PrivacySheetPresenter",
+                "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter(im)init",
+            "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterCACycfc",
+            "moduleName": "StackProductPresentation",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "set",
+            "printedName": "set(json:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter(im)setWithJson:",
+            "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC3set4jsonySDySSypG_tF",
+            "moduleName": "StackProductPresentation",
+            "objc_name": "setWithJson:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepare",
+            "printedName": "prepare(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIViewController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIViewController",
+                    "printedName": "UIKit.UIViewController",
+                    "usr": "c:objc(cs)UIViewController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter(im)prepareFor:",
+            "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC7prepare3forySo16UIViewControllerCSg_tF",
+            "moduleName": "StackProductPresentation",
+            "objc_name": "prepareFor:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter(im)show",
+            "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC4showyyF",
+            "moduleName": "StackProductPresentation",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hide",
+            "printedName": "hide()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter(im)hide",
+            "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC4hideyyF",
+            "moduleName": "StackProductPresentation",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@StackProductPresentation@objc(cs)STKPrivacySheetPresenter",
+        "mangledName": "$s24StackProductPresentation21PrivacySheetPresenterC",
+        "moduleName": "StackProductPresentation",
+        "objc_name": "STKPrivacySheetPresenter",
+        "declAttributes": [
+          "AccessControl",
+          "Final",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -6484,14 +7581,14 @@
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Public\/ProductNavigation.swift",
       "kind": "BooleanLiteral",
-      "offset": 1255,
+      "offset": 1293,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Public\/ProductNavigation.swift",
       "kind": "StringLiteral",
-      "offset": 732,
+      "offset": 770,
       "length": 17,
       "value": "\"StackProductPresentation.ProductNavigation\""
     },
@@ -6515,6 +7612,146 @@
       "offset": 249,
       "length": 34,
       "value": "\"StackProductPresentation.StoreProductViewPresenter_iOS_13_2\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Navigation\/DeepLinkNavigationWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 166,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 1407,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1456,
+      "length": 4,
+      "value": "1000"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 1501,
+      "length": 5,
+      "value": "377.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 1556,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 1601,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 1645,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupUtils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1687,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupUtils.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1728,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupUtils.swift",
+      "kind": "FloatLiteral",
+      "offset": 1788,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1857,
+      "length": 17,
+      "value": "\"bottomPopupView\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupPresentationController.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 33,
+      "value": "\"StackProductPresentation.BottomPopupPresentationController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupDismissAnimator.swift",
+      "kind": "StringLiteral",
+      "offset": 182,
+      "length": 26,
+      "value": "\"StackProductPresentation.BottomPopupDismissAnimator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupNavigationController.swift",
+      "kind": "StringLiteral",
+      "offset": 172,
+      "length": 31,
+      "value": "\"StackProductPresentation.BottomPopupNavigationController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupNavigationController.swift",
+      "kind": "StringLiteral",
+      "offset": 172,
+      "length": 31,
+      "value": "\"StackProductPresentation.BottomPopupNavigationController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupTransitionHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 188,
+      "length": 28,
+      "value": "\"StackProductPresentation.BottomPopupTransitionHandler\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupPresentAnimator.swift",
+      "kind": "StringLiteral",
+      "offset": 182,
+      "length": 26,
+      "value": "\"StackProductPresentation.BottomPopupPresentAnimator\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupDismissInteractionController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 800,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupDismissInteractionController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 849,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/BottomPopupController\/Helpers\/BottomPopupDismissInteractionController.swift",
+      "kind": "StringLiteral",
+      "offset": 356,
+      "length": 39,
+      "value": "\"StackProductPresentation.BottomPopupDismissInteractionController\""
     },
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Overlay\/Custom\/BMOverlayViewPresenter.swift",
@@ -6566,6 +7803,195 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 386,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 468,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 622,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 669,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 755,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 913,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 960,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1031,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1190,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1281,
+      "length": 7,
+      "value": "\"xmark\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1399,
+      "length": 3,
+      "value": "\"x\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1476,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1727,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2021,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2090,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2254,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2294,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3025,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3075,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3121,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3166,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3211,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 26,
+      "value": "\"StackProductPresentation.PrivacySheetViewController\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 8786,
+      "length": 9,
+      "value": "\"#1765EF\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8937,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8988,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9231,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Navigation\/AAKNavigationWrapper.swift",
       "kind": "BooleanLiteral",
       "offset": 356,
@@ -6575,23 +8001,9 @@
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Overlay\/Custom\/BMOverlayModel.swift",
       "kind": "StringLiteral",
-      "offset": 251,
+      "offset": 336,
       "length": 33,
       "value": "\"https:\/\/itunes.apple.com\/lookup\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Overlay\/Custom\/BMOverlayModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 567,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Overlay\/Custom\/BMOverlayModel.swift",
-      "kind": "StringLiteral",
-      "offset": 627,
-      "length": 4,
-      "value": "\"id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Overlay\/Custom\/BMOverlayView.swift",
@@ -6701,42 +8113,70 @@
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Overlay\/BMOverlayWrapper.swift",
       "kind": "StringLiteral",
-      "offset": 390,
+      "offset": 431,
       "length": 16,
       "value": "\"StackProductPresentation.BMOverlayWrapper\""
     },
     {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 415,
+      "length": 10,
+      "value": "\"REDIRECT\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 19,
+      "value": "\"COPY_TO_CLIPBOARD\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 415,
+      "length": 10,
+      "value": "\"REDIRECT\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/PrivacySheet\/PrivacySheetViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 19,
+      "value": "\"COPY_TO_CLIPBOARD\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Public\/ProductOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 763,
+      "offset": 753,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Public\/ProductOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 778,
+      "offset": 768,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Public\/ProductOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 763,
+      "offset": 753,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Public\/ProductOverlay.swift",
       "kind": "IntegerLiteral",
-      "offset": 778,
+      "offset": 768,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Public\/ProductOverlay.swift",
       "kind": "BooleanLiteral",
-      "offset": 898,
+      "offset": 888,
       "length": 5,
       "value": "false"
     },
@@ -6750,21 +8190,49 @@
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Public\/Product.swift",
       "kind": "BooleanLiteral",
-      "offset": 6722,
+      "offset": 5668,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Public\/Product.swift",
       "kind": "IntegerLiteral",
-      "offset": 11114,
+      "offset": 10444,
       "length": 1,
       "value": "5"
     },
     {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/DeepLink.swift",
+      "kind": "StringLiteral",
+      "offset": 96,
+      "length": 12,
+      "value": "\"primaryUrl\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/DeepLink.swift",
+      "kind": "StringLiteral",
+      "offset": 145,
+      "length": 13,
+      "value": "\"fallbackUrl\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/DeepLink.swift",
+      "kind": "StringLiteral",
+      "offset": 202,
+      "length": 20,
+      "value": "\"primaryTrackingUrl\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Shared\/DeepLink.swift",
+      "kind": "StringLiteral",
+      "offset": 267,
+      "length": 21,
+      "value": "\"fallbackTrackingUrl\""
+    },
+    {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Navigation\/LinkNavigationWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 317,
+      "offset": 316,
       "length": 5,
       "value": "false"
     },
@@ -6778,7 +8246,7 @@
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Navigation\/SKANNavigationWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 355,
+      "offset": 360,
       "length": 4,
       "value": "true"
     },
@@ -7040,6 +8508,13 @@
       "offset": 1103,
       "length": 25,
       "value": "\"product_page_identifier\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Overlay\/SKANOverlayWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 556,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/StackModules-iOS\/StackModules-iOS\/StackModules\/StackProductPresentation\/Overlay\/SKANOverlayWrapper.swift",

@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/STKMRAIDPresenterProtocol.h</key>
 		<data>
-		4/J8QUWBYiJ5SyYHOCTyt/89RR4=
+		uUclQuIjEzrutccF7w66/CxJwaM=
 		</data>
 		<key>Headers/STKMRAIDReusablePresenterProtocol.h</key>
 		<data>
@@ -150,11 +150,15 @@
 		</data>
 		<key>Headers/STKNASTAd.h</key>
 		<data>
-		oBqfjUxVdTdMfr5kAPXsdWHPDwA=
+		eUK1XS2xS7tF7ZzNwzQmGpa0hT8=
+		</data>
+		<key>Headers/STKNASTAdLabelAssetModel.h</key>
+		<data>
+		+dfNBjFl01bBrO0NLwR+LCcVGuo=
 		</data>
 		<key>Headers/STKNASTDefines.h</key>
 		<data>
-		6LJUX3oZoMf77bV2uDb7dzDhhO4=
+		/xhvBSWC3QEbSyIThbSHs5z3RHE=
 		</data>
 		<key>Headers/STKNASTManager.h</key>
 		<data>
@@ -326,7 +330,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		rj1yKs/GsBY82pCa/cNq0RG6L5o=
+		PU/ed4ykeyyAG5iaawZghZGgXmg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -585,11 +589,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4/J8QUWBYiJ5SyYHOCTyt/89RR4=
+			uUclQuIjEzrutccF7w66/CxJwaM=
 			</data>
 			<key>hash2</key>
 			<data>
-			sqChA0ad6TxeSPK/5Mp5Mdu/K2T/SKmrp02XmYRvEXc=
+			ttk7GxEDVPLXwCRGXhuoPOOyzNgjKqyA8A21kB5jX9c=
 			</data>
 		</dict>
 		<key>Headers/STKMRAIDReusablePresenterProtocol.h</key>
@@ -739,22 +743,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oBqfjUxVdTdMfr5kAPXsdWHPDwA=
+			eUK1XS2xS7tF7ZzNwzQmGpa0hT8=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ef2/jlrI4ABz7higShbsu/0pIt0SDGWJ3+XRX0rBlp8=
+			cMLfxlumFX/5+yW1tVD7kDt2Q/bX3G3qI5S5SkbUW04=
+			</data>
+		</dict>
+		<key>Headers/STKNASTAdLabelAssetModel.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+dfNBjFl01bBrO0NLwR+LCcVGuo=
+			</data>
+			<key>hash2</key>
+			<data>
+			CuR5sRU5h62br3X0ImHulrp2S2c+/a2skc+wO2S2n80=
 			</data>
 		</dict>
 		<key>Headers/STKNASTDefines.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6LJUX3oZoMf77bV2uDb7dzDhhO4=
+			/xhvBSWC3QEbSyIThbSHs5z3RHE=
 			</data>
 			<key>hash2</key>
 			<data>
-			2msfEOB0dhHHIRqFpIe7hrvhZF7s/UEpVGeEknlRwGQ=
+			38TAIyHjCjUQFMAxk81KLBOB9AugnurceOpQeNSCYsU=
 			</data>
 		</dict>
 		<key>Headers/STKNASTManager.h</key>

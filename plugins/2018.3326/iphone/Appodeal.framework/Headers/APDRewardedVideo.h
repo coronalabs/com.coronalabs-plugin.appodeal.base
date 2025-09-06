@@ -2,7 +2,7 @@
 //  APDReviewVideo.h
 //  Appodeal
 //
-//  AppodealSDK version 3.4.2
+//  AppodealSDK version 3.9.0
 //
 //  Copyright © 2025 Appodeal, Inc. All rights reserved.
 //

@@ -1,7 +1,7 @@
 //
 //  APDBannerView.h
 //
-//  AppodealSDK version 3.4.2
+//  AppodealSDK version 3.8.1
 //
 //  Copyright © 2025 Appodeal, Inc. All rights reserved.
 //

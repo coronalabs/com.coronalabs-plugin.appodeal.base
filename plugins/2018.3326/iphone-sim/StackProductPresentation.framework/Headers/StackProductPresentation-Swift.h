@@ -299,9 +299,32 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@protocol STKPrivacySheetPresenterDelegate;
 @class NSString;
-@class UIView;
 @class UIViewController;
+
+SWIFT_CLASS_NAMED("PrivacySheetPresenter")
+@interface STKPrivacySheetPresenter : NSObject
+@property (nonatomic, weak) id <STKPrivacySheetPresenterDelegate> _Nullable delegate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)setWithJson:(NSDictionary<NSString *, id> * _Nonnull)json;
+- (void)prepareFor:(UIViewController * _Nullable)rootViewController;
+- (void)show;
+- (void)hide;
+@end
+
+
+
+SWIFT_PROTOCOL_NAMED("PrivacySheetPresenterDelegate")
+@protocol STKPrivacySheetPresenterDelegate
+- (void)privacySheetDidFailToPresentModal:(STKPrivacySheetPresenter * _Nonnull)privacySheet error:(NSError * _Nonnull)error;
+- (void)privacySheetWillPresentModal:(STKPrivacySheetPresenter * _Nonnull)privacySheet;
+- (void)privacySheetDidDismissModal:(STKPrivacySheetPresenter * _Nonnull)privacySheet;
+- (void)privacySheetWillLeaveApplication:(STKPrivacySheetPresenter * _Nonnull)privacySheet;
+- (void)privacySheetDidFailToLeaveApplication:(STKPrivacySheetPresenter * _Nonnull)privacySheet error:(NSError * _Nonnull)error;
+@end
+
+@class UIView;
 @class NSURL;
 @protocol STKProductNavigationDelegate;
 enum STKProductOverlayStyle : NSUInteger;
@@ -325,7 +348,7 @@ SWIFT_PROTOCOL_NAMED("ProductNavigationDelegate")
 - (void)productNavigationDidFailToNavigate:(STKProductNavigation * _Nonnull)productNavigation error:(NSError * _Nonnull)error;
 - (void)productNavigationWillPresentModal:(STKProductNavigation * _Nonnull)productNavigation;
 - (void)productNavigationDidDismissModal:(STKProductNavigation * _Nonnull)productNavigation;
-- (void)productNavigationWillLeaveApplication:(STKProductNavigation * _Nonnull)productNavigation;
+- (void)productNavigationWillLeaveApplication:(STKProductNavigation * _Nonnull)productNavigation :(NSString * _Nullable)url;
 @end
 
 
@@ -333,7 +356,7 @@ SWIFT_PROTOCOL_NAMED("ProductNavigationDelegate")
 - (void)productNavigationDidFailToNavigate:(STKProductNavigation * _Nonnull)productNavigation error:(NSError * _Nonnull)error;
 - (void)productNavigationWillPresentModal:(STKProductNavigation * _Nonnull)productNavigation;
 - (void)productNavigationDidDismissModal:(STKProductNavigation * _Nonnull)productNavigation;
-- (void)productNavigationWillLeaveApplication:(STKProductNavigation * _Nonnull)productNavigation;
+- (void)productNavigationWillLeaveApplication:(STKProductNavigation * _Nonnull)productNavigation :(NSString * _Nullable)url;
 @end
 
 @class STKProductOverlay;
@@ -740,9 +763,32 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@protocol STKPrivacySheetPresenterDelegate;
 @class NSString;
-@class UIView;
 @class UIViewController;
+
+SWIFT_CLASS_NAMED("PrivacySheetPresenter")
+@interface STKPrivacySheetPresenter : NSObject
+@property (nonatomic, weak) id <STKPrivacySheetPresenterDelegate> _Nullable delegate;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)setWithJson:(NSDictionary<NSString *, id> * _Nonnull)json;
+- (void)prepareFor:(UIViewController * _Nullable)rootViewController;
+- (void)show;
+- (void)hide;
+@end
+
+
+
+SWIFT_PROTOCOL_NAMED("PrivacySheetPresenterDelegate")
+@protocol STKPrivacySheetPresenterDelegate
+- (void)privacySheetDidFailToPresentModal:(STKPrivacySheetPresenter * _Nonnull)privacySheet error:(NSError * _Nonnull)error;
+- (void)privacySheetWillPresentModal:(STKPrivacySheetPresenter * _Nonnull)privacySheet;
+- (void)privacySheetDidDismissModal:(STKPrivacySheetPresenter * _Nonnull)privacySheet;
+- (void)privacySheetWillLeaveApplication:(STKPrivacySheetPresenter * _Nonnull)privacySheet;
+- (void)privacySheetDidFailToLeaveApplication:(STKPrivacySheetPresenter * _Nonnull)privacySheet error:(NSError * _Nonnull)error;
+@end
+
+@class UIView;
 @class NSURL;
 @protocol STKProductNavigationDelegate;
 enum STKProductOverlayStyle : NSUInteger;
@@ -766,7 +812,7 @@ SWIFT_PROTOCOL_NAMED("ProductNavigationDelegate")
 - (void)productNavigationDidFailToNavigate:(STKProductNavigation * _Nonnull)productNavigation error:(NSError * _Nonnull)error;
 - (void)productNavigationWillPresentModal:(STKProductNavigation * _Nonnull)productNavigation;
 - (void)productNavigationDidDismissModal:(STKProductNavigation * _Nonnull)productNavigation;
-- (void)productNavigationWillLeaveApplication:(STKProductNavigation * _Nonnull)productNavigation;
+- (void)productNavigationWillLeaveApplication:(STKProductNavigation * _Nonnull)productNavigation :(NSString * _Nullable)url;
 @end
 
 
@@ -774,7 +820,7 @@ SWIFT_PROTOCOL_NAMED("ProductNavigationDelegate")
 - (void)productNavigationDidFailToNavigate:(STKProductNavigation * _Nonnull)productNavigation error:(NSError * _Nonnull)error;
 - (void)productNavigationWillPresentModal:(STKProductNavigation * _Nonnull)productNavigation;
 - (void)productNavigationDidDismissModal:(STKProductNavigation * _Nonnull)productNavigation;
-- (void)productNavigationWillLeaveApplication:(STKProductNavigation * _Nonnull)productNavigation;
+- (void)productNavigationWillLeaveApplication:(STKProductNavigation * _Nonnull)productNavigation :(NSString * _Nullable)url;
 @end
 
 @class STKProductOverlay;

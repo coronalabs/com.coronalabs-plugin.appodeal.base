@@ -17,7 +17,7 @@ repositories {
 
 
 dependencies {
-    implementation("com.appodeal.ads:sdk:3.4.2.0") {
+    implementation("com.appodeal.ads:sdk:3.9.0.0") {
         exclude group: "com.appodeal.ads.sdk.networks", module: "admob"
         exclude group: "com.appodeal.ads.sdk.networks", module: "amazon"
         exclude group: "com.appodeal.ads.sdk.networks", module: "applovin"

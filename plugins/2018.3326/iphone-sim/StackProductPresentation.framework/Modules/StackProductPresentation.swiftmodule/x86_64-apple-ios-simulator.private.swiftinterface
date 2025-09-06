@@ -3,6 +3,7 @@
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name StackProductPresentation
 import AdAttributionKit
 import Foundation
+import StackModules.STKConstants
 import StackModules
 @_exported import StackProductPresentation
 import StoreKit
@@ -15,7 +16,7 @@ import _SwiftConcurrencyShims
   @objc func productNavigationDidFailToNavigate(_ productNavigation: StackProductPresentation.ProductNavigation, error: any Swift.Error)
   @objc func productNavigationWillPresentModal(_ productNavigation: StackProductPresentation.ProductNavigation)
   @objc func productNavigationDidDismissModal(_ productNavigation: StackProductPresentation.ProductNavigation)
-  @objc func productNavigationWillLeaveApplication(_ productNavigation: StackProductPresentation.ProductNavigation)
+  @objc func productNavigationWillLeaveApplication(_ productNavigation: StackProductPresentation.ProductNavigation, _ url: Swift.String?)
 }
 @objc(STKProductNavigation) final public class ProductNavigation : ObjectiveC.NSObject {
   @objc weak final public var delegate: (any StackProductPresentation.ProductNavigationDelegate)?
@@ -59,8 +60,7 @@ public protocol ProductDelegate : AnyObject {
 }
 @_inheritsConvenienceInitializers @objc(STKProduct) final public class Product : ObjectiveC.NSObject {
   weak final public var delegate: (any StackProductPresentation.ProductDelegate)?
-  final public func prepare<ProductParameters>(parameters: ProductParameters, completion: @escaping ((any Swift.Error)?) -> ()) where ProductParameters : StackProductPresentation.SKANProductParameters
-  final public func prepare<ProductParameters>(parameters: ProductParameters, completion: @escaping ((any Swift.Error)?) -> ()) where ProductParameters : StackProductPresentation.AAKProductParameters
+  final public func prepare(with parameters: StackProductPresentation.Product.ProductParametersType, completion: @escaping ((any Swift.Error)?) -> ())
   @objc final public func prepare(parameters: [Swift.String : Any], completion: @escaping ((any Swift.Error)?) -> ())
   @objc final public func beginView(on view: UIKit.UIView, controller: UIKit.UIViewController, completion: (((any Swift.Error)?) -> ())? = nil)
   @objc final public func endView(completion: (((any Swift.Error)?) -> ())? = nil)
@@ -74,7 +74,7 @@ extension StackProductPresentation.Product : StackProductPresentation.ProductNav
   @objc final public func productNavigationDidFailToNavigate(_ productNavigation: StackProductPresentation.ProductNavigation, error: any Swift.Error)
   @objc final public func productNavigationWillPresentModal(_ productNavigation: StackProductPresentation.ProductNavigation)
   @objc final public func productNavigationDidDismissModal(_ productNavigation: StackProductPresentation.ProductNavigation)
-  @objc final public func productNavigationWillLeaveApplication(_ productNavigation: StackProductPresentation.ProductNavigation)
+  @objc final public func productNavigationWillLeaveApplication(_ productNavigation: StackProductPresentation.ProductNavigation, _ url: Swift.String?)
 }
 extension StackProductPresentation.Product : StackProductPresentation.ProductOverlayDelegate {
   @objc final public func overlayDidFailToLoad(_ overlay: StackProductPresentation.ProductOverlay?, error: any Swift.Error)
@@ -93,6 +93,10 @@ extension StackProductPresentation.Product {
     case storeControllerNotReady
     case timeout
     case unknown
+  }
+  public enum ProductParametersType {
+    case aak(any StackProductPresentation.AAKProductParameters)
+    case skan(any StackProductPresentation.SKANProductParameters)
   }
   public enum Framework {
     case storeKit
@@ -118,14 +122,16 @@ extension StackProductPresentation.Product {
     case overlayOpen(StackProductPresentation.Product.Framework)
     case overlayHide(StackProductPresentation.Product.Framework)
     case overlayTap(StackProductPresentation.Product.Framework)
+    case deepLinkOpen(Swift.String)
+    case deepLinkError(StackProductPresentation.Product.Error)
   }
 }
 @objc(STKProductImpression) final public class ProductImpression : ObjectiveC.NSObject {
   final public var framework: StackProductPresentation.Product.Framework {
     get
   }
-  public init<ProductParameters>(parameters: ProductParameters) throws where ProductParameters : StackProductPresentation.SKANProductParameters
-  public init<ProductParameters>(parameters: ProductParameters) throws where ProductParameters : StackProductPresentation.AAKProductParameters
+  public init<ProductParameters>(skanParameters: ProductParameters) throws where ProductParameters : StackProductPresentation.SKANProductParameters
+  public init(aakParameters: any StackProductPresentation.AAKProductParameters) throws
   @objc public init(parameters: [Swift.String : Any]) throws
   @objc final public func prepare(completion: @escaping ((any Swift.Error)?) -> ())
   @objc final public func beginView(on view: UIKit.UIView, controller: UIKit.UIViewController, completion: (((any Swift.Error)?) -> ())? = nil)
@@ -135,12 +141,15 @@ extension StackProductPresentation.Product {
 @available(iOS 13.0, *)
 extension StackProductPresentation.ProductImpression {
   #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 15.0, *)
   final public func prepare() async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 15.0, *)
   final public func beginView(on view: UIKit.UIView, controller: UIKit.UIViewController) async throws
   #endif
   #if compiler(>=5.3) && $AsyncAwait
+  @available(iOS 15.0, *)
   final public func endView() async throws
   #endif
 }
@@ -190,6 +199,32 @@ public protocol SKANProductParameters {
     @objc get
   }
 }
+@objc(STKPrivacySheetPresenterDelegate) public protocol PrivacySheetPresenterDelegate {
+  @objc func privacySheetDidFailToPresentModal(_ privacySheet: StackProductPresentation.PrivacySheetPresenter, error: any Swift.Error)
+  @objc func privacySheetWillPresentModal(_ privacySheet: StackProductPresentation.PrivacySheetPresenter)
+  @objc func privacySheetDidDismissModal(_ privacySheet: StackProductPresentation.PrivacySheetPresenter)
+  @objc func privacySheetWillLeaveApplication(_ privacySheet: StackProductPresentation.PrivacySheetPresenter)
+  @objc func privacySheetDidFailToLeaveApplication(_ privacySheet: StackProductPresentation.PrivacySheetPresenter, error: any Swift.Error)
+}
+@_inheritsConvenienceInitializers @objc(STKPrivacySheetPresenter) final public class PrivacySheetPresenter : ObjectiveC.NSObject {
+  public enum Error : Swift.Error {
+    case viewModelInvalidOrNotSet
+    case controllerNotSet
+    case invalidRedirectUrl
+    public static func == (a: StackProductPresentation.PrivacySheetPresenter.Error, b: StackProductPresentation.PrivacySheetPresenter.Error) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @objc weak final public var delegate: (any StackProductPresentation.PrivacySheetPresenterDelegate)?
+  @objc override dynamic public init()
+  @objc final public func set(json: [Swift.String : Any])
+  @objc final public func prepare(for rootViewController: UIKit.UIViewController?)
+  @objc final public func show()
+  @objc final public func hide()
+  @objc deinit
+}
 extension StackProductPresentation.ProductOverlay.Style : Swift.Equatable {}
 extension StackProductPresentation.ProductOverlay.Style : Swift.Hashable {}
 extension StackProductPresentation.ProductOverlay.Style : Swift.RawRepresentable {}
@@ -198,3 +233,5 @@ extension StackProductPresentation.Product.Framework : Swift.Hashable {}
 extension StackProductPresentation.SKANProductFidelityType : Swift.Equatable {}
 extension StackProductPresentation.SKANProductFidelityType : Swift.Hashable {}
 extension StackProductPresentation.SKANProductFidelityType : Swift.RawRepresentable {}
+extension StackProductPresentation.PrivacySheetPresenter.Error : Swift.Equatable {}
+extension StackProductPresentation.PrivacySheetPresenter.Error : Swift.Hashable {}

@@ -72,6 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)ad:(STKMRAIDAd *)ad willNavigateToURL:(NSURL *)URL;
 - (void)ad:(STKMRAIDAd *)ad didReceiveProductURL:(NSURL *)URL;
+- (void)openPrivacySheet:(NSString *)jsonData;
 
 @end
 

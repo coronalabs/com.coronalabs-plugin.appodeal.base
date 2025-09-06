@@ -64,6 +64,10 @@
 		<data>
 		F9PhrafBIMwoifG9c+cYY1iPMAM=
 		</data>
+		<key>Headers/STKConstants.h</key>
+		<data>
+		dUuwUZNI3vqb/JBLjd+Orl98cY8=
+		</data>
 		<key>Headers/STKContainerLogRecorder.h</key>
 		<data>
 		udinD2LQU35DvS1vqxSyGW92reU=
@@ -286,7 +290,7 @@
 		</data>
 		<key>Headers/StackModules.h</key>
 		<data>
-		xMgFfK/2rDqH6acRLH7+2QIiK0Y=
+		Zg4ZJpcMUs3My5tFc9/c4W5SHjg=
 		</data>
 		<key>Headers/UIApplication+STKUIKit.h</key>
 		<data>
@@ -322,7 +326,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Do6leZpX0/ayr6oyDp5LO50ecxc=
+		0VZdX2UCuDsW+/cMnEo2/gG88TE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -498,6 +502,17 @@
 			<key>hash2</key>
 			<data>
 			9J1T9Y2lNotvrWiIz04Mr9KK3hU/CfrBY5RTlmq7UKE=
+			</data>
+		</dict>
+		<key>Headers/STKConstants.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dUuwUZNI3vqb/JBLjd+Orl98cY8=
+			</data>
+			<key>hash2</key>
+			<data>
+			3knRo59t2uNTi651snmS09D4L4T+DIrA7QUwnPwDZUQ=
 			</data>
 		</dict>
 		<key>Headers/STKContainerLogRecorder.h</key>
@@ -1109,11 +1124,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xMgFfK/2rDqH6acRLH7+2QIiK0Y=
+			Zg4ZJpcMUs3My5tFc9/c4W5SHjg=
 			</data>
 			<key>hash2</key>
 			<data>
-			M5qLFfEO+NTXRNcWjImFt27aH3ln+hpuHMrmRaXCBgM=
+			vb0iKhjsZkv88ptpSJb4Kxg2c7hQdFYPC2UQ+0VsuOM=
 			</data>
 		</dict>
 		<key>Headers/UIApplication+STKUIKit.h</key>
