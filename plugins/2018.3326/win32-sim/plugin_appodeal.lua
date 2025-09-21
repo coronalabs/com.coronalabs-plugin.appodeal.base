@@ -63,6 +63,11 @@ function lib.trackInAppPurchase()
     showWarning("appodeal.trackInAppPurchase()")
 end
 
+function lib.showTestView()
+    showWarning("appodeal.showTestView()")
+end
+
+
 -------------------------------------------------------------------------------
 -- END
 -------------------------------------------------------------------------------
