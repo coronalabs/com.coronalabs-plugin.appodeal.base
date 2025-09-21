@@ -1,7 +1,7 @@
 android.defaultConfig {
-    minSdkVersion Math.max(minSdkVersion?.apiLevel ?: 15, 21)
+    minSdkVersion Math.max(minSdkVersion?.apiLevel ?: 15, 23)
 }
-ext["minSdkVersion"] = Math.max(ext.find("minSdkVersion")?:15, 21)
+ext["minSdkVersion"] = Math.max(ext.find("minSdkVersion")?:15, 23)
 
 android {
 
