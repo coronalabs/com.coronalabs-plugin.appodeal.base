@@ -174,7 +174,7 @@
 		</data>
 		<key>PrivateHeaders/APDPrivateDefines.h</key>
 		<data>
-		Md7YEnPsMM7EuKRPj2BQTZt27q8=
+		IHdynguPLi7BXXRWsNZS2erG5oY=
 		</data>
 		<key>PrivateHeaders/APDProductPresentationAdapter.h</key>
 		<data>
@@ -186,7 +186,7 @@
 		</data>
 		<key>PrivateHeaders/APDServiceProtocol.h</key>
 		<data>
-		SoOaW+euuopVB85Qt9x0jtT9JUk=
+		baKdZif5LYR9lMVpro6YoE1Sxsw=
 		</data>
 		<key>PrivateHeaders/APDServicesInfoProtocol.h</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>PrivateHeaders/APDVendorProtocol.h</key>
 		<data>
-		JPU3rwvxJ4xsnhSGcd7s1BX1O4w=
+		KIYlJLGifzJE/fUAxketY5GJH6o=
 		</data>
 		<key>PrivateHeaders/APDVendorRegistry.h</key>
 		<data>
@@ -685,11 +685,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Md7YEnPsMM7EuKRPj2BQTZt27q8=
+			IHdynguPLi7BXXRWsNZS2erG5oY=
 			</data>
 			<key>hash2</key>
 			<data>
-			B9w19/ustwDXGdTzBjSnGRBDGw/7yAJJL8EY2ShcfX8=
+			iyvFbPr4FX3+e+kZRwiB3CN/2KdnFXd8Qy0m9G51WNo=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDProductPresentationAdapter.h</key>
@@ -718,11 +718,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			SoOaW+euuopVB85Qt9x0jtT9JUk=
+			baKdZif5LYR9lMVpro6YoE1Sxsw=
 			</data>
 			<key>hash2</key>
 			<data>
-			8V+LoDOGcxnkkzKLbfXJYkkWqA5PauC90/OIt3XlX8s=
+			bJanKLvwX1XhrpucsA4wMNgrHl2UcA4+FoT3wddNkZE=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDServicesInfoProtocol.h</key>
@@ -773,11 +773,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JPU3rwvxJ4xsnhSGcd7s1BX1O4w=
+			KIYlJLGifzJE/fUAxketY5GJH6o=
 			</data>
 			<key>hash2</key>
 			<data>
-			JVzbHX+JkMeO2yChoF8SQZ8xN3u1OMIQgiguu5ncBpo=
+			g7biwTDhKAQdq8y3mEqO1POq/jJeL01nS9FfpVsiqd8=
 			</data>
 		</dict>
 		<key>PrivateHeaders/APDVendorRegistry.h</key>
